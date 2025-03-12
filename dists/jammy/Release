@@ -1,0 +1,21 @@
+Origin: Ubuntu
+Label: Ubuntu-All
+Suite: stable
+Codename: jammy
+Version: 22.04
+Date: Wed, 12 Mar 2025 12:54:26 UTC
+Architectures: amd64
+Components: main
+Description: Test apt repostiroy
+MD5Sum:
+ 8f8bbce3667c6ede51b6e7b93a178d33 1074 main/binary-amd64/Packages
+ f903350edd4b71498270f1290813dcd8 675 main/binary-amd64/Packages.gz
+ 422cf4692ea8797d281c8b0cb303aff7 133 main/binary-amd64/Release
+SHA1:
+ 9238d5198b16cf1be26ff674079295e9f8e7666c 1074 main/binary-amd64/Packages
+ ead1eb0dbf4258826e0822525d1f4c1bd6251636 675 main/binary-amd64/Packages.gz
+ 77ab5d09610228a36917219ee0a5ca1c689cbd71 133 main/binary-amd64/Release
+SHA256:
+ 31dc55db0cc0506b892e93d131171fce1b41b6e249282a0331ff0f76a125ee50 1074 main/binary-amd64/Packages
+ f4be7820982a10814757d3d57cc8eb344ddab69ff15408c3ed6fe299072e3979 675 main/binary-amd64/Packages.gz
+ 1b428795f66faaae998b2d55a9d1b0e49334307ae1f0b092c88ea6fc538df05d 133 main/binary-amd64/Release

@@ -1,0 +1,7 @@
+Archive: stable
+Version: 22.04
+Component: main
+Origin: Ubuntu
+Label: Ubuntu-All
+Architecture: amd64
+Description: Test apt repostiroy
