@@ -1,3 +1,6 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
 Origin: Ubuntu
 Label: Ubuntu-All
 Suite: stable
@@ -19,3 +22,19 @@ SHA256:
  31dc55db0cc0506b892e93d131171fce1b41b6e249282a0331ff0f76a125ee50 1074 main/binary-amd64/Packages
  f4be7820982a10814757d3d57cc8eb344ddab69ff15408c3ed6fe299072e3979 675 main/binary-amd64/Packages.gz
  1b428795f66faaae998b2d55a9d1b0e49334307ae1f0b092c88ea6fc538df05d 133 main/binary-amd64/Release
+-----BEGIN PGP SIGNATURE-----
+
+iQIzBAEBCgAdFiEEeiEsCPEHyKPsNFiXUme/5bTX1yQFAmfRinkACgkQUme/5bTX
+1ySaew/+LyDTbTardhrjGt/ePWURkfKqrn/zHKAWt1yLS+5cLl5orIYsDLsTuFK6
+nNpFxjnDCnn+k8BEGXF/Gx2LKt+CQVq5LGJPGkT9cRL4+UVmMYcz4EXuCjFMDYCE
+uJIcPHSwEezPG0wuJuWbeA+eW/QvzFmE7m8MDYgoxfEGEaRVTGgEdn4u+eUb8sOY
+x32LvwBXNjqtQayiepk0XqplCOo2+qbmImVqK8WGDKkVa+mr+W0Au6njAiXFEyys
+7+J81aKg1vv602wg6C+ZHBNPaXB4LLwX6eBERgh6hHej7aTE5witGPpi0h88JELn
+l8Mo2ePzRodTrMQD4s7PsgZsNd8z6E4D/YEyBhvVL6LdnkJY+65yxI8cLhmp1IHb
+sbgslnXXX4JHXsd8ACdWxH6CdkPVdE8OGZYhlhLtXi4gC3Fke1fjQoK1TIQgqbN0
+0fRBEOiqcmqC0FJzKwKA1tSMXwFLoBH6ZSaVS4foi+9hyInobY0hQR31BxXCLwys
+tqNRMdUSHGiO2/n0IS6gjhiyVKHO8yHwxTLRPcRMz8FEvXz0jfowBeb09phcwz6x
+fzw+CpjjG0t6Aw7skJwX5/ubmAl2T/aggbbJZD1jfyEJH1hO7MVbI2NsCmL3hchF
+ehp/RRHwYOTfl2HSiabfId8d56zls8Ex1g6c2exb9m3CmoXgEbc=
+=fuJC
+-----END PGP SIGNATURE-----
