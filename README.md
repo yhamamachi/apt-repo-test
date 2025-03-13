@@ -39,3 +39,26 @@ hello:
         500 https://raw.githubusercontent.com/yhamamachi/apt-repo-test/jammy jammy/main amd64 Packages
 ```
 
+## Package upgrade check
+
+myhello package is created by create_test_deb.sh
+1. Create package and upload repository.
+   - `create_test_deb.sh`
+   - `reprepro -V --basedir . --component main --priority 0 includedeb jammy ./work.deb`
+2. Change version of package on top of script file.
+   - `PKG_VER="0.01-3+deb9u1"` will be changed
+3. Regenerate package and upload repository.
+   - `create_test_deb.sh`
+   - `reprepro -V --basedir . --component main --priority 0 includedeb jammy ./work.deb`
+```
+-> % LANG=C apt-cache policy myhello
+myhello:
+  Installed: 0.01-2+deb9u1
+  Candidate: 0.01-3+deb9u1
+  Version table:
+     0.01-3+deb9u1 500
+        500 https://raw.githubusercontent.com/yhamamachi/apt-repo-test/jammy jammy/main amd64 Packages
+ *** 0.01-2+deb9u1 100
+```
+
+
