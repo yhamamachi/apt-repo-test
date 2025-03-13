@@ -61,4 +61,11 @@ myhello:
  *** 0.01-2+deb9u1 100
 ```
 
+## How to check package list in reposotory
+
+```
+-> % reprepro list jammy
+jammy|main|amd64: hello 2.10-2ubuntu4
+jammy|main|amd64: myhello 0.01-5+deb9u1
+```
 
