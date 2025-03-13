@@ -1,6 +1,6 @@
 #!/bin/bash
 
-PKG_VER="0.01-2"
+PKG_VER="0.01-2+deb9u1"
 
 SCRIPT_DIR=$(cd `dirname $0` && pwd)
 WORK_DIR=${SCRIPT_DIR}/work
