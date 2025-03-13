@@ -1,6 +1,6 @@
 #!/bin/bash
 
-PKG_VER="0.01-1+deb9u1"
+PKG_VER="0.01-2"
 
 SCRIPT_DIR=$(cd `dirname $0` && pwd)
 WORK_DIR=${SCRIPT_DIR}/work
@@ -8,7 +8,7 @@ WORK_DIR=${SCRIPT_DIR}/work
 mkdir -p ${WORK_DIR}
 cd ${WORK_DIR}
 mkdir -p ./DEBIAN ./usr/bin
-echo "#!/bin/sh\necho 'My Hello'" > ./usr/bin/myhello
+echo -e "#!/bin/sh\necho 'My Hello'" > ./usr/bin/myhello
 chmod 755 ./usr/bin/myhello
 md5sum ./usr/bin/myhello > ./DEBIAN/md5sums
 
@@ -33,6 +33,5 @@ EOS
 
 cd $SCRIPT_DIR/
 fakeroot dpkg-deb --build $WORK_DIR
-cp -f $WORK_DIR/*.deb $SCRIPT_DIR
 rm -rf $WORK_DIR
 
