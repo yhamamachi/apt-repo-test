@@ -26,18 +26,18 @@ Description: example package based on GNU hello
 Original-Maintainer: Santiago Vila <sanvila@debian.org>
 
 Package: myhello
-Version: 0.01-3+deb9u1
+Version: 0.01-5+deb9u1
 Architecture: amd64
 Maintainer: Yuya Hamamachi <yuya.hamamachi.sx@renesas.com>
 Installed-Size: 16
 Homepage: http://www.example.com/
 Priority: 0
 Section: devel
-Filename: pool/main/m/myhello/myhello_0.01-3+deb9u1_amd64.deb
-Size: 738
-SHA256: 17e80ece437de80e484d125e9882088a7968bd45d5cea88848cca5631b31d3f3
-SHA1: 21d912c52e5762f219d15d871d40a2da78cdefb7
-MD5sum: 69dd0f8807a841054b40fc86394ef4fc
+Filename: pool/main/m/myhello/myhello_0.01-5+deb9u1_amd64.deb
+Size: 734
+SHA256: 447d33fdf4f224b41ba80741c7e9007a5887e26f0c0458a7e625559b5046cbfe
+SHA1: af121c34dbdf5bffc40f78028b1cdf1c112c1083
+MD5sum: a786a194d8657cb21ed9d32bad78ec7f
 Description: example package of myhello
  Sample Program for deb package
  .
