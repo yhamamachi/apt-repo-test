@@ -1,5 +1,13 @@
 #!/bin/bash -eu
 
+#################################
+# Configuable parameter         #
+#################################
+DEVICE=s4sk # Currently, it doesn't support to change device.
+USERNAME=rcar
+HOSTNAME=${DEVICE}
+EXTRA_IMAGE_SIZE=300 # MiB
+
 EXTRA_APT_REPO="\
 deb [arch=arm64 trusted=yes signed-by=/etc/apt/keyrings/kernel-repo.asc] https://raw.githubusercontent.com/yhamamachi/apt-repo-test/debian12 bookworm main \
 "
@@ -9,11 +17,20 @@ CODENAME=bookworm
 DEBIAN_VER=12 # どちらかからもう片方を取得する仕組みのほうが良いか？
 VARIANT=debootstrap # minbase # default=debootstrap
 ARCH=arm64
-EXTRA_IMAGE_SIZE=300 # MiB
 
 SCRIPT_DIR=$(cd `dirname $0` && pwd)
 CHROOT_DIR=${SCRIPT_DIR}/rootfs
 
+NET_DEV=eth0
+if [[ "$DEVICE" == "s4sk" ]]; then
+    NET_DEV=tsn0
+fi
+DHCP_CONF="
+[Match]
+Name=${NET_DEV}
+[Network]
+DHCP=ipv4
+"
 
 echo "Download gpg key for debian repository to Host PC(sudo is used)"
 sudo wget -c -q --directory-prefix /etc/apt/trusted.gpg.d/ https://ftp-master.debian.org/keys/archive-key-${DEBIAN_VER}.asc
@@ -22,7 +39,7 @@ sudo wget -c -q --directory-prefix /etc/apt/trusted.gpg.d/ https://ftp-master.de
 
 echo "Run mmdebstrap to make initial rootfs"
 for name in dev proc sys; do
-    sudo umount ${CHROOT_DIR}/$name
+    sudo umount ${CHROOT_DIR}/$name || true
 done
 sudo rm -rf ${CHROOT_DIR}
 mmdebstrap --variant=$VARIANT --arch=$ARCH --include="ca-certificates" $CODENAME ${CHROOT_DIR}
@@ -36,9 +53,23 @@ done
 sudo curl -fsSL ${GPG_KEY_URL} -o ${CHROOT_DIR}/etc/apt/keyrings/kernel-repo.asc
 echo "$EXTRA_APT_REPO" | sudo tee ${CHROOT_DIR}/etc/apt/sources.list.d/kernel.list > /dev/null
 sudo chroot ${CHROOT_DIR} sh -c "
-    export DEBIAN_FRONTEND=noninteractive;
-    apt-get update;
-    apt-get install kernel* -y;
+    export DEBIAN_FRONTEND=noninteractive \
+    && apt-get update \
+    && apt-get install kernel* -y \
+    && apt-get install -y vim net-tools ssh sudo tzdata rsyslog udev iputils-ping \
+    && apt-get install -y unzip curl kmod iproute2 git python3-pip nano systemd-resolved \
+    && echo \"${DHCP_CONF}\" > /etc/systemd/network/01-${NET_DEV}.network \
+    && useradd -m -s /bin/bash -G sudo ${USERNAME} \
+    && echo ${USERNAME}:${USERNAME} | chpasswd \
+    && echo \"${USERNAME}   ALL=(ALL) NOPASSWD:ALL\" >> /etc/sudoers \
+    && echo ${HOSTNAME} > /etc/hostname \
+    && systemctl enable systemd-networkd \
+    && cp /usr/share/systemd/tmp.mount /etc/systemd/system/tmp.mount \
+    && systemctl enable tmp.mount \
+    && echo 127.0.0.1 localhost > /etc/hosts \
+    && echo 127.0.1.1 ${HOSTNAME} >> /etc/hosts \
+    && depmod -a \`ls /lib/modules\` \
+    && apt clean \
 "
 for name in dev proc sys; do
     sudo umount ${CHROOT_DIR}/$name
