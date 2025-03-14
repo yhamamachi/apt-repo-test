@@ -1,0 +1,40 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Origin: Debian
+Label: Debian
+Suite: stable
+Codename: bookworm
+Version: 12
+Date: Fri, 14 Mar 2025 03:23:55 UTC
+Architectures: arm64
+Components: main
+Description: Test apt repostiroy
+MD5Sum:
+ 2b7f2a5355ca27f368e5cab12587da0c 64598 main/binary-arm64/Packages
+ cddd7548a04093dce6f2f6e72aff685d 8350 main/binary-arm64/Packages.gz
+ 8337f4d6bcff95bb98578b95078553bd 126 main/binary-arm64/Release
+SHA1:
+ 3af6615c9d259df666ff4599c3c20bf00ff80037 64598 main/binary-arm64/Packages
+ bd7854ea95a6a999eb08931e48f9fa23bae3af9b 8350 main/binary-arm64/Packages.gz
+ 0fb8bd707832ea6c1926dc9e2fd9fd7299da7623 126 main/binary-arm64/Release
+SHA256:
+ 0bb7351665a7bb89371cc59ce3d4dce692d60dc515e9c124f152318896aa88f0 64598 main/binary-arm64/Packages
+ 89d9f9ae7b797c4d9c73f4e677b4ccbb84abb558192f99ec4316bcc0e89350bf 8350 main/binary-arm64/Packages.gz
+ 5d9a803f36ae9a920eed756e699be206a099df91ed81ee987a2b50bb8d25bbe5 126 main/binary-arm64/Release
+-----BEGIN PGP SIGNATURE-----
+
+iQIzBAEBCgAdFiEEeiEsCPEHyKPsNFiXUme/5bTX1yQFAmfToU4ACgkQUme/5bTX
+1yRW9g//W3zard6pm+qVmzuytZ9Sax+bntRH45/hffngCHhpIVkfxAWQO7HWqwSh
+fotLpw79dzDRaDms9WizL7yXZhag6CO7/8RpXl5Eu2XAQPKA6R1nArPNr2v8nLMp
+xvF+XNB7eMKcTMmKrWhIDtws0k4Z11JickTG1BZQhpcX0LFImGkqqrJ+z0PXsVY1
+2rn27O0NQQ4demyoDYJPO2+NpEDLdqn9IidRigS9QfKrUkJiN2QcSePC4fqYO+cM
+Miw2rHmXprCpsJP4/QV6DQB88OrmcaFqVZEHkOoflkan4nHovqdZkfKx838qMvkq
+jcTJ7qIFhyvioXmmP/ryNxthRe7UULpSUN3D0FzYd0cFFEz1SjMI55Z3RmhcTorQ
+7v96h/cwRn+GmMPcgQD4eNSdNyz9lNhZ7Af/jz7HJ2twawMKpO/8dtzPSLuxRR+p
+2z6cEoMssVCdLy8+F6cWybFS+BH79CW0dj8TpyLTJbn2jNxStOm+BMGC5xVOYp3C
+O5F/fDS8GdByrXxjsSwHcvII6FOC+miAgE/2qOCuZ7Ek2ipGfn7E+NfZM2Sn6pgi
+H7bzGTmCPp5ktTMNbkfFF3TVuxtp8hGxy/Wqlsp902rwvt2301b+BOJIurJYQC9s
+Q/gaC+vUgeemIp+VCyksMPktZzrkbqGZ7wR6xKgUyFK43YGu3go=
+=IfOD
+-----END PGP SIGNATURE-----
