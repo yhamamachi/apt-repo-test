@@ -23,11 +23,10 @@ reprepro -V --basedir . --component main --priority 0 includedeb jammy ./_work/h
 ## How to add this repo
 
 ```
-curl -LSfs https://github.com/yhamamachi/apt-repo-test/raw/refs/heads/jammy/gpg | sudo apt-key add -
-sudo add-apt-repository -y "deb [arch=amd64] https://raw.githubusercontent.com/yhamamachi/apt-repo-test/jammy jammy main"
+curl -LSfs https://github.com/yhamamachi/apt-repo-test/raw/refs/heads/jammy/gpg | sudo gpg --dearmor -o /usr/share/keyrings/yhamamachi.gpg
+echo "deb [signed-by=/usr/share/keyrings/yhamamachi.gpg arch=amd64] https://raw.githubusercontent.com/yhamamachi/apt-repo-test/jammy jammy main" | sudo tee /etc/apt/sources.list.d/yhamamachi.list
 sudo apt update
 ```
-Note: apt-key/add-apt-repository is deprecated so that it needs to adopt another mothod.
 
 
 ## How to check repository is enabled
