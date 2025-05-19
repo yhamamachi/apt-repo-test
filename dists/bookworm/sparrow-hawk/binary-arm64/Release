@@ -1,0 +1,7 @@
+Archive: stable
+Version: 12
+Component: sparrow-hawk
+Origin: Debian
+Label: Debian
+Architecture: arm64
+Description: Test apt repostiroy
