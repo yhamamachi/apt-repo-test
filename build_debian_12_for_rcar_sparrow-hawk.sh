@@ -88,7 +88,7 @@ sudo chroot ${CHROOT_DIR} sh -c "
     && echo 127.0.0.1 localhost > /etc/hosts \
     && echo 127.0.1.1 ${HOSTNAME} >> /etc/hosts \
     && echo '#!/bin/sh' > /etc/rc.local \
-    && echo '/sbin/insmod /lib/modules/\$(uname -r)/kernel/drivers/pci/controller/dwc/pcie-rcar-gen4.ko' >> /etc/rc.local \
+    && echo '/sbin/insmod /lib/modules/\$(uname -r)/kernel/drivers/pci/controller/dwc/pcie-rcar-gen4.ko & ' >> /etc/rc.local \
     && echo 'exit 0' >> /etc/rc.local \
     && chmod +x /etc/rc.local \
     && depmod -a \`ls /lib/modules\` \
