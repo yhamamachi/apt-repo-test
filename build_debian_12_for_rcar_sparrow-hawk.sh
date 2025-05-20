@@ -69,7 +69,7 @@ sudo chroot ${CHROOT_DIR} sh -c "
     && echo nameserver 1.1.1.1 >> /etc/resolve.conf \
     && echo nameserver 8.8.8.8 >> /etc/resolve.conf \
     && apt-get update \
-    && apt-get install -y kernel* \
+    && apt-get install -y kernel* linux-fitimage \
         systemd dbus net-tools iproute2 pciutils usbutils \
         sudo passwd login adduser tzdata locales alsa-utils \
         vim net-tools ssh tzdata rsyslog udev wget \
