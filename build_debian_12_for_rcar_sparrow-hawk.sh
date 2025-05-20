@@ -59,10 +59,9 @@ curl -fsSL ${GPG_KEY_URL} | sudo gpg --dearmor -o ${CHROOT_DIR}/etc/apt/keyrings
 echo "$EXTRA_APT_REPO" | sudo tee ${CHROOT_DIR}/etc/apt/sources.list.d/kernel-repo.list > /dev/null
 
 # For X11 with Gnome/LXQt
-#DESKTOP_PKG="libegl-mesa0 gnome"
-DESKTOP_PKG="libegl-mesa0 lxqt"
-# For wayland with sway
-#DESKTOP_PKG="sway wayland-utils seatd libseat1 grim slurp wl-clipboard"
+DESKTOP_PKG=""
+#DESKTOP_PKG="gnome"
+#DESKTOP_PKG="lxqt"
 
 sudo chroot ${CHROOT_DIR} sh -c "
     export DEBIAN_FRONTEND=noninteractive \
