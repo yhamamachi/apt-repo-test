@@ -420,3 +420,19 @@ OE: linux-renesas
 PackageArch: sparrow-hawk
 Homepage: https://www.yoctoproject.org/
 
+Package: linux-fitimage
+Version: 1.0-r0
+Priority: 0
+Section: base
+Filename: pool/sparrow-hawk/l/linux-fitimage/linux-fitimage_1.0-r0_arm64.deb
+Size: 13412288
+SHA256: 45e8504c17710b556aedbebc61b8e60f2875050343a4fc088c7db339402d5e7d
+SHA1: 86e9f0752c750c72d789089e98cc2460d57a9b38
+MD5sum: 86b8e10ddf7547150e3d7b3892ff8aed
+Description: linux-fitimage version 1.0-r0
+ Custom FIT image with BL31, DTB, and Kernel
+Maintainer: Poky Maintainers <poky@lists.yoctoproject.org>
+Architecture: arm64
+OE: linux-fitimage
+PackageArch: cortexa76
+

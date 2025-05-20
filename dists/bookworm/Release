@@ -3,7 +3,7 @@ Label: Debian
 Suite: stable
 Codename: bookworm
 Version: 12
-Date: Tue, 20 May 2025 03:53:22 UTC
+Date: Tue, 20 May 2025 10:18:19 UTC
 Architectures: arm64
 Components: main sparrow-hawk
 Description: Test apt repostiroy
@@ -11,20 +11,20 @@ MD5Sum:
  2b7f2a5355ca27f368e5cab12587da0c 64598 main/binary-arm64/Packages
  cddd7548a04093dce6f2f6e72aff685d 8350 main/binary-arm64/Packages.gz
  8337f4d6bcff95bb98578b95078553bd 126 main/binary-arm64/Release
- f83b5360f20df635e0379ad99731c6d8 17774 sparrow-hawk/binary-arm64/Packages
- fab2752e77c44865a0e9ed18bfb0b6bf 3467 sparrow-hawk/binary-arm64/Packages.gz
+ 209b2f731189c3933b1fa757d0c42a8a 18303 sparrow-hawk/binary-arm64/Packages
+ d3e0ad06f06acf4c553b928d35a45689 3644 sparrow-hawk/binary-arm64/Packages.gz
  fb7a5099022b61122a00d1f04ff8695e 134 sparrow-hawk/binary-arm64/Release
 SHA1:
  3af6615c9d259df666ff4599c3c20bf00ff80037 64598 main/binary-arm64/Packages
  bd7854ea95a6a999eb08931e48f9fa23bae3af9b 8350 main/binary-arm64/Packages.gz
  0fb8bd707832ea6c1926dc9e2fd9fd7299da7623 126 main/binary-arm64/Release
- ea752104644697c4102e78f291662c72759b0655 17774 sparrow-hawk/binary-arm64/Packages
- 5bfa05c6bf513745f9fed5aa30b9088fb2fd0ec5 3467 sparrow-hawk/binary-arm64/Packages.gz
+ e35ebc80731eca6d22378429ddcfb9d3dc78d1b4 18303 sparrow-hawk/binary-arm64/Packages
+ 29bd96b7dfae503ea0f57369f73aff42c8e97d3e 3644 sparrow-hawk/binary-arm64/Packages.gz
  f07998632b4d7ff15aadc31eec175b25af7132eb 134 sparrow-hawk/binary-arm64/Release
 SHA256:
  0bb7351665a7bb89371cc59ce3d4dce692d60dc515e9c124f152318896aa88f0 64598 main/binary-arm64/Packages
  89d9f9ae7b797c4d9c73f4e677b4ccbb84abb558192f99ec4316bcc0e89350bf 8350 main/binary-arm64/Packages.gz
  5d9a803f36ae9a920eed756e699be206a099df91ed81ee987a2b50bb8d25bbe5 126 main/binary-arm64/Release
- c37f140f8da4e7044bc24383d8fb3a002909e642fe14271f2ab1c53ac31d2dc6 17774 sparrow-hawk/binary-arm64/Packages
- e9551aff3e77b2a74b5b3d9b80e50e8f5a405b2291ca154d20995a2f5abfd40d 3467 sparrow-hawk/binary-arm64/Packages.gz
+ d67d24986ecd06e2fe6101664f37a94430d64ba19645b524a047111095f4faec 18303 sparrow-hawk/binary-arm64/Packages
+ a6612a35153621238cfbdb5a5fd4348c93c7056198d65fae5780f5e0851bf127 3644 sparrow-hawk/binary-arm64/Packages.gz
  beb679b8cb3845f284be8bd79a8262679519813ebde08c32b22a3b4d966e8db6 134 sparrow-hawk/binary-arm64/Release
