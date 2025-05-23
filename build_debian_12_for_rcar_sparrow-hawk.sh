@@ -11,9 +11,9 @@ EXTRA_IMAGE_SIZE=3000 # MiB
 EXTRA_APT_REPO="\
 deb [arch=arm64 trusted=yes signed-by=/etc/apt/keyrings/kernel-repo.asc] https://raw.githubusercontent.com/yhamamachi/apt-repo-test/debian12 bookworm sparrow-hawk \
 "
-#EXTRA_APT_REPO="\
-#deb [arch=arm64 trusted=yes signed-by=/etc/apt/keyrings/kernel-repo.asc] https://raw.githubusercontent.com/yhamamachi/apt-repo-test/debian12-dev bookworm sparrow-hawk \
-#"
+EXTRA_APT_REPO="\
+deb [arch=arm64 trusted=yes signed-by=/etc/apt/keyrings/kernel-repo.asc] https://raw.githubusercontent.com/yhamamachi/apt-repo-test/debian12-dev bookworm sparrow-hawk \
+"
 GPG_KEY_URL=https://github.com/yhamamachi/apt-repo-test/raw/refs/heads/debian12/gpg
 
 CODENAME=bookworm
