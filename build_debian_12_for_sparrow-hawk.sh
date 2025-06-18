@@ -69,11 +69,10 @@ mmdebstrap --variant=$VARIANT --arch=$ARCH \
     --customize-hook="echo '#!/bin/sh' > ${CHROOT_DIR}/etc/rc.local" \
     --customize-hook="echo '/sbin/insmod /lib/modules/\$(uname -r)/kernel/drivers/pci/controller/dwc/pcie-rcar-gen4.ko & ' >> ${CHROOT_DIR}/etc/rc.local" \
     --customize-hook="echo 'exit 0' >> ${CHROOT_DIR}/etc/rc.local" \
-    \
-    --customize-hook="chroot ${CHROOT_DIR} useradd -m -s /bin/bash -G sudo ${USERNAME}" \
-    --customize-hook="echo ${USERNAME}:${USERNAME} | chroot ${CHROOT_DIR} chpasswd" \
-    --customize-hook="chroot ${CHROOT_DIR} echo \"${USERNAME}   ALL=(ALL) NOPASSWD:ALL\" >> /etc/sudoers" \
     --customize-hook="chroot ${CHROOT_DIR} chmod +x /etc/rc.local" \
+    --customize-hook="chroot ${CHROOT_DIR} useradd -m -s /bin/bash -G sudo ${USERNAME}" \
+    --customize-hook="chroot ${CHROOT_DIR} sh -c 'echo ${USERNAME}:${USERNAME} | chpasswd'" \
+    --customize-hook="echo \"${USERNAME}   ALL=(ALL) NOPASSWD:ALL\" >> ${CHROOT_DIR}/etc/sudoers" \
     --customize-hook="curl -fsSL ${GPG_KEY_URL} -o ${CHROOT_DIR}/etc/apt/trusted.gpg.d/kernel-repo.asc" \
     --customize-hook="echo \"$EXTRA_APT_REPO\" | tee ${CHROOT_DIR}/etc/apt/sources.list.d/kernel-repo.list > /dev/null" \
     --customize-hook="chroot ${CHROOT_DIR} rm /etc/resolv.conf" \
