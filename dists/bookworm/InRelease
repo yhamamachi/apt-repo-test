@@ -6,7 +6,7 @@ Label: Debian
 Suite: stable
 Codename: bookworm
 Version: 12
-Date: Wed, 18 Jun 2025 10:47:23 UTC
+Date: Wed, 18 Jun 2025 11:31:22 UTC
 Architectures: arm64
 Components: main sparrow-hawk
 Description: Test apt repostiroy
@@ -14,36 +14,36 @@ MD5Sum:
  bca74fd12b328b04e7f5287b5863641e 2134 main/binary-arm64/Packages
  617357b52762ae58c240061df83d7b6d 677 main/binary-arm64/Packages.gz
  8337f4d6bcff95bb98578b95078553bd 126 main/binary-arm64/Release
- af71c196bcac3c9c4b71e058c3cab106 20095 sparrow-hawk/binary-arm64/Packages
- 977889ae781a83f28c46a6f1092b8056 3875 sparrow-hawk/binary-arm64/Packages.gz
+ 421b2b08da3d2f6727fdea2c75b7d24b 20095 sparrow-hawk/binary-arm64/Packages
+ 438e5c61b895828fec7dc252f618afb0 3886 sparrow-hawk/binary-arm64/Packages.gz
  fb7a5099022b61122a00d1f04ff8695e 134 sparrow-hawk/binary-arm64/Release
 SHA1:
  f8c1c0cd7b26af7e8d50966435c34dd6b85b293f 2134 main/binary-arm64/Packages
  adddf1d6ac7433a46b1935494f87393c3ad3b945 677 main/binary-arm64/Packages.gz
  0fb8bd707832ea6c1926dc9e2fd9fd7299da7623 126 main/binary-arm64/Release
- 9fbd2f673f66e8af74fbce45eda1b0441f141abf 20095 sparrow-hawk/binary-arm64/Packages
- e7ad6ef6489667a5b8ad033faf6b03331c2be543 3875 sparrow-hawk/binary-arm64/Packages.gz
+ 345fbc605e88178691bbe81cb0324175cf911174 20095 sparrow-hawk/binary-arm64/Packages
+ adbbc9fb3f6777c0b7ae4df59548472bc7c77edd 3886 sparrow-hawk/binary-arm64/Packages.gz
  f07998632b4d7ff15aadc31eec175b25af7132eb 134 sparrow-hawk/binary-arm64/Release
 SHA256:
  3095d269e85a27ba6c9637b3053694de358e680e2074e65b6ea97729593889e1 2134 main/binary-arm64/Packages
  8c7fa47d698409bb9f763bf6e767dd7c6bdc11ac23097999079ca14217192230 677 main/binary-arm64/Packages.gz
  5d9a803f36ae9a920eed756e699be206a099df91ed81ee987a2b50bb8d25bbe5 126 main/binary-arm64/Release
- 2b5ca54c03160b319e6f5969d8dd850f0c66625de1896b5aa41dc2c1d70c05fd 20095 sparrow-hawk/binary-arm64/Packages
- 66b4c40a030a99bee20ef9707ffa4718c3f5dc601b92f1e1c006f2d916d2d5b1 3875 sparrow-hawk/binary-arm64/Packages.gz
+ eb0a31b3fbe055a603843c94684a9d7d9c7cc4c3b918cf5e5ebb48053bdb01cc 20095 sparrow-hawk/binary-arm64/Packages
+ 84c5c1a9f91f8eb95a2c4c3746938dc7e0870e7b5ade298620542ffcfdc0bafd 3886 sparrow-hawk/binary-arm64/Packages.gz
  beb679b8cb3845f284be8bd79a8262679519813ebde08c32b22a3b4d966e8db6 134 sparrow-hawk/binary-arm64/Release
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCgAdFiEEeiEsCPEHyKPsNFiXUme/5bTX1yQFAmhSmTwACgkQUme/5bTX
-1ySaew//UHvki1HHg7MB2TaXsmIwfZB0zobZZw3FMgaiSCmsg72w6hpAao1R0KQ2
-8tSOAzOPeHdat8fNHO9DjdMvajYpauCtRcX+/xnmvFzs3OL0T9c9euuShhbCw3Mj
-FbHMYbc4d5g6gUTKHSN6DkcmO1iYKiusEcSwievAGm9eBbiDrnKdpYrErbYPoHpV
-DhGGdGuTmTln0wpArP1rs0ty792QQD/Q7+jxBwVAO90WQVBjkiTg31Ps9l7JRqEr
-LXEZS7bQsz2S+fPGYcBot2ZwnE0NflZPASS1dWSZ5pnzY0OKSBL3Sle6qlAeqO8i
-JcyTYISBXUrwHJuN3K8plzetJW8jJ/dD1ouXxsSuCUTaXy1o7MRiR7Fa0joTjrOk
-4getdQPnRa3nktu9EMXCRupkc47uxhwGy+pv4cOM/9oy66x1G1fNfJMcVD2EU5fq
-XHsBxl6XViioD+YpgcmvGstA0mr5ytlquT/a/Whp9kJ6Q3VBCZ7sJtpj0BjEkBSJ
-1KUYjRKPWgcvKhaO3stNW+UTJEqyUqPbDtPTP7cec7ZDY9V5LKiG8Ih31vijesuZ
-P3gbKjB9bEoVbsrsCBCjoy2Yztcb5Z4izZ5I5m1nnjCn8LMzQH61aIDmJuPCNkOR
-gV25jG4giq4CMpRgfOYr9qVyXN9qDK9DID5XTbsVEbBGkH01HCM=
-=JQqD
+iQIzBAEBCgAdFiEEeiEsCPEHyKPsNFiXUme/5bTX1yQFAmhSo4oACgkQUme/5bTX
+1ySUhBAAgq/NfN73h9cC4nfa4ieQc4ioMjGse66HZovmKo17BpT661WXTflVB0xs
+43bl8x8luZV8Ij8xIyACD3eluyhYlhIqtmXMci28Km0VzT4np1zaGxmK5pr1MZt5
+03ALPStfrbIojj6rJ5BWOvNklMr98jbAAvTJtBdxkqzmn0/L6D4uxGwCOQkUHwqD
+Sv/btn4Y5PjKw3qLAy8vntoQozEoEn5Typnkx0GqcQSrU2Q17XmoVIG+IZ4/FM4L
+aqQ5DlBif77cX/6ei6oeGlc9qV075h1fN0CNxLf1IiVWMTFcOdVfJT4wCVDwBXSR
+Ye9EiGDMnlNdnsUirEyMA4Cdk80BmMBM5JjSCf9xVM8rcwFc+H+lYd6ZKd8aGpxY
+cMqRfu/VV2HnyIj8mj/sAe/sXACsl7qjwsDbjowWwhWeiNA9XDGIgeNMvfGkt+1V
+Ik++jq/7KaHoeplc3IHNTk/7f1x4FxGx7D9aglDTdfTqruITICjzVKee11i8mRcL
+dDLQgzh0bdkTN5qugo2wDh/J/TT9VvddzD6HahGiI6zGAv8QNs3VfLWO+RiocW/+
+ZgnkCHf6g+m3scQg8rsgSSlco29RAuqZlqZNw3GyNJx2ORq8b8B6lSLI1qs65Cyp
+wm6VjEkBDBsgfdOxlqWcRMMfkA3zlBLS7Iehy+A6WQCToasSdCc=
+=dWdn
 -----END PGP SIGNATURE-----
