@@ -1,12 +1,12 @@
-Package: kernel
-Version: 6.12.34+git0+742b508598-r0
+Package: kernel-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Version: 6.12.34+git0+f6cd0b6d75-r0
 Priority: 0
 Section: kernel
-Filename: pool/sparrow-hawk/k/kernel/kernel_6.12.34+git0+742b508598-r0_arm64.deb
-Size: 816
-SHA256: d7002d203fe1d461d0e47f95c5c843d0d8a249341643fe8791720897879ae69c
-SHA1: ddc0d0e6ab4376a3c197128032fe9a7dd276d7f9
-MD5sum: afab41180377b32e35395a8d55ee2a27
+Filename: pool/sparrow-hawk/k/kernel-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty/kernel-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty_6.12.34+git0+f6cd0b6d75-r0_arm64.deb
+Size: 32968
+SHA256: 4a0f8f2c7e272392b47c6daae6426f904288b42dddbebff0525afdf898dcc6c1
+SHA1: 89202eb75ebd1792791e3f261c1635dd2a447d0b
+MD5sum: e7665da29412f46a5fb95971564aba4e
 Description: Linux kernel
  Linux kernel for the R-Car board
 Maintainer: Poky Maintainers <poky@lists.yoctoproject.org>
@@ -14,36 +14,18 @@ Architecture: arm64
 OE: linux-renesas
 PackageArch: sparrow-hawk
 Homepage: https://www.yoctoproject.org/
-Depends: kernel-6.12.34-yocto-standard-g742b50859847-dirty (= 6.12.34+git0+742b508598-r0)
-
-Package: kernel-6.12.34-yocto-standard-g742b50859847-dirty
-Version: 6.12.34+git0+742b508598-r0
-Priority: 0
-Section: kernel
-Filename: pool/sparrow-hawk/k/kernel-6.12.34-yocto-standard-g742b50859847-dirty/kernel-6.12.34-yocto-standard-g742b50859847-dirty_6.12.34+git0+742b508598-r0_arm64.deb
-Size: 32328
-SHA256: ac1dc872072c882a8d205eea2b5ed27c16054bb37019cda64c30d495398372eb
-SHA1: 514a02fb93e286f145df0429b6df2bd5eedbe279
-MD5sum: c8d369da0388f4940a3b5967d631ae12
-Description: Linux kernel
- Linux kernel for the R-Car board
-Maintainer: Poky Maintainers <poky@lists.yoctoproject.org>
-Architecture: arm64
-OE: linux-renesas
-PackageArch: sparrow-hawk
-Homepage: https://www.yoctoproject.org/
-Recommends: kernel-image-6.12.34-yocto-standard-g742b50859847-dirty (= 6.12.34+git0+742b508598-r0)
-Provides: kernel-6.12.34-yocto-standard-g742b50859847-dirty, kernel-base
+Recommends: kernel-image-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty (= 6.12.34+git0+f6cd0b6d75-r0)
+Provides: kernel-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty, kernel-base
 
 Package: kernel-dbg
-Version: 6.12.34+git0+742b508598-r0
+Version: 6.12.34+git0+f6cd0b6d75-r0
 Priority: 0
 Section: kernel
-Filename: pool/sparrow-hawk/k/kernel-dbg/kernel-dbg_6.12.34+git0+742b508598-r0_arm64.deb
-Size: 959752
-SHA256: ac193157cbdd786f6ceb753d65bb70eda9134c85cf5028355f4fb62136cc7e3b
-SHA1: 4ddac95c29e1afe09f94dee513401b50af973027
-MD5sum: eca6c8e46dea7fb5b96a407e56c391e5
+Filename: pool/sparrow-hawk/k/kernel-dbg/kernel-dbg_6.12.34+git0+f6cd0b6d75-r0_arm64.deb
+Size: 1109104
+SHA256: 3b04bc9f463fc39745063330cad3f31bfd0ffec23589a55f495395055c51ffb3
+SHA1: d5b458171a4be688df706b11d91cffc4729d4882
+MD5sum: cedfd26d8eeb936b590d893362a03201
 Description: Linux kernel
  Linux kernel for the R-Car board
 Maintainer: Poky Maintainers <poky@lists.yoctoproject.org>
@@ -53,14 +35,14 @@ PackageArch: sparrow-hawk
 Homepage: https://www.yoctoproject.org/
 
 Package: kernel-dev
-Version: 6.12.34+git0+742b508598-r0
+Version: 6.12.34+git0+f6cd0b6d75-r0
 Priority: 0
 Section: kernel
-Filename: pool/sparrow-hawk/k/kernel-dev/kernel-dev_6.12.34+git0+742b508598-r0_arm64.deb
-Size: 677508
-SHA256: 7f9cdcb9b3ff77eab7ebfb90f2847f0108a52da00f657956d6d6d2e8d9652748
-SHA1: bf25116b7575a65904660e6801c5f47133ece6a5
-MD5sum: 03ec1d243fd9ec64ffc3fe7532dacc76
+Filename: pool/sparrow-hawk/k/kernel-dev/kernel-dev_6.12.34+git0+f6cd0b6d75-r0_arm64.deb
+Size: 688876
+SHA256: 2f8aefa7c3ddd8942370ec4ff2a96603cbb12867c76de0a725f20f29f29256f2
+SHA1: 89dc515542b77c12ef97aae01d233d03eceff16c
+MD5sum: 5a5ad05b071da6362af955bdaf171693
 Description: Linux kernel
  Linux kernel for the R-Car board
 Maintainer: Poky Maintainers <poky@lists.yoctoproject.org>
@@ -68,17 +50,17 @@ Architecture: arm64
 OE: linux-renesas
 PackageArch: sparrow-hawk
 Homepage: https://www.yoctoproject.org/
-Recommends: kernel-6.12.34-yocto-standard-g742b50859847-dirty-dev, kernel-base-dev, kernel-image-image-dev, kernel-module-efivarfs-6.12.34-yocto-standard-g742b50859847-dirty-dev, kernel-module-pcie-rcar-gen4-6.12.34-yocto-standard-g742b50859847-dirty-dev, kernel-module-xen-gntalloc-6.12.34-yocto-standard-g742b50859847-dirty-dev, kernel-module-xen-gntdev-6.12.34-yocto-standard-g742b50859847-dirty-dev, libgcc-dev
+Recommends: kernel-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty-dev, kernel-base-dev, kernel-image-image-dev, kernel-module-a8293-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty-dev, kernel-module-af9013-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty-dev, kernel-module-af9033-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty-dev, kernel-module-ascot2e-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty-dev, kernel-module-atbm8830-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty-dev, kernel-module-au8522-common-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty-dev, kernel-module-au8522-decoder-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty-dev, kernel-module-au8522-dig-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty-dev, kernel-module-bcm3510-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty-dev, kernel-module-cx22700-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty-dev, kernel-module-cx22702-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty-dev, kernel-module-cx24110-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty-dev, kernel-module-cx24113-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty-dev, kernel-module-cx24116-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty-dev, kernel-module-cx24117-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty-dev, kernel-module-cx24120-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty-dev, kernel-module-cx24123-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty-dev, kernel-module-cxd2099-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty-dev, kernel-module-cxd2820r-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty-dev, kernel-module-cxd2841er-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty-dev, kernel-module-cxd2880-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty-dev, kernel-module-cxd2880-spi-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty-dev, kernel-module-dib0070-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty-dev, kernel-module-dib0090-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty-dev, kernel-module-dib3000mb-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty-dev, kernel-module-dib3000mc-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty-dev, kernel-module-dib7000m-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty-dev, kernel-module-dib7000p-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty-dev, kernel-module-dib8000-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty-dev, kernel-module-dib9000-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty-dev, kernel-module-dibx000-common-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty-dev, kernel-module-drx39xyj-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty-dev, kernel-module-drxd-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty-dev, kernel-module-drxk-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty-dev, kernel-module-ds3000-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty-dev, kernel-module-dvb-pll-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty-dev, kernel-module-ec100-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty-dev, kernel-module-efivarfs-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty-dev, kernel-module-helene-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty-dev, kernel-module-horus3a-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty-dev, kernel-module-isl6405-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty-dev, kernel-module-isl6421-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty-dev, kernel-module-isl6423-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty-dev, kernel-module-itd1000-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty-dev, kernel-module-ix2505v-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty-dev, kernel-module-l64781-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty-dev, kernel-module-lg2160-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty-dev, kernel-module-lgdt3305-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty-dev, kernel-module-lgdt3306a-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty-dev, kernel-module-lgdt330x-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty-dev, kernel-module-lgs8gl5-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty-dev, kernel-module-lgs8gxx-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty-dev, kernel-module-lnbh25-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty-dev, kernel-module-lnbh29-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty-dev, kernel-module-lnbp21-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty-dev, kernel-module-lnbp22-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty-dev, kernel-module-m88ds3103-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty-dev, kernel-module-m88rs2000-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty-dev, kernel-module-mb86a16-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty-dev, kernel-module-mb86a20s-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty-dev, kernel-module-mn88443x-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty-dev, kernel-module-mn88472-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty-dev, kernel-module-mn88473-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty-dev, kernel-module-mt312-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty-dev, kernel-module-mt352-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty-dev, kernel-module-mxl5xx-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty-dev, kernel-module-mxl692-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty-dev, kernel-module-nxt200x-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty-dev, kernel-module-nxt6000-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty-dev, kernel-module-or51132-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty-dev, kernel-module-or51211-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty-dev, kernel-module-pcie-rcar-gen4-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty-dev, kernel-module-rtl2830-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty-dev, kernel-module-rtl2832-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty-dev, kernel-module-rtl2832-sdr-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty-dev, kernel-module-s5h1409-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty-dev, kernel-module-s5h1411-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty-dev, kernel-module-s5h1420-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty-dev, kernel-module-s5h1432-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty-dev, kernel-module-s921-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty-dev, kernel-module-si2165-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty-dev, kernel-module-si2168-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty-dev, kernel-module-si21xx-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty-dev, kernel-module-sp2-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty-dev, kernel-module-sp887x-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty-dev, kernel-module-stb0899-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty-dev, kernel-module-stb6000-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty-dev, kernel-module-stb6100-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty-dev, kernel-module-stv0288-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty-dev, kernel-module-stv0297-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty-dev, kernel-module-stv0299-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty-dev, kernel-module-stv0367-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty-dev, kernel-module-stv0900-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty-dev, kernel-module-stv090x-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty-dev, kernel-module-stv0910-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty-dev, kernel-module-stv6110-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty-dev, kernel-module-stv6110x-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty-dev, kernel-module-stv6111-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty-dev, kernel-module-tc90522-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty-dev, kernel-module-tda10021-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty-dev, kernel-module-tda10023-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty-dev, kernel-module-tda10048-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty-dev, kernel-module-tda1004x-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty-dev, kernel-module-tda10071-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty-dev, kernel-module-tda10086-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty-dev, kernel-module-tda18271c2dd-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty-dev, kernel-module-tda665x-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty-dev, kernel-module-tda8083-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty-dev, kernel-module-tda8261-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty-dev, kernel-module-tda826x-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty-dev, kernel-module-ts2020-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty-dev, kernel-module-tua6100-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty-dev, kernel-module-ves1820-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty-dev, kernel-module-ves1x93-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty-dev, kernel-module-xen-gntalloc-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty-dev, kernel-module-xen-gntdev-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty-dev, kernel-module-zd1301-demod-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty-dev, kernel-module-zl10036-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty-dev, kernel-module-zl10039-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty-dev, kernel-module-zl10353-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty-dev, libgcc-dev
 
 Package: kernel-devicetree
-Version: 6.12.34+git0+742b508598-r0
+Version: 6.12.34+git0+f6cd0b6d75-r0
 Priority: 0
 Section: kernel
-Filename: pool/sparrow-hawk/k/kernel-devicetree/kernel-devicetree_6.12.34+git0+742b508598-r0_arm64.deb
-Size: 10060
-SHA256: be9a688936be468447bdfb92796934171f21d85484cce031704ec62eb3e2c2cd
-SHA1: 1d05669a03dac5b9e6eb20dc3fed1794b0a76eba
-MD5sum: f213997561de0ccab116e76e499d86fe
+Filename: pool/sparrow-hawk/k/kernel-devicetree/kernel-devicetree_6.12.34+git0+f6cd0b6d75-r0_arm64.deb
+Size: 10120
+SHA256: af9ec8d470ae8f08d251e57d1a48aa0d44f19a2cefb32eaeb080fb429ab06f66
+SHA1: 9f514d61f6738fdbacb52327f6985529e0259dd9
+MD5sum: 65e03ef18a106d833639e32e9dc2bf55
 Description: Linux kernel
  Linux kernel for the R-Car board
 Maintainer: Poky Maintainers <poky@lists.yoctoproject.org>
@@ -87,15 +69,15 @@ OE: linux-renesas
 PackageArch: sparrow-hawk
 Homepage: https://www.yoctoproject.org/
 
-Package: kernel-image-6.12.34-yocto-standard-g742b50859847-dirty
-Version: 6.12.34+git0+742b508598-r0
+Package: kernel-image-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Version: 6.12.34+git0+f6cd0b6d75-r0
 Priority: 0
 Section: kernel
-Filename: pool/sparrow-hawk/k/kernel-image-6.12.34-yocto-standard-g742b50859847-dirty/kernel-image-6.12.34-yocto-standard-g742b50859847-dirty_6.12.34+git0+742b508598-r0_arm64.deb
+Filename: pool/sparrow-hawk/k/kernel-image-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty/kernel-image-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty_6.12.34+git0+f6cd0b6d75-r0_arm64.deb
 Size: 832
-SHA256: e4bc8640d1a4fa8172ee66876174416e2559726cda03d13b08df7b6827c5cff2
-SHA1: 69bc8df7f43a8dc546d78f2721e2e4cc20133dc0
-MD5sum: d5386c22ec57ce40857104bc8ee3cfdf
+SHA256: 361cc060014a2abd9197d95f5c9733d7d530df15b4b306a5874e48a798db74a3
+SHA1: e9e8c2cba034484408aa76472c27d8c71727f3a7
+MD5sum: c1d4c3019c3c81fb950a9f5b6854e00c
 Description: Linux kernel
  Linux kernel for the R-Car board
 Maintainer: Poky Maintainers <poky@lists.yoctoproject.org>
@@ -103,18 +85,18 @@ Architecture: arm64
 OE: linux-renesas
 PackageArch: sparrow-hawk
 Homepage: https://www.yoctoproject.org/
-Depends: kernel-image-image-6.12.34-yocto-standard-g742b50859847-dirty (= 6.12.34+git0+742b508598-r0)
+Depends: kernel-image-image-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty (= 6.12.34+git0+f6cd0b6d75-r0)
 Provides: kernel-image
 
-Package: kernel-image-image-6.12.34-yocto-standard-g742b50859847-dirty
-Version: 6.12.34+git0+742b508598-r0
+Package: kernel-image-image-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Version: 6.12.34+git0+f6cd0b6d75-r0
 Priority: 0
 Section: kernel
-Filename: pool/sparrow-hawk/k/kernel-image-image-6.12.34-yocto-standard-g742b50859847-dirty/kernel-image-image-6.12.34-yocto-standard-g742b50859847-dirty_6.12.34+git0+742b508598-r0_arm64.deb
-Size: 6723236
-SHA256: 1e5889beab0bfc175ab89f84c686666d23532fa483bbe0a814d65b9c3450f4ce
-SHA1: a9d3b06916386a28b37344121f99f63670aad137
-MD5sum: 62f0323337d190004ac44df9cad6297a
+Filename: pool/sparrow-hawk/k/kernel-image-image-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty/kernel-image-image-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty_6.12.34+git0+f6cd0b6d75-r0_arm64.deb
+Size: 6831752
+SHA256: 391639542fd1e8022d3d05e9579da1522eb086e147f4d3e1fe7201c056a9990d
+SHA1: f0a2d5ea5075ecf633900ef254ac2f69b1f1ff4a
+MD5sum: 4dd3479b41676e84727625e638a248f0
 Description: Linux kernel
  Linux kernel for the R-Car board
 Maintainer: Poky Maintainers <poky@lists.yoctoproject.org>
@@ -124,15 +106,730 @@ PackageArch: sparrow-hawk
 Homepage: https://www.yoctoproject.org/
 Provides: kernel-image-image
 
-Package: kernel-module-efivarfs-6.12.34-yocto-standard-g742b50859847-dirty
-Version: 6.12.34+git0+742b508598-r0
+Package: kernel-module-a8293-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Version: 6.12.34+git0+f6cd0b6d75-r0
 Priority: 0
 Section: kernel
-Filename: pool/sparrow-hawk/k/kernel-module-efivarfs-6.12.34-yocto-standard-g742b50859847-dirty/kernel-module-efivarfs-6.12.34-yocto-standard-g742b50859847-dirty_6.12.34+git0+742b508598-r0_arm64.deb
-Size: 8296
-SHA256: b3d870ed278ce925dd36c8c22db28de0cf4adc545d5e94105fb60ae78c489aff
-SHA1: 1bcca22af216ef52e2dc1fe5edf65b1a91382105
-MD5sum: f61cff8054f0d095133dee39cac1912c
+Filename: pool/sparrow-hawk/k/kernel-module-a8293-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty/kernel-module-a8293-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty_6.12.34+git0+f6cd0b6d75-r0_arm64.deb
+Size: 3340
+SHA256: f2663e456e0b4b5ec6a6d10c99d27d9b6b297ca016e83c6674d448cce6c786ff
+SHA1: 2cf1d6bef7860deb866ec4e63c9244feefb58c70
+MD5sum: 8a8b61c7710c973df5f19b45d0457520
+Description: a8293 kernel module
+ a8293 kernel module; Allegro A8293 SEC driver
+Maintainer: Poky Maintainers <poky@lists.yoctoproject.org>
+Architecture: arm64
+OE: linux-renesas
+PackageArch: sparrow-hawk
+Homepage: https://www.yoctoproject.org/
+Depends: kernel-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Provides: kernel-module-a8293
+
+Package: kernel-module-af9013-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Version: 6.12.34+git0+f6cd0b6d75-r0
+Priority: 0
+Section: kernel
+Filename: pool/sparrow-hawk/k/kernel-module-af9013-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty/kernel-module-af9013-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty_6.12.34+git0+f6cd0b6d75-r0_arm64.deb
+Size: 8876
+SHA256: 8ee64dc7b886b4bd49cbcf9d0ff6a48ab45b45f1f900c1f089c8f6cc650b9f7a
+SHA1: 159db3dbffe0825e094c4d77e981607b9a60741e
+MD5sum: 78b542d73e078c640144703d4940c420
+Description: af9013 kernel module
+ af9013 kernel module; Afatech AF9013 DVB-T demodulator driver
+Maintainer: Poky Maintainers <poky@lists.yoctoproject.org>
+Architecture: arm64
+OE: linux-renesas
+PackageArch: sparrow-hawk
+Homepage: https://www.yoctoproject.org/
+Depends: kernel-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Provides: kernel-module-af9013
+
+Package: kernel-module-af9033-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Version: 6.12.34+git0+f6cd0b6d75-r0
+Priority: 0
+Section: kernel
+Filename: pool/sparrow-hawk/k/kernel-module-af9033-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty/kernel-module-af9033-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty_6.12.34+git0+f6cd0b6d75-r0_arm64.deb
+Size: 8568
+SHA256: 9f191d26be13d4ce0613a771a867835e794708d4a7a65be0ff0fe4eee8bfbf82
+SHA1: d6fcb4e25c9da50e2749cb1c254b29736c2edf97
+MD5sum: 361cda48f7df64c4253ae6e0c48d1f8c
+Description: af9033 kernel module
+ af9033 kernel module; Afatech AF9033 DVB-T demodulator driver
+Maintainer: Poky Maintainers <poky@lists.yoctoproject.org>
+Architecture: arm64
+OE: linux-renesas
+PackageArch: sparrow-hawk
+Homepage: https://www.yoctoproject.org/
+Depends: kernel-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Provides: kernel-module-af9033
+
+Package: kernel-module-ascot2e-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Version: 6.12.34+git0+f6cd0b6d75-r0
+Priority: 0
+Section: kernel
+Filename: pool/sparrow-hawk/k/kernel-module-ascot2e-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty/kernel-module-ascot2e-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty_6.12.34+git0+f6cd0b6d75-r0_arm64.deb
+Size: 4176
+SHA256: add35c10e63acafc8459e0c60c4f46a1fcaf98a8f5bf0c985e7995428bb31575
+SHA1: 5e00f8783d931aac523368363af050785e427dd4
+MD5sum: ec209e6a73afa771b32675c5686c9e5d
+Description: ascot2e kernel module
+ ascot2e kernel module; Sony ASCOT2E terr/cab tuner driver
+Maintainer: Poky Maintainers <poky@lists.yoctoproject.org>
+Architecture: arm64
+OE: linux-renesas
+PackageArch: sparrow-hawk
+Homepage: https://www.yoctoproject.org/
+Depends: kernel-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Provides: kernel-module-ascot2e
+
+Package: kernel-module-atbm8830-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Version: 6.12.34+git0+f6cd0b6d75-r0
+Priority: 0
+Section: kernel
+Filename: pool/sparrow-hawk/k/kernel-module-atbm8830-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty/kernel-module-atbm8830-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty_6.12.34+git0+f6cd0b6d75-r0_arm64.deb
+Size: 4972
+SHA256: 0b9a3d4b66b5c18d6ec5428080a61be56b50af0ae11297a9d2243dcd75389f12
+SHA1: 7439d6029d0fcff9016d3284a95ffade3415d189
+MD5sum: 9d21067863046138e545b60acb4ced55
+Description: atbm8830 kernel module
+ atbm8830 kernel module; AltoBeam ATBM8830/8831 GB20600 demodulator driver
+Maintainer: Poky Maintainers <poky@lists.yoctoproject.org>
+Architecture: arm64
+OE: linux-renesas
+PackageArch: sparrow-hawk
+Homepage: https://www.yoctoproject.org/
+Depends: kernel-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Provides: kernel-module-atbm8830
+
+Package: kernel-module-au8522-common-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Version: 6.12.34+git0+f6cd0b6d75-r0
+Priority: 0
+Section: kernel
+Filename: pool/sparrow-hawk/k/kernel-module-au8522-common-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty/kernel-module-au8522-common-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty_6.12.34+git0+f6cd0b6d75-r0_arm64.deb
+Size: 4288
+SHA256: 72ec1ff4ea6262c92e9b9ff80d5fda6ce133f1d742d554f3752be8085918f255
+SHA1: ece35b35f6f0333c880ecb7ab9024b433ad30ffa
+MD5sum: d0e0adf4c5a5741e884906a3ba160b98
+Description: au8522-common kernel module
+ au8522-common kernel module; Auvitek AU8522 QAM-B/ATSC Demodulator driver
+Maintainer: Poky Maintainers <poky@lists.yoctoproject.org>
+Architecture: arm64
+OE: linux-renesas
+PackageArch: sparrow-hawk
+Homepage: https://www.yoctoproject.org/
+Depends: kernel-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Provides: kernel-module-au8522-common
+
+Package: kernel-module-au8522-decoder-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Version: 6.12.34+git0+f6cd0b6d75-r0
+Priority: 0
+Section: kernel
+Filename: pool/sparrow-hawk/k/kernel-module-au8522-decoder-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty/kernel-module-au8522-decoder-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty_6.12.34+git0+f6cd0b6d75-r0_arm64.deb
+Size: 5280
+SHA256: ddc6fbd26f1e3b6d3172d9295a20dded6eae15a7bda7fabf5c02d0a02d403e1b
+SHA1: 7a732c09073fcb0f9e79010812f3ee0e77caa559
+MD5sum: 6b9021826bab3a83169a4ec606ca8eae
+Description: au8522-decoder kernel module
+ au8522-decoder kernel module; Auvitek AU8522 QAM/8VSB demodulator driver
+ and video decoder
+Maintainer: Poky Maintainers <poky@lists.yoctoproject.org>
+Architecture: arm64
+OE: linux-renesas
+PackageArch: sparrow-hawk
+Homepage: https://www.yoctoproject.org/
+Depends: kernel-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty, kernel-module-au8522-common-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Provides: kernel-module-au8522-decoder
+
+Package: kernel-module-au8522-dig-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Version: 6.12.34+git0+f6cd0b6d75-r0
+Priority: 0
+Section: kernel
+Filename: pool/sparrow-hawk/k/kernel-module-au8522-dig-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty/kernel-module-au8522-dig-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty_6.12.34+git0+f6cd0b6d75-r0_arm64.deb
+Size: 6164
+SHA256: 939e0cb69947a40c9f7aa76902872e4dd3f1d8ac76c9c6a21a8f9800ee26ccdf
+SHA1: 1c64b94cc62cce8ccf1efc7543266ff9fabea6e8
+MD5sum: 5bd5c4cff6976c32e6e82d8a08d49823
+Description: au8522-dig kernel module
+ au8522-dig kernel module; Auvitek AU8522 QAM-B/ATSC Demodulator driver
+Maintainer: Poky Maintainers <poky@lists.yoctoproject.org>
+Architecture: arm64
+OE: linux-renesas
+PackageArch: sparrow-hawk
+Homepage: https://www.yoctoproject.org/
+Depends: kernel-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty, kernel-module-au8522-common-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Provides: kernel-module-au8522-dig
+
+Package: kernel-module-bcm3510-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Version: 6.12.34+git0+f6cd0b6d75-r0
+Priority: 0
+Section: kernel
+Filename: pool/sparrow-hawk/k/kernel-module-bcm3510-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty/kernel-module-bcm3510-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty_6.12.34+git0+f6cd0b6d75-r0_arm64.deb
+Size: 6920
+SHA256: 95191ee7822fbd2a918a1cdbad3a406c72048cf1063f7c8bde67baccdbfceea9
+SHA1: e45084cbb950823f22d0938458ab0865ea8f0eb5
+MD5sum: 8e8a090255555458a0139de509b10dca
+Description: bcm3510 kernel module
+ bcm3510 kernel module; Broadcom BCM3510 ATSC (8VSB/16VSB & ITU J83 AnnexB
+ FEC QAM64/256) demodulator driver
+Maintainer: Poky Maintainers <poky@lists.yoctoproject.org>
+Architecture: arm64
+OE: linux-renesas
+PackageArch: sparrow-hawk
+Homepage: https://www.yoctoproject.org/
+Depends: kernel-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Provides: kernel-module-bcm3510
+
+Package: kernel-module-cx22700-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Version: 6.12.34+git0+f6cd0b6d75-r0
+Priority: 0
+Section: kernel
+Filename: pool/sparrow-hawk/k/kernel-module-cx22700-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty/kernel-module-cx22700-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty_6.12.34+git0+f6cd0b6d75-r0_arm64.deb
+Size: 4280
+SHA256: 94738de2642828a1f4bab26757f24e0498f3fa56fbedf6baf8dab170c10b3b45
+SHA1: 90f31fac695a4d94ba3e1e95616ec40fddbc4546
+MD5sum: d9afcc5dcba8e2431d8c69a025a32f39
+Description: cx22700 kernel module
+ cx22700 kernel module; Conexant CX22700 DVB-T Demodulator driver
+Maintainer: Poky Maintainers <poky@lists.yoctoproject.org>
+Architecture: arm64
+OE: linux-renesas
+PackageArch: sparrow-hawk
+Homepage: https://www.yoctoproject.org/
+Depends: kernel-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Provides: kernel-module-cx22700
+
+Package: kernel-module-cx22702-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Version: 6.12.34+git0+f6cd0b6d75-r0
+Priority: 0
+Section: kernel
+Filename: pool/sparrow-hawk/k/kernel-module-cx22702-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty/kernel-module-cx22702-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty_6.12.34+git0+f6cd0b6d75-r0_arm64.deb
+Size: 4336
+SHA256: f686f7e7122722645716494432ff121daaa199260c3d199f984ace3342d495cc
+SHA1: 7843b0ec360a340263dae4736ac1291f2062862a
+MD5sum: f84291e328b98da5dd69a9a76f6e1510
+Description: cx22702 kernel module
+ cx22702 kernel module; Conexant CX22702 DVB-T Demodulator driver
+Maintainer: Poky Maintainers <poky@lists.yoctoproject.org>
+Architecture: arm64
+OE: linux-renesas
+PackageArch: sparrow-hawk
+Homepage: https://www.yoctoproject.org/
+Depends: kernel-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Provides: kernel-module-cx22702
+
+Package: kernel-module-cx24110-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Version: 6.12.34+git0+f6cd0b6d75-r0
+Priority: 0
+Section: kernel
+Filename: pool/sparrow-hawk/k/kernel-module-cx24110-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty/kernel-module-cx24110-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty_6.12.34+git0+f6cd0b6d75-r0_arm64.deb
+Size: 5328
+SHA256: 3631fbe73092ece89e7b1cc79b96f986a5c77c57ff459b2084df6b5ecc6e34bb
+SHA1: 52384dfdfbb7ef0fbaaf1e268e6ad8cc3c88dd70
+MD5sum: 514fb63b765639f26b38d62233db0522
+Description: cx24110 kernel module
+ cx24110 kernel module; Conexant CX24110 DVB-S Demodulator driver
+Maintainer: Poky Maintainers <poky@lists.yoctoproject.org>
+Architecture: arm64
+OE: linux-renesas
+PackageArch: sparrow-hawk
+Homepage: https://www.yoctoproject.org/
+Depends: kernel-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Provides: kernel-module-cx24110
+
+Package: kernel-module-cx24113-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Version: 6.12.34+git0+f6cd0b6d75-r0
+Priority: 0
+Section: kernel
+Filename: pool/sparrow-hawk/k/kernel-module-cx24113-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty/kernel-module-cx24113-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty_6.12.34+git0+f6cd0b6d75-r0_arm64.deb
+Size: 5972
+SHA256: cc3cf878ad185fd51095bb5ced96e12a0a1cfec7e5a0c8dd02a129fe2d7a2042
+SHA1: dff22041551f04705f37b5df8764202da1180293
+MD5sum: 52a4b059e6f4c5bb55c6403df304ffd0
+Description: cx24113 kernel module
+ cx24113 kernel module; DVB Frontend module for Conexant
+ CX24113/CX24128hardware
+Maintainer: Poky Maintainers <poky@lists.yoctoproject.org>
+Architecture: arm64
+OE: linux-renesas
+PackageArch: sparrow-hawk
+Homepage: https://www.yoctoproject.org/
+Depends: kernel-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Provides: kernel-module-cx24113
+
+Package: kernel-module-cx24116-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Version: 6.12.34+git0+f6cd0b6d75-r0
+Priority: 0
+Section: kernel
+Filename: pool/sparrow-hawk/k/kernel-module-cx24116-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty/kernel-module-cx24116-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty_6.12.34+git0+f6cd0b6d75-r0_arm64.deb
+Size: 8932
+SHA256: 06acc417fc62b1794833867dfe395ea4923f7933296fd19f6a6d74eefe3e9d00
+SHA1: dba4dce70dc530f3edd76597f605fdfb23766b26
+MD5sum: 98c49a47bbf8b1cecf357215bc6fde9b
+Description: cx24116 kernel module
+ cx24116 kernel module; DVB Frontend module for Conexant cx24116/cx24118
+ hardware
+Maintainer: Poky Maintainers <poky@lists.yoctoproject.org>
+Architecture: arm64
+OE: linux-renesas
+PackageArch: sparrow-hawk
+Homepage: https://www.yoctoproject.org/
+Depends: kernel-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Provides: kernel-module-cx24116
+
+Package: kernel-module-cx24117-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Version: 6.12.34+git0+f6cd0b6d75-r0
+Priority: 0
+Section: kernel
+Filename: pool/sparrow-hawk/k/kernel-module-cx24117-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty/kernel-module-cx24117-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty_6.12.34+git0+f6cd0b6d75-r0_arm64.deb
+Size: 7488
+SHA256: 1c6c0841b50c2461f9ff1a944491e7976aee667e1d2aca7d82e4c15dfb248086
+SHA1: 4eff374f7cc905438815354464c4de3ed3c4217c
+MD5sum: 2fa4b6096be47859e79c04819606acde
+Description: cx24117 kernel module
+ cx24117 kernel module; DVB Frontend module for Conexant cx24117/cx24132
+ hardware
+Maintainer: Poky Maintainers <poky@lists.yoctoproject.org>
+Architecture: arm64
+OE: linux-renesas
+PackageArch: sparrow-hawk
+Homepage: https://www.yoctoproject.org/
+Depends: kernel-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Provides: kernel-module-cx24117
+
+Package: kernel-module-cx24120-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Version: 6.12.34+git0+f6cd0b6d75-r0
+Priority: 0
+Section: kernel
+Filename: pool/sparrow-hawk/k/kernel-module-cx24120-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty/kernel-module-cx24120-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty_6.12.34+git0+f6cd0b6d75-r0_arm64.deb
+Size: 7332
+SHA256: 963c7e741c249af0052dacf64d485353cf54c62e9f56b35c18ac68678f4a3394
+SHA1: bd4df1c55dd39bbe9de68eeb0ccc6a6cc61e1c08
+MD5sum: b3d294309da9a69034783ad04816e429
+Description: cx24120 kernel module
+ cx24120 kernel module; DVB Frontend module for Conexant CX24120/CX24118
+ hardware
+Maintainer: Poky Maintainers <poky@lists.yoctoproject.org>
+Architecture: arm64
+OE: linux-renesas
+PackageArch: sparrow-hawk
+Homepage: https://www.yoctoproject.org/
+Depends: kernel-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Provides: kernel-module-cx24120
+
+Package: kernel-module-cx24123-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Version: 6.12.34+git0+f6cd0b6d75-r0
+Priority: 0
+Section: kernel
+Filename: pool/sparrow-hawk/k/kernel-module-cx24123-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty/kernel-module-cx24123-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty_6.12.34+git0+f6cd0b6d75-r0_arm64.deb
+Size: 8004
+SHA256: 366cc46ea435ce5d1df774f64caf800df988239276125f006b4f6aa972d5612e
+SHA1: f343090532617afe84f0849f186c9e4182e7fb7b
+MD5sum: 9018fc15e558b3a647455a211760ffb8
+Description: cx24123 kernel module
+ cx24123 kernel module; DVB Frontend module for Conexant
+ CX24123/CX24109/CX24113 hardware
+Maintainer: Poky Maintainers <poky@lists.yoctoproject.org>
+Architecture: arm64
+OE: linux-renesas
+PackageArch: sparrow-hawk
+Homepage: https://www.yoctoproject.org/
+Depends: kernel-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Provides: kernel-module-cx24123
+
+Package: kernel-module-cxd2099-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Version: 6.12.34+git0+f6cd0b6d75-r0
+Priority: 0
+Section: kernel
+Filename: pool/sparrow-hawk/k/kernel-module-cxd2099-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty/kernel-module-cxd2099-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty_6.12.34+git0+f6cd0b6d75-r0_arm64.deb
+Size: 5460
+SHA256: 3d89f33c358aa88bb9741bec4905fb27c821c7989ee1ce27d88bab4a57d674dd
+SHA1: 5bc4492c17279239039299f00a43d658dbb9f0fa
+MD5sum: 067023e993b409baa1b4c93395c38513
+Description: cxd2099 kernel module
+ cxd2099 kernel module; Sony CXD2099AR Common Interface controller driver
+Maintainer: Poky Maintainers <poky@lists.yoctoproject.org>
+Architecture: arm64
+OE: linux-renesas
+PackageArch: sparrow-hawk
+Homepage: https://www.yoctoproject.org/
+Depends: kernel-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Provides: kernel-module-cxd2099
+
+Package: kernel-module-cxd2820r-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Version: 6.12.34+git0+f6cd0b6d75-r0
+Priority: 0
+Section: kernel
+Filename: pool/sparrow-hawk/k/kernel-module-cxd2820r-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty/kernel-module-cxd2820r-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty_6.12.34+git0+f6cd0b6d75-r0_arm64.deb
+Size: 8228
+SHA256: e323cbeb6f97e06258cc68aa58b824f75fc8027bdb5c109b5366d0774c9c5a5d
+SHA1: f196f2e98f33f5eba1fc3db151d029d5d28c3db8
+MD5sum: ed7c628a2c8eb5bc9fbfff05ec925aaa
+Description: cxd2820r kernel module
+ cxd2820r kernel module; Sony CXD2820R demodulator driver
+Maintainer: Poky Maintainers <poky@lists.yoctoproject.org>
+Architecture: arm64
+OE: linux-renesas
+PackageArch: sparrow-hawk
+Homepage: https://www.yoctoproject.org/
+Depends: kernel-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Provides: kernel-module-cxd2820r
+
+Package: kernel-module-cxd2841er-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Version: 6.12.34+git0+f6cd0b6d75-r0
+Priority: 0
+Section: kernel
+Filename: pool/sparrow-hawk/k/kernel-module-cxd2841er-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty/kernel-module-cxd2841er-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty_6.12.34+git0+f6cd0b6d75-r0_arm64.deb
+Size: 15032
+SHA256: 48af6c0deaaa2ab9f3041cc18d9c3f0376bd066869989be0dc7006274d815c04
+SHA1: 461ad1106544ba0c33b8abc7a2bad69d8e8dd0ed
+MD5sum: b6f66a0c04ae4764d053e77944634dae
+Description: cxd2841er kernel module
+ cxd2841er kernel module; Sony CXD2837/38/41/43/54ER DVB-C/C2/T/T2/S/S2
+ demodulator driver
+Maintainer: Poky Maintainers <poky@lists.yoctoproject.org>
+Architecture: arm64
+OE: linux-renesas
+PackageArch: sparrow-hawk
+Homepage: https://www.yoctoproject.org/
+Depends: kernel-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Provides: kernel-module-cxd2841er
+
+Package: kernel-module-cxd2880-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Version: 6.12.34+git0+f6cd0b6d75-r0
+Priority: 0
+Section: kernel
+Filename: pool/sparrow-hawk/k/kernel-module-cxd2880-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty/kernel-module-cxd2880-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty_6.12.34+git0+f6cd0b6d75-r0_arm64.deb
+Size: 26008
+SHA256: 4f68d06a828506ee253477d70f89c386bba0164df536e504bb349dd0a3e39399
+SHA1: a9f825b74b90649adf0e4ad3db1acedd03445f18
+MD5sum: b3e97022943189f0c60378b014083d80
+Description: cxd2880 kernel module
+ cxd2880 kernel module; Sony CXD2880 DVB-T2/T tuner + demod driver
+Maintainer: Poky Maintainers <poky@lists.yoctoproject.org>
+Architecture: arm64
+OE: linux-renesas
+PackageArch: sparrow-hawk
+Homepage: https://www.yoctoproject.org/
+Depends: kernel-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Provides: kernel-module-cxd2880
+
+Package: kernel-module-cxd2880-spi-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Version: 6.12.34+git0+f6cd0b6d75-r0
+Priority: 0
+Section: kernel
+Filename: pool/sparrow-hawk/k/kernel-module-cxd2880-spi-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty/kernel-module-cxd2880-spi-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty_6.12.34+git0+f6cd0b6d75-r0_arm64.deb
+Size: 6508
+SHA256: 6395a36741febb2cac0938877f0a04d52011e1eb1713d1e4398e03d5c7af11ae
+SHA1: 79a10e9d821d1f8cb224efa5a6e9e461f6a96688
+MD5sum: fc3bdce03bb3ba1528891eb9d52d5780
+Description: cxd2880-spi kernel module
+ cxd2880-spi kernel module; Sony CXD2880 DVB-T2/T tuner + demod driver SPI
+ adapter
+Maintainer: Poky Maintainers <poky@lists.yoctoproject.org>
+Architecture: arm64
+OE: linux-renesas
+PackageArch: sparrow-hawk
+Homepage: https://www.yoctoproject.org/
+Depends: kernel-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Provides: kernel-module-cxd2880-spi
+
+Package: kernel-module-dib0070-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Version: 6.12.34+git0+f6cd0b6d75-r0
+Priority: 0
+Section: kernel
+Filename: pool/sparrow-hawk/k/kernel-module-dib0070-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty/kernel-module-dib0070-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty_6.12.34+git0+f6cd0b6d75-r0_arm64.deb
+Size: 6500
+SHA256: 6f52daabbcb7a4dcc36dd8073e6889ccf0c4b654709be1736d09300b36d10124
+SHA1: 4c35d05ad91e450566d80f8e98a815568cce9cf0
+MD5sum: 5af0e0f548f1658e07941cb8f577ce54
+Description: dib0070 kernel module
+ dib0070 kernel module; Driver for the DiBcom 0070 base-band RF Tuner
+Maintainer: Poky Maintainers <poky@lists.yoctoproject.org>
+Architecture: arm64
+OE: linux-renesas
+PackageArch: sparrow-hawk
+Homepage: https://www.yoctoproject.org/
+Depends: kernel-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Provides: kernel-module-dib0070
+
+Package: kernel-module-dib0090-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Version: 6.12.34+git0+f6cd0b6d75-r0
+Priority: 0
+Section: kernel
+Filename: pool/sparrow-hawk/k/kernel-module-dib0090-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty/kernel-module-dib0090-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty_6.12.34+git0+f6cd0b6d75-r0_arm64.deb
+Size: 14568
+SHA256: 919fef970c852c68badcd002af7d68bd8c2baccfebb3fba5aa0d80b55163bb45
+SHA1: 22d167b66285f0c3d8ca18a35bc68f957107518e
+MD5sum: 5708f607747ee2da93212fcfd33c6916
+Description: dib0090 kernel module
+ dib0090 kernel module; Driver for the DiBcom 0090 base-band RF Tuner
+Maintainer: Poky Maintainers <poky@lists.yoctoproject.org>
+Architecture: arm64
+OE: linux-renesas
+PackageArch: sparrow-hawk
+Homepage: https://www.yoctoproject.org/
+Depends: kernel-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Provides: kernel-module-dib0090
+
+Package: kernel-module-dib3000mb-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Version: 6.12.34+git0+f6cd0b6d75-r0
+Priority: 0
+Section: kernel
+Filename: pool/sparrow-hawk/k/kernel-module-dib3000mb-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty/kernel-module-dib3000mb-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty_6.12.34+git0+f6cd0b6d75-r0_arm64.deb
+Size: 9780
+SHA256: b890acd017ebb3e3c20739e208f40064a5049139ce2b78cb2475ddd06113bfbe
+SHA1: c353776b88a2e54323859ed74c63a4b11a2d4323
+MD5sum: 0ef9a173bffa15352d9bfdfe0411e32d
+Description: dib3000mb kernel module
+ dib3000mb kernel module; DiBcom 3000M-B DVB-T demodulator
+Maintainer: Poky Maintainers <poky@lists.yoctoproject.org>
+Architecture: arm64
+OE: linux-renesas
+PackageArch: sparrow-hawk
+Homepage: https://www.yoctoproject.org/
+Depends: kernel-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Provides: kernel-module-dib3000mb
+
+Package: kernel-module-dib3000mc-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Version: 6.12.34+git0+f6cd0b6d75-r0
+Priority: 0
+Section: kernel
+Filename: pool/sparrow-hawk/k/kernel-module-dib3000mc-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty/kernel-module-dib3000mc-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty_6.12.34+git0+f6cd0b6d75-r0_arm64.deb
+Size: 7324
+SHA256: 1beea4d659a53c411b1cd7ab88c04247f67fb5eb09566e25431d96d4b9fb4841
+SHA1: 1258f9ee260eb539415f0f6ea2be0e7bab42e3f2
+MD5sum: 7edf2dc62a11b0c1766f6e3eebae31ae
+Description: dib3000mc kernel module
+ dib3000mc kernel module; Driver for the DiBcom 3000MC/P COFDM demodulator
+Maintainer: Poky Maintainers <poky@lists.yoctoproject.org>
+Architecture: arm64
+OE: linux-renesas
+PackageArch: sparrow-hawk
+Homepage: https://www.yoctoproject.org/
+Depends: kernel-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty, kernel-module-dibx000-common-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Provides: kernel-module-dib3000mc
+
+Package: kernel-module-dib7000m-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Version: 6.12.34+git0+f6cd0b6d75-r0
+Priority: 0
+Section: kernel
+Filename: pool/sparrow-hawk/k/kernel-module-dib7000m-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty/kernel-module-dib7000m-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty_6.12.34+git0+f6cd0b6d75-r0_arm64.deb
+Size: 9176
+SHA256: a1e47df8da1f5a5b2894ebb34c7537715e612b2b815dd3c647368218a3db1214
+SHA1: 08f0252d259b03dcb76031763fee811c6db0b7fb
+MD5sum: a6dbbe5ed439ce8a150afc60557d0a40
+Description: dib7000m kernel module
+ dib7000m kernel module; Driver for the DiBcom 7000MA/MB/PA/PB/MC COFDM
+ demodulator
+Maintainer: Poky Maintainers <poky@lists.yoctoproject.org>
+Architecture: arm64
+OE: linux-renesas
+PackageArch: sparrow-hawk
+Homepage: https://www.yoctoproject.org/
+Depends: kernel-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty, kernel-module-dibx000-common-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Provides: kernel-module-dib7000m
+
+Package: kernel-module-dib7000p-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Version: 6.12.34+git0+f6cd0b6d75-r0
+Priority: 0
+Section: kernel
+Filename: pool/sparrow-hawk/k/kernel-module-dib7000p-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty/kernel-module-dib7000p-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty_6.12.34+git0+f6cd0b6d75-r0_arm64.deb
+Size: 15744
+SHA256: de98753fcba834efd9e2aa0bb1a9caff3947ab6e7696d1c8c2077f4688d88700
+SHA1: 101f393c0f4ee06d66abf4cbd46e95e3aa6f8e8c
+MD5sum: 1db306ff266f9b56c3268ad7ae5ffbec
+Description: dib7000p kernel module
+ dib7000p kernel module; Driver for the DiBcom 7000PC COFDM demodulator
+Maintainer: Poky Maintainers <poky@lists.yoctoproject.org>
+Architecture: arm64
+OE: linux-renesas
+PackageArch: sparrow-hawk
+Homepage: https://www.yoctoproject.org/
+Depends: kernel-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty, kernel-module-dibx000-common-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Provides: kernel-module-dib7000p
+
+Package: kernel-module-dib8000-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Version: 6.12.34+git0+f6cd0b6d75-r0
+Priority: 0
+Section: kernel
+Filename: pool/sparrow-hawk/k/kernel-module-dib8000-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty/kernel-module-dib8000-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty_6.12.34+git0+f6cd0b6d75-r0_arm64.deb
+Size: 28528
+SHA256: 84d88a0373d595b61cf86fc77dd0284009ca600db2a4a25ba93e82101732f19f
+SHA1: e060b1c6a9ed60ad54e2e4e4c90957d6a7757ad4
+MD5sum: 413aa6feb32c0bb2f51e5a5c0cc41a16
+Description: dib8000 kernel module
+ dib8000 kernel module; Driver for the DiBcom 8000 ISDB-T demodulator
+Maintainer: Poky Maintainers <poky@lists.yoctoproject.org>
+Architecture: arm64
+OE: linux-renesas
+PackageArch: sparrow-hawk
+Homepage: https://www.yoctoproject.org/
+Depends: kernel-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty, kernel-module-dibx000-common-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Provides: kernel-module-dib8000
+
+Package: kernel-module-dib9000-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Version: 6.12.34+git0+f6cd0b6d75-r0
+Priority: 0
+Section: kernel
+Filename: pool/sparrow-hawk/k/kernel-module-dib9000-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty/kernel-module-dib9000-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty_6.12.34+git0+f6cd0b6d75-r0_arm64.deb
+Size: 15136
+SHA256: 658e41e053f0b7b67642e981405d959619b32a0ce22d5ac1015d242c6912d962
+SHA1: 918c4fbd988a21954ae70333f9106a28a1dd7b46
+MD5sum: f14e5db16defddd132639c2f25ed8023
+Description: dib9000 kernel module
+ dib9000 kernel module; Driver for the DiBcom 9000 COFDM demodulator
+Maintainer: Poky Maintainers <poky@lists.yoctoproject.org>
+Architecture: arm64
+OE: linux-renesas
+PackageArch: sparrow-hawk
+Homepage: https://www.yoctoproject.org/
+Depends: kernel-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty, kernel-module-dibx000-common-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Provides: kernel-module-dib9000
+
+Package: kernel-module-dibx000-common-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Version: 6.12.34+git0+f6cd0b6d75-r0
+Priority: 0
+Section: kernel
+Filename: pool/sparrow-hawk/k/kernel-module-dibx000-common-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty/kernel-module-dibx000-common-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty_6.12.34+git0+f6cd0b6d75-r0_arm64.deb
+Size: 5268
+SHA256: 517a5c374ef51f5dbd41e65da2138ed8a3f95a45b28b826cc9434cc439c68f1d
+SHA1: b9a6e6a4de4877889adad0faa0885200d8fe64a7
+MD5sum: bd19b50b3c30f3d514d582a89fe7c280
+Description: dibx000-common kernel module
+ dibx000-common kernel module; Common function the DiBcom demodulator
+ family
+Maintainer: Poky Maintainers <poky@lists.yoctoproject.org>
+Architecture: arm64
+OE: linux-renesas
+PackageArch: sparrow-hawk
+Homepage: https://www.yoctoproject.org/
+Depends: kernel-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Provides: kernel-module-dibx000-common
+
+Package: kernel-module-drx39xyj-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Version: 6.12.34+git0+f6cd0b6d75-r0
+Priority: 0
+Section: kernel
+Filename: pool/sparrow-hawk/k/kernel-module-drx39xyj-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty/kernel-module-drx39xyj-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty_6.12.34+git0+f6cd0b6d75-r0_arm64.deb
+Size: 23884
+SHA256: 766385e8559e1c69bac77856b2c7342b855b1d5332f01ec0da1acbe54eeb5dd5
+SHA1: bbbf67ab20841f900e43e8dbc35abd82bb11451a
+MD5sum: 48331b989f02ab3fd144005722312bb8
+Description: drx39xyj kernel module
+ drx39xyj kernel module; Micronas DRX39xxj Frontend
+Maintainer: Poky Maintainers <poky@lists.yoctoproject.org>
+Architecture: arm64
+OE: linux-renesas
+PackageArch: sparrow-hawk
+Homepage: https://www.yoctoproject.org/
+Depends: kernel-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Provides: kernel-module-drx39xyj
+
+Package: kernel-module-drxd-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Version: 6.12.34+git0+f6cd0b6d75-r0
+Priority: 0
+Section: kernel
+Filename: pool/sparrow-hawk/k/kernel-module-drxd-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty/kernel-module-drxd-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty_6.12.34+git0+f6cd0b6d75-r0_arm64.deb
+Size: 11152
+SHA256: df70713c40df62a0edc19f431a3253aa31775b65195ff11aea1f0d1cb936ecdf
+SHA1: aa56b4dfc235aa3fae2b9c00e18e8eafd2fa5521
+MD5sum: 4fff9b697de9c9e140dcd3ccaa73468d
+Description: drxd kernel module
+ drxd kernel module; DRXD driver
+Maintainer: Poky Maintainers <poky@lists.yoctoproject.org>
+Architecture: arm64
+OE: linux-renesas
+PackageArch: sparrow-hawk
+Homepage: https://www.yoctoproject.org/
+Depends: kernel-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Provides: kernel-module-drxd
+
+Package: kernel-module-drxk-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Version: 6.12.34+git0+f6cd0b6d75-r0
+Priority: 0
+Section: kernel
+Filename: pool/sparrow-hawk/k/kernel-module-drxk-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty/kernel-module-drxk-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty_6.12.34+git0+f6cd0b6d75-r0_arm64.deb
+Size: 20840
+SHA256: a54304949b4072cebbd99836694fac36c1a9bef338d5a2a7e78269ee02f5ad8f
+SHA1: 54becfe390c85cc3c434edcc0132b5ac38cfd9d0
+MD5sum: 96d4646cd13164c18f7beb4eb12762eb
+Description: drxk kernel module
+ drxk kernel module; DRX-K driver
+Maintainer: Poky Maintainers <poky@lists.yoctoproject.org>
+Architecture: arm64
+OE: linux-renesas
+PackageArch: sparrow-hawk
+Homepage: https://www.yoctoproject.org/
+Depends: kernel-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Provides: kernel-module-drxk
+
+Package: kernel-module-ds3000-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Version: 6.12.34+git0+f6cd0b6d75-r0
+Priority: 0
+Section: kernel
+Filename: pool/sparrow-hawk/k/kernel-module-ds3000-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty/kernel-module-ds3000-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty_6.12.34+git0+f6cd0b6d75-r0_arm64.deb
+Size: 7612
+SHA256: 6c27c460becb4fa642571c424986fa9cd7fb142b9c6050d99b13fb955cbbe8c1
+SHA1: 84f1a7c518165e1fbfe0f8344a32038852a30453
+MD5sum: 96a0c6318705016b6f3b09c400c222f6
+Description: ds3000 kernel module
+ ds3000 kernel module; DVB Frontend module for Montage Technology DS3000
+ hardware
+Maintainer: Poky Maintainers <poky@lists.yoctoproject.org>
+Architecture: arm64
+OE: linux-renesas
+PackageArch: sparrow-hawk
+Homepage: https://www.yoctoproject.org/
+Depends: kernel-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Provides: kernel-module-ds3000
+
+Package: kernel-module-dvb-pll-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Version: 6.12.34+git0+f6cd0b6d75-r0
+Priority: 0
+Section: kernel
+Filename: pool/sparrow-hawk/k/kernel-module-dvb-pll-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty/kernel-module-dvb-pll-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty_6.12.34+git0+f6cd0b6d75-r0_arm64.deb
+Size: 6984
+SHA256: a6c80d9968dcd8e3dab74d38f02502932dd4dd039adfa579303fe4b416a5e2a3
+SHA1: 42660335382c236f25056d91308bf90a96ce3f61
+MD5sum: a00ce893fa55a08948d569e0e8393fbd
+Description: dvb-pll kernel module
+ dvb-pll kernel module; dvb pll library
+Maintainer: Poky Maintainers <poky@lists.yoctoproject.org>
+Architecture: arm64
+OE: linux-renesas
+PackageArch: sparrow-hawk
+Homepage: https://www.yoctoproject.org/
+Depends: kernel-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Provides: kernel-module-dvb-pll
+
+Package: kernel-module-ec100-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Version: 6.12.34+git0+f6cd0b6d75-r0
+Priority: 0
+Section: kernel
+Filename: pool/sparrow-hawk/k/kernel-module-ec100-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty/kernel-module-ec100-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty_6.12.34+git0+f6cd0b6d75-r0_arm64.deb
+Size: 3428
+SHA256: 92c09d9762decd3436b9f4ec7ee311c811185b59559a91abfb1c8f8e22be336e
+SHA1: 8a7f3235305e95546773b686b4fc5e8c8c7ba6d8
+MD5sum: 83079d6ccf4e41d8bdd70ead8b33650f
+Description: ec100 kernel module
+ ec100 kernel module; E3C EC100 DVB-T demodulator driver
+Maintainer: Poky Maintainers <poky@lists.yoctoproject.org>
+Architecture: arm64
+OE: linux-renesas
+PackageArch: sparrow-hawk
+Homepage: https://www.yoctoproject.org/
+Depends: kernel-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Provides: kernel-module-ec100
+
+Package: kernel-module-efivarfs-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Version: 6.12.34+git0+f6cd0b6d75-r0
+Priority: 0
+Section: kernel
+Filename: pool/sparrow-hawk/k/kernel-module-efivarfs-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty/kernel-module-efivarfs-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty_6.12.34+git0+f6cd0b6d75-r0_arm64.deb
+Size: 8304
+SHA256: 4ae653ef3c773bd64bdadfe441665d98144590e6a88db138e06f731333d7cad2
+SHA1: 45f1e3318e1eec25573eeba1fd44fb0f964861c0
+MD5sum: c03e280eab93c92d1ee87ea2eefaa34e
 Description: efivarfs kernel module
  efivarfs kernel module; EFI Variable Filesystem
 Maintainer: Poky Maintainers <poky@lists.yoctoproject.org>
@@ -140,18 +837,653 @@ Architecture: arm64
 OE: linux-renesas
 PackageArch: sparrow-hawk
 Homepage: https://www.yoctoproject.org/
-Depends: kernel-6.12.34-yocto-standard-g742b50859847-dirty
+Depends: kernel-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
 Provides: kernel-module-efivarfs
 
-Package: kernel-module-pcie-rcar-gen4-6.12.34-yocto-standard-g742b50859847-dirty
-Version: 6.12.34+git0+742b508598-r0
+Package: kernel-module-helene-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Version: 6.12.34+git0+f6cd0b6d75-r0
 Priority: 0
 Section: kernel
-Filename: pool/sparrow-hawk/k/kernel-module-pcie-rcar-gen4-6.12.34-yocto-standard-g742b50859847-dirty/kernel-module-pcie-rcar-gen4-6.12.34-yocto-standard-g742b50859847-dirty_6.12.34+git0+742b508598-r0_arm64.deb
-Size: 5480
-SHA256: 90e9611f565840a840a52d8ffe401e0abe1d065a6e3b52af82305f8b52ce8e7a
-SHA1: fb4ab442942453173a5f43b9c3dacf9750f37c3d
-MD5sum: 4421bb605e32db718f297c332d9a4049
+Filename: pool/sparrow-hawk/k/kernel-module-helene-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty/kernel-module-helene-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty_6.12.34+git0+f6cd0b6d75-r0_arm64.deb
+Size: 5852
+SHA256: 83fafed34a006df9002f4721ed2a4fc5bd4d14ffbbcc9df2fe4e9ece34c2aacb
+SHA1: 57550e2f0fa0c4470f12629ee93f777dc3ecdb95
+MD5sum: b0dcf29f887d637e5b10975db4a94cfa
+Description: helene kernel module
+ helene kernel module; Sony HELENE Sat/Ter tuner driver
+Maintainer: Poky Maintainers <poky@lists.yoctoproject.org>
+Architecture: arm64
+OE: linux-renesas
+PackageArch: sparrow-hawk
+Homepage: https://www.yoctoproject.org/
+Depends: kernel-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Provides: kernel-module-helene
+
+Package: kernel-module-horus3a-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Version: 6.12.34+git0+f6cd0b6d75-r0
+Priority: 0
+Section: kernel
+Filename: pool/sparrow-hawk/k/kernel-module-horus3a-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty/kernel-module-horus3a-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty_6.12.34+git0+f6cd0b6d75-r0_arm64.deb
+Size: 3968
+SHA256: b02194bacc5eb2c12efeb9eb8433e07b9741749f65b2de3737f272d312ed96a2
+SHA1: 322991ac9e1eb2eb553c18bafbd57c7d99f9c457
+MD5sum: 961ea5e0f1cd2eccd03c21b8577fa5cd
+Description: horus3a kernel module
+ horus3a kernel module; Sony HORUS3A satellite tuner driver
+Maintainer: Poky Maintainers <poky@lists.yoctoproject.org>
+Architecture: arm64
+OE: linux-renesas
+PackageArch: sparrow-hawk
+Homepage: https://www.yoctoproject.org/
+Depends: kernel-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Provides: kernel-module-horus3a
+
+Package: kernel-module-isl6405-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Version: 6.12.34+git0+f6cd0b6d75-r0
+Priority: 0
+Section: kernel
+Filename: pool/sparrow-hawk/k/kernel-module-isl6405-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty/kernel-module-isl6405-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty_6.12.34+git0+f6cd0b6d75-r0_arm64.deb
+Size: 2692
+SHA256: 141ca62603cf03e9f173ccc9437fcde5f2537478e198c2305717842cc20b59e7
+SHA1: be64b4b226844f51b0a6597fe994d51d90f0a060
+MD5sum: 34cbea6017d817dafe4da03620c13fb3
+Description: isl6405 kernel module
+ isl6405 kernel module; Driver for lnb supply and control ic isl6405
+Maintainer: Poky Maintainers <poky@lists.yoctoproject.org>
+Architecture: arm64
+OE: linux-renesas
+PackageArch: sparrow-hawk
+Homepage: https://www.yoctoproject.org/
+Depends: kernel-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Provides: kernel-module-isl6405
+
+Package: kernel-module-isl6421-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Version: 6.12.34+git0+f6cd0b6d75-r0
+Priority: 0
+Section: kernel
+Filename: pool/sparrow-hawk/k/kernel-module-isl6421-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty/kernel-module-isl6421-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty_6.12.34+git0+f6cd0b6d75-r0_arm64.deb
+Size: 3048
+SHA256: ac70f95fd36f16ebb3b584e248f4e2119170f8c17b21067e4d4e14363cf8cf9c
+SHA1: 4cd51cc419f2de23db11509ffa81b543c6864ef9
+MD5sum: 95df468cfaa98f93f6d93b9754e4b609
+Description: isl6421 kernel module
+ isl6421 kernel module; Driver for lnb supply and control ic isl6421
+Maintainer: Poky Maintainers <poky@lists.yoctoproject.org>
+Architecture: arm64
+OE: linux-renesas
+PackageArch: sparrow-hawk
+Homepage: https://www.yoctoproject.org/
+Depends: kernel-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Provides: kernel-module-isl6421
+
+Package: kernel-module-isl6423-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Version: 6.12.34+git0+f6cd0b6d75-r0
+Priority: 0
+Section: kernel
+Filename: pool/sparrow-hawk/k/kernel-module-isl6423-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty/kernel-module-isl6423-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty_6.12.34+git0+f6cd0b6d75-r0_arm64.deb
+Size: 3256
+SHA256: 2561040f7c4219373de3d05476402bd850af80e1a29533ac6f738028ee73e784
+SHA1: 944846e76e01edb39e40d3388d372960688c0c9d
+MD5sum: 774bc43508d43af0bab6cdb7f9a0f307
+Description: isl6423 kernel module
+ isl6423 kernel module; ISL6423 SEC
+Maintainer: Poky Maintainers <poky@lists.yoctoproject.org>
+Architecture: arm64
+OE: linux-renesas
+PackageArch: sparrow-hawk
+Homepage: https://www.yoctoproject.org/
+Depends: kernel-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Provides: kernel-module-isl6423
+
+Package: kernel-module-itd1000-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Version: 6.12.34+git0+f6cd0b6d75-r0
+Priority: 0
+Section: kernel
+Filename: pool/sparrow-hawk/k/kernel-module-itd1000-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty/kernel-module-itd1000-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty_6.12.34+git0+f6cd0b6d75-r0_arm64.deb
+Size: 4584
+SHA256: 7a0bfa99a907c578581964b6498ac0650f4fd76580b355ec78b85fbecd47d7ac
+SHA1: c6009c604ffaddb13c3bac6bfc1917bbae25601c
+MD5sum: c742354c6f89e699cced287d4fe89fbf
+Description: itd1000 kernel module
+ itd1000 kernel module; Integrant ITD1000 driver
+Maintainer: Poky Maintainers <poky@lists.yoctoproject.org>
+Architecture: arm64
+OE: linux-renesas
+PackageArch: sparrow-hawk
+Homepage: https://www.yoctoproject.org/
+Depends: kernel-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Provides: kernel-module-itd1000
+
+Package: kernel-module-ix2505v-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Version: 6.12.34+git0+f6cd0b6d75-r0
+Priority: 0
+Section: kernel
+Filename: pool/sparrow-hawk/k/kernel-module-ix2505v-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty/kernel-module-ix2505v-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty_6.12.34+git0+f6cd0b6d75-r0_arm64.deb
+Size: 3980
+SHA256: 88fbe15d51659d5331a0e014abecf0c0ce4bc4f5bab90e2d2767d5164d3d8417
+SHA1: e187ae249b298448f70b6be93a16fafa1141b7d5
+MD5sum: ce9f9064cd71966e10f452169ec97242
+Description: ix2505v kernel module
+ ix2505v kernel module; DVB IX2505V tuner driver
+Maintainer: Poky Maintainers <poky@lists.yoctoproject.org>
+Architecture: arm64
+OE: linux-renesas
+PackageArch: sparrow-hawk
+Homepage: https://www.yoctoproject.org/
+Depends: kernel-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Provides: kernel-module-ix2505v
+
+Package: kernel-module-l64781-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Version: 6.12.34+git0+f6cd0b6d75-r0
+Priority: 0
+Section: kernel
+Filename: pool/sparrow-hawk/k/kernel-module-l64781-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty/kernel-module-l64781-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty_6.12.34+git0+f6cd0b6d75-r0_arm64.deb
+Size: 4952
+SHA256: 9b22d8fbf5764b29f5efe9b86cf1d99667e6926d95469bf6b037ed065e787e88
+SHA1: 7746130dfd8b89d545469a0405e689f6e2c95c6b
+MD5sum: af8ccf74b5e4d5216cd18789fe5719cd
+Description: l64781 kernel module
+ l64781 kernel module; LSI L64781 DVB-T Demodulator driver
+Maintainer: Poky Maintainers <poky@lists.yoctoproject.org>
+Architecture: arm64
+OE: linux-renesas
+PackageArch: sparrow-hawk
+Homepage: https://www.yoctoproject.org/
+Depends: kernel-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Provides: kernel-module-l64781
+
+Package: kernel-module-lg2160-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Version: 6.12.34+git0+f6cd0b6d75-r0
+Priority: 0
+Section: kernel
+Filename: pool/sparrow-hawk/k/kernel-module-lg2160-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty/kernel-module-lg2160-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty_6.12.34+git0+f6cd0b6d75-r0_arm64.deb
+Size: 7024
+SHA256: 35dfe3fc671693927cf128f7af0efd7783fa690a8d714d7f531b2c565c04f056
+SHA1: 0b832e3c89e0bd35d7b3f703b9e3b67be5a18a0d
+MD5sum: d6f9f7f4930f3cc39f88753d1b84c2bc
+Description: lg2160 kernel module
+ lg2160 kernel module; LG Electronics LG216x ATSC/MH Demodulator Driver
+Maintainer: Poky Maintainers <poky@lists.yoctoproject.org>
+Architecture: arm64
+OE: linux-renesas
+PackageArch: sparrow-hawk
+Homepage: https://www.yoctoproject.org/
+Depends: kernel-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Provides: kernel-module-lg2160
+
+Package: kernel-module-lgdt3305-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Version: 6.12.34+git0+f6cd0b6d75-r0
+Priority: 0
+Section: kernel
+Filename: pool/sparrow-hawk/k/kernel-module-lgdt3305-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty/kernel-module-lgdt3305-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty_6.12.34+git0+f6cd0b6d75-r0_arm64.deb
+Size: 8624
+SHA256: 899b81c987c13d3bb77e945703811b4cec335a3c9686832331a6176b12ccbcbb
+SHA1: 68d2ff2c0f593588afb40afad55735ad7affef29
+MD5sum: c69604f93fd09823f1fa81753575d235
+Description: lgdt3305 kernel module
+ lgdt3305 kernel module; LG Electronics LGDT3304/5 ATSC/QAM-B Demodulator
+ Driver
+Maintainer: Poky Maintainers <poky@lists.yoctoproject.org>
+Architecture: arm64
+OE: linux-renesas
+PackageArch: sparrow-hawk
+Homepage: https://www.yoctoproject.org/
+Depends: kernel-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Provides: kernel-module-lgdt3305
+
+Package: kernel-module-lgdt3306a-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Version: 6.12.34+git0+f6cd0b6d75-r0
+Priority: 0
+Section: kernel
+Filename: pool/sparrow-hawk/k/kernel-module-lgdt3306a-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty/kernel-module-lgdt3306a-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty_6.12.34+git0+f6cd0b6d75-r0_arm64.deb
+Size: 11196
+SHA256: 614e361d51bb35b3134a9e40a2f3127f236719db2e277cf44ce9e66290362528
+SHA1: 28c000933b20f43113c5fc9d6ec7aae70d94101c
+MD5sum: 4bda29de666f637f6b576357e4808d9b
+Description: lgdt3306a kernel module
+ lgdt3306a kernel module; LG Electronics LGDT3306A ATSC/QAM-B Demodulator
+ Driver
+Maintainer: Poky Maintainers <poky@lists.yoctoproject.org>
+Architecture: arm64
+OE: linux-renesas
+PackageArch: sparrow-hawk
+Homepage: https://www.yoctoproject.org/
+Depends: kernel-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Provides: kernel-module-lgdt3306a
+
+Package: kernel-module-lgdt330x-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Version: 6.12.34+git0+f6cd0b6d75-r0
+Priority: 0
+Section: kernel
+Filename: pool/sparrow-hawk/k/kernel-module-lgdt330x-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty/kernel-module-lgdt330x-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty_6.12.34+git0+f6cd0b6d75-r0_arm64.deb
+Size: 6652
+SHA256: 3fc0aab099cab5adfa1716822ff5190870fe793b4b822e27386d8655ec71d4e3
+SHA1: 84e56ad1130efa252b275a9d42d99302e659bd32
+MD5sum: 93471c92bfd8cb7b4c92a3fd571bba05
+Description: lgdt330x kernel module
+ lgdt330x kernel module; LGDT330X (ATSC 8VSB & ITU-T J.83 AnnexB 64/256
+ QAM) Demodulator Driver
+Maintainer: Poky Maintainers <poky@lists.yoctoproject.org>
+Architecture: arm64
+OE: linux-renesas
+PackageArch: sparrow-hawk
+Homepage: https://www.yoctoproject.org/
+Depends: kernel-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Provides: kernel-module-lgdt330x
+
+Package: kernel-module-lgs8gl5-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Version: 6.12.34+git0+f6cd0b6d75-r0
+Priority: 0
+Section: kernel
+Filename: pool/sparrow-hawk/k/kernel-module-lgs8gl5-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty/kernel-module-lgs8gl5-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty_6.12.34+git0+f6cd0b6d75-r0_arm64.deb
+Size: 4120
+SHA256: 8711f3abf55f970da771390e339d8a1f7094f5f5637f206ace6364944b5f65e5
+SHA1: a1557974f694b79be9960d215154c740e11beb72
+MD5sum: 849fb3aaee36ac46f35ac1cbd118505b
+Description: lgs8gl5 kernel module
+ lgs8gl5 kernel module; Legend Silicon LGS-8GL5 DMB-TH Demodulator driver
+Maintainer: Poky Maintainers <poky@lists.yoctoproject.org>
+Architecture: arm64
+OE: linux-renesas
+PackageArch: sparrow-hawk
+Homepage: https://www.yoctoproject.org/
+Depends: kernel-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Provides: kernel-module-lgs8gl5
+
+Package: kernel-module-lgs8gxx-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Version: 6.12.34+git0+f6cd0b6d75-r0
+Priority: 0
+Section: kernel
+Filename: pool/sparrow-hawk/k/kernel-module-lgs8gxx-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty/kernel-module-lgs8gxx-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty_6.12.34+git0+f6cd0b6d75-r0_arm64.deb
+Size: 7440
+SHA256: 949077fc14a7e45bc7854bd9b81cd4eeff5913311d912f3dabd2ee940935696d
+SHA1: 70733240e6b37ef10eb4f4c8603fc0d3ed3dec07
+MD5sum: 9e1dbf059e69ff4da14d084cddad0423
+Description: lgs8gxx kernel module
+ lgs8gxx kernel module; Legend Silicon LGS8913/LGS8GXX DMB-TH demodulator
+ driver
+Maintainer: Poky Maintainers <poky@lists.yoctoproject.org>
+Architecture: arm64
+OE: linux-renesas
+PackageArch: sparrow-hawk
+Homepage: https://www.yoctoproject.org/
+Depends: kernel-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Provides: kernel-module-lgs8gxx
+
+Package: kernel-module-lnbh25-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Version: 6.12.34+git0+f6cd0b6d75-r0
+Priority: 0
+Section: kernel
+Filename: pool/sparrow-hawk/k/kernel-module-lnbh25-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty/kernel-module-lnbh25-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty_6.12.34+git0+f6cd0b6d75-r0_arm64.deb
+Size: 2956
+SHA256: fdc8db96b6176a04e3d0fcb9b750b0fbc80bb66f0dc09c9da67fe44e33540399
+SHA1: 5254c28bb0dcf2264584ab1e655c4b590e39d39d
+MD5sum: deb1d78612f31573a5180544a2d5ac80
+Description: lnbh25 kernel module
+ lnbh25 kernel module; ST LNBH25 driver
+Maintainer: Poky Maintainers <poky@lists.yoctoproject.org>
+Architecture: arm64
+OE: linux-renesas
+PackageArch: sparrow-hawk
+Homepage: https://www.yoctoproject.org/
+Depends: kernel-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Provides: kernel-module-lnbh25
+
+Package: kernel-module-lnbh29-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Version: 6.12.34+git0+f6cd0b6d75-r0
+Priority: 0
+Section: kernel
+Filename: pool/sparrow-hawk/k/kernel-module-lnbh29-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty/kernel-module-lnbh29-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty_6.12.34+git0+f6cd0b6d75-r0_arm64.deb
+Size: 2904
+SHA256: 8a16e38a0b230032dc80e6fe323a4c83be89683147645f127d49fbd7efe871e7
+SHA1: 77bb660d26a5b03ed79f1b6e2ee408494342b69b
+MD5sum: 25995a887f2e3253af36702636380200
+Description: lnbh29 kernel module
+ lnbh29 kernel module; STMicroelectronics LNBH29 driver
+Maintainer: Poky Maintainers <poky@lists.yoctoproject.org>
+Architecture: arm64
+OE: linux-renesas
+PackageArch: sparrow-hawk
+Homepage: https://www.yoctoproject.org/
+Depends: kernel-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Provides: kernel-module-lnbh29
+
+Package: kernel-module-lnbp21-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Version: 6.12.34+git0+f6cd0b6d75-r0
+Priority: 0
+Section: kernel
+Filename: pool/sparrow-hawk/k/kernel-module-lnbp21-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty/kernel-module-lnbp21-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty_6.12.34+git0+f6cd0b6d75-r0_arm64.deb
+Size: 2932
+SHA256: a7e35322a52c20474668b570a73b2d1b24e563a3fe11ff210f675d58aa78718a
+SHA1: 3a4a0d09429d2ae2e80032979ca6052a2a6378a4
+MD5sum: a7b72b6d58a66ce12c39c7e0252fb1d3
+Description: lnbp21 kernel module
+ lnbp21 kernel module; Driver for lnb supply and control ic lnbp21, lnbh24
+Maintainer: Poky Maintainers <poky@lists.yoctoproject.org>
+Architecture: arm64
+OE: linux-renesas
+PackageArch: sparrow-hawk
+Homepage: https://www.yoctoproject.org/
+Depends: kernel-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Provides: kernel-module-lnbp21
+
+Package: kernel-module-lnbp22-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Version: 6.12.34+git0+f6cd0b6d75-r0
+Priority: 0
+Section: kernel
+Filename: pool/sparrow-hawk/k/kernel-module-lnbp22-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty/kernel-module-lnbp22-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty_6.12.34+git0+f6cd0b6d75-r0_arm64.deb
+Size: 3080
+SHA256: caf2c1498db1a3a36b18ad8083cd61c5380d47543d6d09a5bee6f7948f576e42
+SHA1: e557e1a0d12511a45874ac9d7a7f359be4cbf0da
+MD5sum: da051cc9e7b45a05c2bcafe5bf4ec8d4
+Description: lnbp22 kernel module
+ lnbp22 kernel module; Driver for lnb supply and control ic lnbp22
+Maintainer: Poky Maintainers <poky@lists.yoctoproject.org>
+Architecture: arm64
+OE: linux-renesas
+PackageArch: sparrow-hawk
+Homepage: https://www.yoctoproject.org/
+Depends: kernel-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Provides: kernel-module-lnbp22
+
+Package: kernel-module-m88ds3103-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Version: 6.12.34+git0+f6cd0b6d75-r0
+Priority: 0
+Section: kernel
+Filename: pool/sparrow-hawk/k/kernel-module-m88ds3103-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty/kernel-module-m88ds3103-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty_6.12.34+git0+f6cd0b6d75-r0_arm64.deb
+Size: 10044
+SHA256: 1c52803f85bbfecd32a10467dd3843d251af7c77b42988886497e3f875be2652
+SHA1: c913ca41696bd262570c9ae1a5c4aa7b084efd6b
+MD5sum: 43e2b3566c9f9edca9ea18945872ad7b
+Description: m88ds3103 kernel module
+ m88ds3103 kernel module; Montage Technology M88DS3103 DVB-S/S2
+ demodulator driver
+Maintainer: Poky Maintainers <poky@lists.yoctoproject.org>
+Architecture: arm64
+OE: linux-renesas
+PackageArch: sparrow-hawk
+Homepage: https://www.yoctoproject.org/
+Depends: kernel-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Provides: kernel-module-m88ds3103
+
+Package: kernel-module-m88rs2000-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Version: 6.12.34+git0+f6cd0b6d75-r0
+Priority: 0
+Section: kernel
+Filename: pool/sparrow-hawk/k/kernel-module-m88rs2000-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty/kernel-module-m88rs2000-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty_6.12.34+git0+f6cd0b6d75-r0_arm64.deb
+Size: 5636
+SHA256: 08f66e3dc738b91dc1cf01107e11928b38aab3e94646956a3a1738663622084d
+SHA1: 6d1c38ee3c13c0fade42c457311b7c67bc65d5bf
+MD5sum: 0d94796fad1ba6d4415570e74ba17747
+Description: m88rs2000 kernel module
+ m88rs2000 kernel module; M88RS2000 DVB-S Demodulator driver
+Maintainer: Poky Maintainers <poky@lists.yoctoproject.org>
+Architecture: arm64
+OE: linux-renesas
+PackageArch: sparrow-hawk
+Homepage: https://www.yoctoproject.org/
+Depends: kernel-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Provides: kernel-module-m88rs2000
+
+Package: kernel-module-mb86a16-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Version: 6.12.34+git0+f6cd0b6d75-r0
+Priority: 0
+Section: kernel
+Filename: pool/sparrow-hawk/k/kernel-module-mb86a16-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty/kernel-module-mb86a16-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty_6.12.34+git0+f6cd0b6d75-r0_arm64.deb
+Size: 11288
+SHA256: b9dcb068878b2f85e668ed62a09c960fc32cd8ded79a03c495e7f598963869d4
+SHA1: 0db3c854eac5a78d8e1d78369282819d4098b2c0
+MD5sum: 08a6dda29ae1d30b6d044a463cab0a42
+Description: mb86a16 kernel module
+ mb86a16 kernel module; Fujitsu MB86A16 DVB-S/DSS DC Receiver driver
+Maintainer: Poky Maintainers <poky@lists.yoctoproject.org>
+Architecture: arm64
+OE: linux-renesas
+PackageArch: sparrow-hawk
+Homepage: https://www.yoctoproject.org/
+Depends: kernel-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Provides: kernel-module-mb86a16
+
+Package: kernel-module-mb86a20s-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Version: 6.12.34+git0+f6cd0b6d75-r0
+Priority: 0
+Section: kernel
+Filename: pool/sparrow-hawk/k/kernel-module-mb86a20s-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty/kernel-module-mb86a20s-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty_6.12.34+git0+f6cd0b6d75-r0_arm64.deb
+Size: 8644
+SHA256: d2e02f5ba2e244fab371a0e1c6fbd4eed73a8160717f387d6805ab8587ca1275
+SHA1: e3f71a689929271111ae018b557657db0d7c34e8
+MD5sum: 10bc2f4a7927da56de3e1bd9e0e4468f
+Description: mb86a20s kernel module
+ mb86a20s kernel module; DVB Frontend module for Fujitsu mb86A20s hardware
+Maintainer: Poky Maintainers <poky@lists.yoctoproject.org>
+Architecture: arm64
+OE: linux-renesas
+PackageArch: sparrow-hawk
+Homepage: https://www.yoctoproject.org/
+Depends: kernel-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Provides: kernel-module-mb86a20s
+
+Package: kernel-module-mn88443x-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Version: 6.12.34+git0+f6cd0b6d75-r0
+Priority: 0
+Section: kernel
+Filename: pool/sparrow-hawk/k/kernel-module-mn88443x-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty/kernel-module-mn88443x-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty_6.12.34+git0+f6cd0b6d75-r0_arm64.deb
+Size: 5232
+SHA256: 4a246ffb71ade5326eb42a2dfa60d6195b20015a2d62af39a09afa2bb0db0ba7
+SHA1: 480c42c58670fba4565835b6667072cf851c58c4
+MD5sum: 7d2cc4f21f2944560fbe27811bc11c1b
+Description: mn88443x kernel module
+ mn88443x kernel module; Socionext MN88443x series demodulator driver.
+Maintainer: Poky Maintainers <poky@lists.yoctoproject.org>
+Architecture: arm64
+OE: linux-renesas
+PackageArch: sparrow-hawk
+Homepage: https://www.yoctoproject.org/
+Depends: kernel-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Provides: kernel-module-mn88443x
+
+Package: kernel-module-mn88472-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Version: 6.12.34+git0+f6cd0b6d75-r0
+Priority: 0
+Section: kernel
+Filename: pool/sparrow-hawk/k/kernel-module-mn88472-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty/kernel-module-mn88472-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty_6.12.34+git0+f6cd0b6d75-r0_arm64.deb
+Size: 5088
+SHA256: 643e3b73be25d1d56cfe2bad50993640401a2a95bc156b3a2213711c1b1a90ca
+SHA1: df36b99e80ce436d831821677fd79e268d6de46b
+MD5sum: fd892532d050cd5b5ead58f731706e42
+Description: mn88472 kernel module
+ mn88472 kernel module; Panasonic MN88472 DVB-T/T2/C demodulator driver
+Maintainer: Poky Maintainers <poky@lists.yoctoproject.org>
+Architecture: arm64
+OE: linux-renesas
+PackageArch: sparrow-hawk
+Homepage: https://www.yoctoproject.org/
+Depends: kernel-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Provides: kernel-module-mn88472
+
+Package: kernel-module-mn88473-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Version: 6.12.34+git0+f6cd0b6d75-r0
+Priority: 0
+Section: kernel
+Filename: pool/sparrow-hawk/k/kernel-module-mn88473-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty/kernel-module-mn88473-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty_6.12.34+git0+f6cd0b6d75-r0_arm64.deb
+Size: 5284
+SHA256: 33a9421de60d47fdc6176b268116a262fcf98fd99ef0c60eaaadc7464b51678e
+SHA1: 596056fb1739246194e332ddccbf2109b12eac17
+MD5sum: f2e10d2177dacd9368b2aa5b3fc309b7
+Description: mn88473 kernel module
+ mn88473 kernel module; Panasonic MN88473 DVB-T/T2/C demodulator driver
+Maintainer: Poky Maintainers <poky@lists.yoctoproject.org>
+Architecture: arm64
+OE: linux-renesas
+PackageArch: sparrow-hawk
+Homepage: https://www.yoctoproject.org/
+Depends: kernel-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Provides: kernel-module-mn88473
+
+Package: kernel-module-mt312-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Version: 6.12.34+git0+f6cd0b6d75-r0
+Priority: 0
+Section: kernel
+Filename: pool/sparrow-hawk/k/kernel-module-mt312-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty/kernel-module-mt312-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty_6.12.34+git0+f6cd0b6d75-r0_arm64.deb
+Size: 5960
+SHA256: 893478a112d35e9ca0563fc8b62d0ef3c58ba9b5638164aab6c5e1b17f259251
+SHA1: f934c4ee60e1c6b5d840ed0224937fa1e35ed23c
+MD5sum: bf24843b39e0098ad3bec65a12dbab2b
+Description: mt312 kernel module
+ mt312 kernel module; Zarlink VP310/MT312/ZL10313 DVB-S Demodulator driver
+Maintainer: Poky Maintainers <poky@lists.yoctoproject.org>
+Architecture: arm64
+OE: linux-renesas
+PackageArch: sparrow-hawk
+Homepage: https://www.yoctoproject.org/
+Depends: kernel-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Provides: kernel-module-mt312
+
+Package: kernel-module-mt352-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Version: 6.12.34+git0+f6cd0b6d75-r0
+Priority: 0
+Section: kernel
+Filename: pool/sparrow-hawk/k/kernel-module-mt352-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty/kernel-module-mt352-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty_6.12.34+git0+f6cd0b6d75-r0_arm64.deb
+Size: 5260
+SHA256: 27eedd0abe5278f2a4011622ab45a7f48b17603555341f1682b04f9481553856
+SHA1: 13a8dc6e170010e64ccd19b2e1e43b5e94064ff1
+MD5sum: 631cf129322296697bd3ebaf1bf2188e
+Description: mt352 kernel module
+ mt352 kernel module; Zarlink MT352 DVB-T Demodulator driver
+Maintainer: Poky Maintainers <poky@lists.yoctoproject.org>
+Architecture: arm64
+OE: linux-renesas
+PackageArch: sparrow-hawk
+Homepage: https://www.yoctoproject.org/
+Depends: kernel-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Provides: kernel-module-mt352
+
+Package: kernel-module-mxl5xx-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Version: 6.12.34+git0+f6cd0b6d75-r0
+Priority: 0
+Section: kernel
+Filename: pool/sparrow-hawk/k/kernel-module-mxl5xx-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty/kernel-module-mxl5xx-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty_6.12.34+git0+f6cd0b6d75-r0_arm64.deb
+Size: 9292
+SHA256: 08d485b83226de66775a282efa107785af8ea55a54d0453366412a18a0a04ab3
+SHA1: 194b9beef837cb1eaa7df3af4a23ca9e81bbb4fc
+MD5sum: abd84bff6fb93b02274293c66b7ffe32
+Description: mxl5xx kernel module
+ mxl5xx kernel module; MaxLinear MxL5xx DVB-S/S2 tuner-demodulator driver
+Maintainer: Poky Maintainers <poky@lists.yoctoproject.org>
+Architecture: arm64
+OE: linux-renesas
+PackageArch: sparrow-hawk
+Homepage: https://www.yoctoproject.org/
+Depends: kernel-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Provides: kernel-module-mxl5xx
+
+Package: kernel-module-mxl692-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Version: 6.12.34+git0+f6cd0b6d75-r0
+Priority: 0
+Section: kernel
+Filename: pool/sparrow-hawk/k/kernel-module-mxl692-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty/kernel-module-mxl692-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty_6.12.34+git0+f6cd0b6d75-r0_arm64.deb
+Size: 6360
+SHA256: f1fbf79702ff26be385636a864d89936beacf93ec948310aa232c9b35c57e5bf
+SHA1: e2c7f0ad0df76a0635461ee12917634376acf683
+MD5sum: bb77cfa027da1268f75366d861ba24e8
+Description: mxl692 kernel module
+ mxl692 kernel module; MaxLinear MxL692 demodulator/tuner driver
+Maintainer: Poky Maintainers <poky@lists.yoctoproject.org>
+Architecture: arm64
+OE: linux-renesas
+PackageArch: sparrow-hawk
+Homepage: https://www.yoctoproject.org/
+Depends: kernel-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Provides: kernel-module-mxl692
+
+Package: kernel-module-nxt200x-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Version: 6.12.34+git0+f6cd0b6d75-r0
+Priority: 0
+Section: kernel
+Filename: pool/sparrow-hawk/k/kernel-module-nxt200x-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty/kernel-module-nxt200x-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty_6.12.34+git0+f6cd0b6d75-r0_arm64.deb
+Size: 6924
+SHA256: 32640ef030d36c6af4ca649ade096c35d6b807236c29bf11675c92404f428ba1
+SHA1: 43634e216e5ef6ce6627650c403132a0af356256
+MD5sum: adbd66c5e2cc6a93740c25fd6464e244
+Description: nxt200x kernel module
+ nxt200x kernel module; NXT200X (ATSC 8VSB & ITU-T J.83 AnnexB 64/256 QAM)
+ Demodulator Driver
+Maintainer: Poky Maintainers <poky@lists.yoctoproject.org>
+Architecture: arm64
+OE: linux-renesas
+PackageArch: sparrow-hawk
+Homepage: https://www.yoctoproject.org/
+Depends: kernel-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Provides: kernel-module-nxt200x
+
+Package: kernel-module-nxt6000-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Version: 6.12.34+git0+f6cd0b6d75-r0
+Priority: 0
+Section: kernel
+Filename: pool/sparrow-hawk/k/kernel-module-nxt6000-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty/kernel-module-nxt6000-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty_6.12.34+git0+f6cd0b6d75-r0_arm64.deb
+Size: 4832
+SHA256: 131ee0f0b23728f639c74423369f5f87a58390ca1415da6c6beaf267b9843b3d
+SHA1: 3ea0e758b192b3f6638d0760ce7f2ad032ccf769
+MD5sum: 04bce3b598eae8833bf74d336679e1cd
+Description: nxt6000 kernel module
+ nxt6000 kernel module; NxtWave NXT6000 DVB-T demodulator driver
+Maintainer: Poky Maintainers <poky@lists.yoctoproject.org>
+Architecture: arm64
+OE: linux-renesas
+PackageArch: sparrow-hawk
+Homepage: https://www.yoctoproject.org/
+Depends: kernel-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Provides: kernel-module-nxt6000
+
+Package: kernel-module-or51132-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Version: 6.12.34+git0+f6cd0b6d75-r0
+Priority: 0
+Section: kernel
+Filename: pool/sparrow-hawk/k/kernel-module-or51132-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty/kernel-module-or51132-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty_6.12.34+git0+f6cd0b6d75-r0_arm64.deb
+Size: 5628
+SHA256: 725cdd410fc47e14edff585b98b7e2ab2ecd35e7d8bbbe654d035f2fb4f2b57c
+SHA1: e298fc4d642e217bc18139e85071ae1efe757b7d
+MD5sum: e920e295cd629232e9981f15bef5e904
+Description: or51132 kernel module
+ or51132 kernel module; OR51132 ATSC [pcHDTV HD-3000] (8VSB & ITU J83
+ AnnexB FEC QAM64/256) Demodulator Driver
+Maintainer: Poky Maintainers <poky@lists.yoctoproject.org>
+Architecture: arm64
+OE: linux-renesas
+PackageArch: sparrow-hawk
+Homepage: https://www.yoctoproject.org/
+Depends: kernel-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Provides: kernel-module-or51132
+
+Package: kernel-module-or51211-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Version: 6.12.34+git0+f6cd0b6d75-r0
+Priority: 0
+Section: kernel
+Filename: pool/sparrow-hawk/k/kernel-module-or51211-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty/kernel-module-or51211-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty_6.12.34+git0+f6cd0b6d75-r0_arm64.deb
+Size: 5456
+SHA256: abe5efffc09595b4ce9950b4cfca561a09be16e3866b63a436b8245ba48919f0
+SHA1: 7f8cf676efb4dd935fcc0ddc4ed25d0ff712493f
+MD5sum: 319526d8b8d19634c98132c6e19ef148
+Description: or51211 kernel module
+ or51211 kernel module; Oren OR51211 VSB [pcHDTV HD-2000] Demodulator
+ Driver
+Maintainer: Poky Maintainers <poky@lists.yoctoproject.org>
+Architecture: arm64
+OE: linux-renesas
+PackageArch: sparrow-hawk
+Homepage: https://www.yoctoproject.org/
+Depends: kernel-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Provides: kernel-module-or51211
+
+Package: kernel-module-pcie-rcar-gen4-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Version: 6.12.34+git0+f6cd0b6d75-r0
+Priority: 0
+Section: kernel
+Filename: pool/sparrow-hawk/k/kernel-module-pcie-rcar-gen4-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty/kernel-module-pcie-rcar-gen4-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty_6.12.34+git0+f6cd0b6d75-r0_arm64.deb
+Size: 5488
+SHA256: 1da77421921dbfc0d9623e8c44129d86623d461c7fddd5fcaa135c7348777235
+SHA1: ac34eb3fe6b16510689072b43f2be509facfd0f8
+MD5sum: 6ef7f99608e423e53c3817015c5da298
 Description: pcie-rcar-gen4 kernel module
  pcie-rcar-gen4 kernel module; Renesas R-Car Gen4 PCIe controller driver
 Maintainer: Poky Maintainers <poky@lists.yoctoproject.org>
@@ -159,7 +1491,7 @@ Architecture: arm64
 OE: linux-renesas
 PackageArch: sparrow-hawk
 Homepage: https://www.yoctoproject.org/
-Depends: kernel-6.12.34-yocto-standard-g742b50859847-dirty
+Depends: kernel-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
 Provides: kernel-module-pcie-rcar-gen4
 
 Package: kernel-module-qos
@@ -167,17 +1499,17 @@ Version: 1.0-r0
 Priority: 0
 Section: base
 Filename: pool/sparrow-hawk/k/kernel-module-qos/kernel-module-qos_1.0-r0_arm64.deb
-Size: 5804
-SHA256: dadb6f86fd66a7fe3ecf510c7a45ce5d5bfc27685286ab513695d5e9432aeb56
-SHA1: 9d0448f335858c6e722fc4e238ecf788bdafdeb0
-MD5sum: 643ecaa52dbf83348266bd8268b09fbf
+Size: 5792
+SHA256: 26b8e972d0d94ff72fc5a1ee53b0d6e6187d3e52945fae974617cf2eb2d2836d
+SHA1: 92d2ae8c4cb81a47c21c7bd2efa71fab309e0c29
+MD5sum: 1bfdcfab7372bad352d098e8978e5664
 Description: qos kernel module
  qos kernel module
 Maintainer: Poky Maintainers <poky@lists.yoctoproject.org>
 Architecture: arm64
 OE: kernel-module-qos
 PackageArch: sparrow-hawk
-Depends: kernel-6.12.34-yocto-standard-g742b50859847-dirty
+Depends: kernel-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
 Provides: kernel-module-qos
 
 Package: kernel-module-qos-dbg
@@ -185,10 +1517,10 @@ Version: 1.0-r0
 Priority: 0
 Section: devel
 Filename: pool/sparrow-hawk/k/kernel-module-qos-dbg/kernel-module-qos-dbg_1.0-r0_arm64.deb
-Size: 3424
-SHA256: 22c730a85e579bd37ca60a3901af668a14bf91deb71c80788ffb6df48bd7afbd
-SHA1: b62f5142b831b3592b0044fa98a8f406464d4f4c
-MD5sum: 455f0e7bb7ec41a7482914109de7e903
+Size: 3420
+SHA256: 24289185711ca18fece07486e5f312f3cba795e46fcd7e69758f6d0418010afd
+SHA1: 652f6b29e1007db262f9efcae1c39d195a73d557
+MD5sum: fd078d57b9d8d3ded553328ce09900ca
 Description: kernel-module-qos version 1.0-r0 - Debugging files
  QoS driver for the R-Car  This package contains ELF symbols and related
  sources for debugging purposes.
@@ -203,9 +1535,9 @@ Priority: 0
 Section: devel
 Filename: pool/sparrow-hawk/k/kernel-module-qos-dev/kernel-module-qos-dev_1.0-r0_arm64.deb
 Size: 2684
-SHA256: e2e6d8d6c642c7f7386cd72911b012ea1514144c3b53935884b8bf4b63b1911a
-SHA1: f9cdb7bbef6e11ceed746264269662b4ba9ea4db
-MD5sum: eaf3c154f61836ea8e281185cfca9806
+SHA256: b126a5ae180295448473527a8ccf84e844e0938a3c03e2f252241dca9b43f83f
+SHA1: f96ecbf8dac23d9393a7614dff68e6c9d92d1e90
+MD5sum: 4940cdae10df759c7fed376c205dfcbb
 Description: kernel-module-qos version 1.0-r0 - Development files
  QoS driver for the R-Car  This package contains symbolic links, header
  files, and related items necessary for software development.
@@ -213,17 +1545,817 @@ Maintainer: Poky Maintainers <poky@lists.yoctoproject.org>
 Architecture: arm64
 OE: kernel-module-qos
 PackageArch: sparrow-hawk
-Recommends: kernel-6.12.34-yocto-standard-g742b50859847-dirty-dev, kernel-module-qos (= 1.0-r0), linux-renesas-dev
+Recommends: kernel-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty-dev, kernel-module-qos (= 1.0-r0), linux-renesas-dev
 
-Package: kernel-module-xen-gntalloc-6.12.34-yocto-standard-g742b50859847-dirty
-Version: 6.12.34+git0+742b508598-r0
+Package: kernel-module-rtl2830-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Version: 6.12.34+git0+f6cd0b6d75-r0
 Priority: 0
 Section: kernel
-Filename: pool/sparrow-hawk/k/kernel-module-xen-gntalloc-6.12.34-yocto-standard-g742b50859847-dirty/kernel-module-xen-gntalloc-6.12.34-yocto-standard-g742b50859847-dirty_6.12.34+git0+742b508598-r0_arm64.deb
-Size: 5196
-SHA256: 86d8cf4ddcfba4add9140e4fa120be5b09fc764a4c80969133e02cb212e105f2
-SHA1: c8009fb2f04cb3845753074123135386e7178b9e
-MD5sum: 5858ccfa9b4106dd91ed2a045fe10924
+Filename: pool/sparrow-hawk/k/kernel-module-rtl2830-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty/kernel-module-rtl2830-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty_6.12.34+git0+f6cd0b6d75-r0_arm64.deb
+Size: 6076
+SHA256: e73ecf0dec7c62d4bf8156c5aed50129b21b9bfed67f068d21b07ba5e120f10c
+SHA1: 9d5ad6b640209413b2e54e7354bcc96193272902
+MD5sum: 984e6cb36938b1549188ec442cd5b4b6
+Description: rtl2830 kernel module
+ rtl2830 kernel module; Realtek RTL2830 DVB-T demodulator driver
+Maintainer: Poky Maintainers <poky@lists.yoctoproject.org>
+Architecture: arm64
+OE: linux-renesas
+PackageArch: sparrow-hawk
+Homepage: https://www.yoctoproject.org/
+Depends: kernel-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Provides: kernel-module-rtl2830
+
+Package: kernel-module-rtl2832-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Version: 6.12.34+git0+f6cd0b6d75-r0
+Priority: 0
+Section: kernel
+Filename: pool/sparrow-hawk/k/kernel-module-rtl2832-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty/kernel-module-rtl2832-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty_6.12.34+git0+f6cd0b6d75-r0_arm64.deb
+Size: 6640
+SHA256: 45be9de4fc7558b2c1172b5340df8bbf38854f97774ddcc8448d52b47f877371
+SHA1: ddb11f43ae0bc7efb9efd50b989c27356873527a
+MD5sum: 561c9e018bcdefd23dd298e27c7b5626
+Description: rtl2832 kernel module
+ rtl2832 kernel module; Realtek RTL2832 DVB-T demodulator driver
+Maintainer: Poky Maintainers <poky@lists.yoctoproject.org>
+Architecture: arm64
+OE: linux-renesas
+PackageArch: sparrow-hawk
+Homepage: https://www.yoctoproject.org/
+Depends: kernel-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Provides: kernel-module-rtl2832
+
+Package: kernel-module-rtl2832-sdr-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Version: 6.12.34+git0+f6cd0b6d75-r0
+Priority: 0
+Section: kernel
+Filename: pool/sparrow-hawk/k/kernel-module-rtl2832-sdr-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty/kernel-module-rtl2832-sdr-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty_6.12.34+git0+f6cd0b6d75-r0_arm64.deb
+Size: 8888
+SHA256: df5b33a0aee54893f35aac3244232fb595e2c5d8ddf4be3dc018da5395013723
+SHA1: 4c39dcdc5dce186def13ffd741c969517fa26116
+MD5sum: 5b0a5d77b7a866e48bb0351fbd825653
+Description: rtl2832-sdr kernel module
+ rtl2832-sdr kernel module; Realtek RTL2832 SDR driver
+Maintainer: Poky Maintainers <poky@lists.yoctoproject.org>
+Architecture: arm64
+OE: linux-renesas
+PackageArch: sparrow-hawk
+Homepage: https://www.yoctoproject.org/
+Depends: kernel-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Provides: kernel-module-rtl2832-sdr
+
+Package: kernel-module-s5h1409-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Version: 6.12.34+git0+f6cd0b6d75-r0
+Priority: 0
+Section: kernel
+Filename: pool/sparrow-hawk/k/kernel-module-s5h1409-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty/kernel-module-s5h1409-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty_6.12.34+git0+f6cd0b6d75-r0_arm64.deb
+Size: 6844
+SHA256: 8837e4d99ce307e13dfb654e1bb438ba0797b15128b77fb8e1eb2834a592d447
+SHA1: d1f4206cba12e840acf292e1efc42b2fb4612d4e
+MD5sum: 629c66e753d880aa86c5a4ea6b70c189
+Description: s5h1409 kernel module
+ s5h1409 kernel module; Samsung S5H1409 QAM-B/ATSC Demodulator driver
+Maintainer: Poky Maintainers <poky@lists.yoctoproject.org>
+Architecture: arm64
+OE: linux-renesas
+PackageArch: sparrow-hawk
+Homepage: https://www.yoctoproject.org/
+Depends: kernel-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Provides: kernel-module-s5h1409
+
+Package: kernel-module-s5h1411-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Version: 6.12.34+git0+f6cd0b6d75-r0
+Priority: 0
+Section: kernel
+Filename: pool/sparrow-hawk/k/kernel-module-s5h1411-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty/kernel-module-s5h1411-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty_6.12.34+git0+f6cd0b6d75-r0_arm64.deb
+Size: 6652
+SHA256: 090de0b6311d4713507c68826ffb96708544c6be4c9226199938700f0ddb8183
+SHA1: 89e206235d0e9d89b67f7493318dff8155d22ad7
+MD5sum: 770846992727c35e774b5eaf3941ad1c
+Description: s5h1411 kernel module
+ s5h1411 kernel module; Samsung S5H1411 QAM-B/ATSC Demodulator driver
+Maintainer: Poky Maintainers <poky@lists.yoctoproject.org>
+Architecture: arm64
+OE: linux-renesas
+PackageArch: sparrow-hawk
+Homepage: https://www.yoctoproject.org/
+Depends: kernel-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Provides: kernel-module-s5h1411
+
+Package: kernel-module-s5h1420-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Version: 6.12.34+git0+f6cd0b6d75-r0
+Priority: 0
+Section: kernel
+Filename: pool/sparrow-hawk/k/kernel-module-s5h1420-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty/kernel-module-s5h1420-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty_6.12.34+git0+f6cd0b6d75-r0_arm64.deb
+Size: 7628
+SHA256: 51b8b67390b0204592231ca0038d9072dfb3ed052e4663598aacf3847d8cabbb
+SHA1: d7593ddc537aacf451b51f2e88fd3ed34eb255b1
+MD5sum: 65d27aa7361a0cfecac9226b4be928cc
+Description: s5h1420 kernel module
+ s5h1420 kernel module; Samsung S5H1420/PnpNetwork PN1010 DVB-S
+ Demodulator driver
+Maintainer: Poky Maintainers <poky@lists.yoctoproject.org>
+Architecture: arm64
+OE: linux-renesas
+PackageArch: sparrow-hawk
+Homepage: https://www.yoctoproject.org/
+Depends: kernel-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Provides: kernel-module-s5h1420
+
+Package: kernel-module-s5h1432-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Version: 6.12.34+git0+f6cd0b6d75-r0
+Priority: 0
+Section: kernel
+Filename: pool/sparrow-hawk/k/kernel-module-s5h1432-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty/kernel-module-s5h1432-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty_6.12.34+git0+f6cd0b6d75-r0_arm64.deb
+Size: 3556
+SHA256: 857ecd292584b1862f107bb338de22dc6e8fe975ecad8637e31dea763582b899
+SHA1: 4d03677036abe8660c96fe18845de43b4793e137
+MD5sum: 4f4e528c6aba5e594acadd10f9516f31
+Description: s5h1432 kernel module
+ s5h1432 kernel module; Samsung s5h1432 DVB-T Demodulator driver
+Maintainer: Poky Maintainers <poky@lists.yoctoproject.org>
+Architecture: arm64
+OE: linux-renesas
+PackageArch: sparrow-hawk
+Homepage: https://www.yoctoproject.org/
+Depends: kernel-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Provides: kernel-module-s5h1432
+
+Package: kernel-module-s921-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Version: 6.12.34+git0+f6cd0b6d75-r0
+Priority: 0
+Section: kernel
+Filename: pool/sparrow-hawk/k/kernel-module-s921-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty/kernel-module-s921-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty_6.12.34+git0+f6cd0b6d75-r0_arm64.deb
+Size: 5248
+SHA256: 9a405a44e0c779938f0490d175594543d0d2e1c75dad16dfb9da56c7ce55dbd5
+SHA1: 9c7f0f6badd32971343905ce04fb352f7ea9711e
+MD5sum: 7a8336e749d71fe602dd8cf2736dc0c2
+Description: s921 kernel module
+ s921 kernel module; DVB Frontend module for Sharp S921 hardware
+Maintainer: Poky Maintainers <poky@lists.yoctoproject.org>
+Architecture: arm64
+OE: linux-renesas
+PackageArch: sparrow-hawk
+Homepage: https://www.yoctoproject.org/
+Depends: kernel-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Provides: kernel-module-s921
+
+Package: kernel-module-si2165-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Version: 6.12.34+git0+f6cd0b6d75-r0
+Priority: 0
+Section: kernel
+Filename: pool/sparrow-hawk/k/kernel-module-si2165-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty/kernel-module-si2165-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty_6.12.34+git0+f6cd0b6d75-r0_arm64.deb
+Size: 7264
+SHA256: 31d3693e3d897865e021aa3879e770fbc94825cb48e6c8b49ad20d558564a0e2
+SHA1: 7105798394b8d5e3a2cd043ab839f813a3a8e853
+MD5sum: 79e50aeb8a484c0b86c04f97c240d875
+Description: si2165 kernel module
+ si2165 kernel module; Silicon Labs Si2165 DVB-C/-T Demodulator driver
+Maintainer: Poky Maintainers <poky@lists.yoctoproject.org>
+Architecture: arm64
+OE: linux-renesas
+PackageArch: sparrow-hawk
+Homepage: https://www.yoctoproject.org/
+Depends: kernel-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Provides: kernel-module-si2165
+
+Package: kernel-module-si2168-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Version: 6.12.34+git0+f6cd0b6d75-r0
+Priority: 0
+Section: kernel
+Filename: pool/sparrow-hawk/k/kernel-module-si2168-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty/kernel-module-si2168-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty_6.12.34+git0+f6cd0b6d75-r0_arm64.deb
+Size: 6084
+SHA256: 58cbbf850182f4dbcf1e9d7e897605228bc36febb227977231e9dab608703c64
+SHA1: 1d1c6bf89293cc249d5fc78371bcf3920936b1a0
+MD5sum: d381499f61407f96d5d21ccbb844c577
+Description: si2168 kernel module
+ si2168 kernel module; Silicon Labs Si2168 DVB-T/T2/C demodulator driver
+Maintainer: Poky Maintainers <poky@lists.yoctoproject.org>
+Architecture: arm64
+OE: linux-renesas
+PackageArch: sparrow-hawk
+Homepage: https://www.yoctoproject.org/
+Depends: kernel-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Provides: kernel-module-si2168
+
+Package: kernel-module-si21xx-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Version: 6.12.34+git0+f6cd0b6d75-r0
+Priority: 0
+Section: kernel
+Filename: pool/sparrow-hawk/k/kernel-module-si21xx-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty/kernel-module-si21xx-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty_6.12.34+git0+f6cd0b6d75-r0_arm64.deb
+Size: 6588
+SHA256: 490cd7401db4ecb3e3a68cbe8455ab56124172ed220cc664b415ee08857bcb05
+SHA1: ece0e388f52b7ea7f8c0e543a931c24b491e1e86
+MD5sum: c40b258b135b793b3ae5cc2a8f6a8471
+Description: si21xx kernel module
+ si21xx kernel module; SL SI21XX DVB Demodulator driver
+Maintainer: Poky Maintainers <poky@lists.yoctoproject.org>
+Architecture: arm64
+OE: linux-renesas
+PackageArch: sparrow-hawk
+Homepage: https://www.yoctoproject.org/
+Depends: kernel-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Provides: kernel-module-si21xx
+
+Package: kernel-module-sp2-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Version: 6.12.34+git0+f6cd0b6d75-r0
+Priority: 0
+Section: kernel
+Filename: pool/sparrow-hawk/k/kernel-module-sp2-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty/kernel-module-sp2-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty_6.12.34+git0+f6cd0b6d75-r0_arm64.deb
+Size: 3964
+SHA256: dc43dceaccfdcb00838b78ad1d7462e6c6438d33c2e71e79ed6e999e2c71c0a2
+SHA1: fc42868b347c09d83ee5ca40cc25120d6beef1aa
+MD5sum: 20d0dd0f17ca1ba228c8739f55821964
+Description: sp2 kernel module
+ sp2 kernel module; CIMaX SP2/HF CI driver
+Maintainer: Poky Maintainers <poky@lists.yoctoproject.org>
+Architecture: arm64
+OE: linux-renesas
+PackageArch: sparrow-hawk
+Homepage: https://www.yoctoproject.org/
+Depends: kernel-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Provides: kernel-module-sp2
+
+Package: kernel-module-sp887x-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Version: 6.12.34+git0+f6cd0b6d75-r0
+Priority: 0
+Section: kernel
+Filename: pool/sparrow-hawk/k/kernel-module-sp887x-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty/kernel-module-sp887x-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty_6.12.34+git0+f6cd0b6d75-r0_arm64.deb
+Size: 5316
+SHA256: 1e6eddb5b3a01046779901b36a672ac0688cb93096dcd9fad73269d38174dbb0
+SHA1: 8b2401204eb337ca7139ac5794bd90e4900a9206
+MD5sum: e00b01868b4deb0d932ef747639bbbf9
+Description: sp887x kernel module
+ sp887x kernel module; Spase sp887x DVB-T demodulator driver
+Maintainer: Poky Maintainers <poky@lists.yoctoproject.org>
+Architecture: arm64
+OE: linux-renesas
+PackageArch: sparrow-hawk
+Homepage: https://www.yoctoproject.org/
+Depends: kernel-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Provides: kernel-module-sp887x
+
+Package: kernel-module-stb0899-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Version: 6.12.34+git0+f6cd0b6d75-r0
+Priority: 0
+Section: kernel
+Filename: pool/sparrow-hawk/k/kernel-module-stb0899-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty/kernel-module-stb0899-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty_6.12.34+git0+f6cd0b6d75-r0_arm64.deb
+Size: 16452
+SHA256: b122aa2ff6de4d9fb9d908d13e6f2ca2d60eb62adbc9423ac07f85a4609db3cc
+SHA1: 94d95d3bfc9db1c7a3d3a4da6c4f0ef77ea6d70b
+MD5sum: 71170dd95527cf40f150ea286a0daa46
+Description: stb0899 kernel module
+ stb0899 kernel module; STB0899 Multi-Std frontend
+Maintainer: Poky Maintainers <poky@lists.yoctoproject.org>
+Architecture: arm64
+OE: linux-renesas
+PackageArch: sparrow-hawk
+Homepage: https://www.yoctoproject.org/
+Depends: kernel-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Provides: kernel-module-stb0899
+
+Package: kernel-module-stb6000-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Version: 6.12.34+git0+f6cd0b6d75-r0
+Priority: 0
+Section: kernel
+Filename: pool/sparrow-hawk/k/kernel-module-stb6000-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty/kernel-module-stb6000-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty_6.12.34+git0+f6cd0b6d75-r0_arm64.deb
+Size: 3628
+SHA256: 8b0093116bb24c40718bc275f5390810a5b8791c2aaa23c4b0d82bbe6d2c9f27
+SHA1: b435a901d3358748edf647a9b7cb18647236a381
+MD5sum: f2bb68b4d765594e3e5745ad8bc23c42
+Description: stb6000 kernel module
+ stb6000 kernel module; DVB STB6000 driver
+Maintainer: Poky Maintainers <poky@lists.yoctoproject.org>
+Architecture: arm64
+OE: linux-renesas
+PackageArch: sparrow-hawk
+Homepage: https://www.yoctoproject.org/
+Depends: kernel-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Provides: kernel-module-stb6000
+
+Package: kernel-module-stb6100-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Version: 6.12.34+git0+f6cd0b6d75-r0
+Priority: 0
+Section: kernel
+Filename: pool/sparrow-hawk/k/kernel-module-stb6100-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty/kernel-module-stb6100-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty_6.12.34+git0+f6cd0b6d75-r0_arm64.deb
+Size: 5236
+SHA256: 1fbfd6403a3a31b05cbbe9fdeb6d58db7144e663bec237d9a07bd285bf8d409e
+SHA1: 8af26451441fb47a2664e52d2de04f5c1be8a446
+MD5sum: 9e5ad2fb94b81f2fdcba9ca2dcc38ae8
+Description: stb6100 kernel module
+ stb6100 kernel module; STB6100 Silicon tuner
+Maintainer: Poky Maintainers <poky@lists.yoctoproject.org>
+Architecture: arm64
+OE: linux-renesas
+PackageArch: sparrow-hawk
+Homepage: https://www.yoctoproject.org/
+Depends: kernel-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Provides: kernel-module-stb6100
+
+Package: kernel-module-stv0288-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Version: 6.12.34+git0+f6cd0b6d75-r0
+Priority: 0
+Section: kernel
+Filename: pool/sparrow-hawk/k/kernel-module-stv0288-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty/kernel-module-stv0288-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty_6.12.34+git0+f6cd0b6d75-r0_arm64.deb
+Size: 5624
+SHA256: 33bd3be3436d6002bb3897d5cdc0b76ee844de5ceb5b8783894d603cd953a52a
+SHA1: 327426893ceebd760e68e79c9874fab064d058cc
+MD5sum: 69cbb95511fbe5beb32986785ef8d2cd
+Description: stv0288 kernel module
+ stv0288 kernel module; ST STV0288 DVB Demodulator driver
+Maintainer: Poky Maintainers <poky@lists.yoctoproject.org>
+Architecture: arm64
+OE: linux-renesas
+PackageArch: sparrow-hawk
+Homepage: https://www.yoctoproject.org/
+Depends: kernel-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Provides: kernel-module-stv0288
+
+Package: kernel-module-stv0297-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Version: 6.12.34+git0+f6cd0b6d75-r0
+Priority: 0
+Section: kernel
+Filename: pool/sparrow-hawk/k/kernel-module-stv0297-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty/kernel-module-stv0297-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty_6.12.34+git0+f6cd0b6d75-r0_arm64.deb
+Size: 5080
+SHA256: c6dbb6f0dfd50fd9ea912e046bdcace85593373555a4e92438d032a34155a21e
+SHA1: d710a023a1b7b78eeecfccfaa39727166752aea2
+MD5sum: c4110871f611c6fe12826f09a5a400f7
+Description: stv0297 kernel module
+ stv0297 kernel module; ST STV0297 DVB-C Demodulator driver
+Maintainer: Poky Maintainers <poky@lists.yoctoproject.org>
+Architecture: arm64
+OE: linux-renesas
+PackageArch: sparrow-hawk
+Homepage: https://www.yoctoproject.org/
+Depends: kernel-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Provides: kernel-module-stv0297
+
+Package: kernel-module-stv0299-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Version: 6.12.34+git0+f6cd0b6d75-r0
+Priority: 0
+Section: kernel
+Filename: pool/sparrow-hawk/k/kernel-module-stv0299-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty/kernel-module-stv0299-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty_6.12.34+git0+f6cd0b6d75-r0_arm64.deb
+Size: 6920
+SHA256: 9776a7a6869e18151c560eb03ec6c7b8d586d981a26d53e0831d6db818fb727b
+SHA1: e5d0637df76b3d4f9f0d19b2cc47734053f694ef
+MD5sum: f18af8bf3ce03422c313f8aa86bed50e
+Description: stv0299 kernel module
+ stv0299 kernel module; ST STV0299 DVB Demodulator driver
+Maintainer: Poky Maintainers <poky@lists.yoctoproject.org>
+Architecture: arm64
+OE: linux-renesas
+PackageArch: sparrow-hawk
+Homepage: https://www.yoctoproject.org/
+Depends: kernel-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Provides: kernel-module-stv0299
+
+Package: kernel-module-stv0367-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Version: 6.12.34+git0+f6cd0b6d75-r0
+Priority: 0
+Section: kernel
+Filename: pool/sparrow-hawk/k/kernel-module-stv0367-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty/kernel-module-stv0367-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty_6.12.34+git0+f6cd0b6d75-r0_arm64.deb
+Size: 17064
+SHA256: 486608eed8673321f9f4c1bbcbe2dbc623beac2ae0b12763da329bf2b777b851
+SHA1: 8f5b4c585538a212283dfc884f2e9a558418e46c
+MD5sum: 29dec4868ca4d1d116b80fee5bb77543
+Description: stv0367 kernel module
+ stv0367 kernel module; ST STV0367 DVB-C/T demodulator driver
+Maintainer: Poky Maintainers <poky@lists.yoctoproject.org>
+Architecture: arm64
+OE: linux-renesas
+PackageArch: sparrow-hawk
+Homepage: https://www.yoctoproject.org/
+Depends: kernel-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Provides: kernel-module-stv0367
+
+Package: kernel-module-stv0900-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Version: 6.12.34+git0+f6cd0b6d75-r0
+Priority: 0
+Section: kernel
+Filename: pool/sparrow-hawk/k/kernel-module-stv0900-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty/kernel-module-stv0900-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty_6.12.34+git0+f6cd0b6d75-r0_arm64.deb
+Size: 23072
+SHA256: 6a6cd520c72dafb217e2a5f8a4c1a75cf8ea3c8e2432d49082c37cdd0bd2181b
+SHA1: e5b2cba59d15c5515f43a1b40393153fa823974b
+MD5sum: 268cdab2772cf29599eeb413192f472a
+Description: stv0900 kernel module
+ stv0900 kernel module; ST STV0900 frontend
+Maintainer: Poky Maintainers <poky@lists.yoctoproject.org>
+Architecture: arm64
+OE: linux-renesas
+PackageArch: sparrow-hawk
+Homepage: https://www.yoctoproject.org/
+Depends: kernel-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Provides: kernel-module-stv0900
+
+Package: kernel-module-stv090x-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Version: 6.12.34+git0+f6cd0b6d75-r0
+Priority: 0
+Section: kernel
+Filename: pool/sparrow-hawk/k/kernel-module-stv090x-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty/kernel-module-stv090x-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty_6.12.34+git0+f6cd0b6d75-r0_arm64.deb
+Size: 25080
+SHA256: 897adb249f88474137b2810c3abb2b6a2a9b559a78ae632c6514f6524acb20ad
+SHA1: 989b5d3f9ddfe26df66e1623cd0c79bfa7349f27
+MD5sum: 07377725a53aaf994fe3b4aa55d17630
+Description: stv090x kernel module
+ stv090x kernel module; STV090x Multi-Std Broadcast frontend
+Maintainer: Poky Maintainers <poky@lists.yoctoproject.org>
+Architecture: arm64
+OE: linux-renesas
+PackageArch: sparrow-hawk
+Homepage: https://www.yoctoproject.org/
+Depends: kernel-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Provides: kernel-module-stv090x
+
+Package: kernel-module-stv0910-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Version: 6.12.34+git0+f6cd0b6d75-r0
+Priority: 0
+Section: kernel
+Filename: pool/sparrow-hawk/k/kernel-module-stv0910-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty/kernel-module-stv0910-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty_6.12.34+git0+f6cd0b6d75-r0_arm64.deb
+Size: 9136
+SHA256: 9884ea19b47afae77c889c2ed6ee661c4303475461571d9f8fc33eecb8c03317
+SHA1: bfb3e405411fb6b60244d45d65228205639c4dbe
+MD5sum: 34cd92f9aaa5e2829681786cfe7e1b31
+Description: stv0910 kernel module
+ stv0910 kernel module; ST STV0910 multistandard frontend driver
+Maintainer: Poky Maintainers <poky@lists.yoctoproject.org>
+Architecture: arm64
+OE: linux-renesas
+PackageArch: sparrow-hawk
+Homepage: https://www.yoctoproject.org/
+Depends: kernel-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Provides: kernel-module-stv0910
+
+Package: kernel-module-stv6110-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Version: 6.12.34+git0+f6cd0b6d75-r0
+Priority: 0
+Section: kernel
+Filename: pool/sparrow-hawk/k/kernel-module-stv6110-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty/kernel-module-stv6110-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty_6.12.34+git0+f6cd0b6d75-r0_arm64.deb
+Size: 4504
+SHA256: 50d97251c40b282942a55d6edc09ba0d16aa98959977cf3075989009cf4a6826
+SHA1: 3dc8cde8a420f95ad0beb2fa018b9458ad4210c1
+MD5sum: e91b6dac18adb0f1e8c29a81710bcf75
+Description: stv6110 kernel module
+ stv6110 kernel module; ST STV6110 driver
+Maintainer: Poky Maintainers <poky@lists.yoctoproject.org>
+Architecture: arm64
+OE: linux-renesas
+PackageArch: sparrow-hawk
+Homepage: https://www.yoctoproject.org/
+Depends: kernel-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Provides: kernel-module-stv6110
+
+Package: kernel-module-stv6110x-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Version: 6.12.34+git0+f6cd0b6d75-r0
+Priority: 0
+Section: kernel
+Filename: pool/sparrow-hawk/k/kernel-module-stv6110x-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty/kernel-module-stv6110x-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty_6.12.34+git0+f6cd0b6d75-r0_arm64.deb
+Size: 5304
+SHA256: 95e6986ea5b52d82dbdd5f7541ab5bc880314ddb9c37215abd62c263c68b289e
+SHA1: 820dc9056d991b34002602068d97f4239f509647
+MD5sum: 45ad9249baf623b073e990c5f27f5d74
+Description: stv6110x kernel module
+ stv6110x kernel module; STV6110x Silicon tuner
+Maintainer: Poky Maintainers <poky@lists.yoctoproject.org>
+Architecture: arm64
+OE: linux-renesas
+PackageArch: sparrow-hawk
+Homepage: https://www.yoctoproject.org/
+Depends: kernel-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Provides: kernel-module-stv6110x
+
+Package: kernel-module-stv6111-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Version: 6.12.34+git0+f6cd0b6d75-r0
+Priority: 0
+Section: kernel
+Filename: pool/sparrow-hawk/k/kernel-module-stv6111-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty/kernel-module-stv6111-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty_6.12.34+git0+f6cd0b6d75-r0_arm64.deb
+Size: 4968
+SHA256: 18c3985ba6729d17949f5de5a8b23cc825faef67c3c162f153420d32cada37a4
+SHA1: 3c559d43f8d405999ae1c32b984bc13cabf316af
+MD5sum: bf8c6988893305633aaa46508f9c605e
+Description: stv6111 kernel module
+ stv6111 kernel module; ST STV6111 satellite tuner driver
+Maintainer: Poky Maintainers <poky@lists.yoctoproject.org>
+Architecture: arm64
+OE: linux-renesas
+PackageArch: sparrow-hawk
+Homepage: https://www.yoctoproject.org/
+Depends: kernel-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Provides: kernel-module-stv6111
+
+Package: kernel-module-tc90522-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Version: 6.12.34+git0+f6cd0b6d75-r0
+Priority: 0
+Section: kernel
+Filename: pool/sparrow-hawk/k/kernel-module-tc90522-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty/kernel-module-tc90522-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty_6.12.34+git0+f6cd0b6d75-r0_arm64.deb
+Size: 6508
+SHA256: 4488f74c5906f6c709a4e3fd718032b73ab7515e07418a786dc209b145bcfc31
+SHA1: a6490f5e6a0646037348d8a045ca93284873f1ea
+MD5sum: 68f9f3a2dedc8ec7abaf5e6664f520da
+Description: tc90522 kernel module
+ tc90522 kernel module; Toshiba TC90522 frontend
+Maintainer: Poky Maintainers <poky@lists.yoctoproject.org>
+Architecture: arm64
+OE: linux-renesas
+PackageArch: sparrow-hawk
+Homepage: https://www.yoctoproject.org/
+Depends: kernel-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Provides: kernel-module-tc90522
+
+Package: kernel-module-tda10021-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Version: 6.12.34+git0+f6cd0b6d75-r0
+Priority: 0
+Section: kernel
+Filename: pool/sparrow-hawk/k/kernel-module-tda10021-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty/kernel-module-tda10021-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty_6.12.34+git0+f6cd0b6d75-r0_arm64.deb
+Size: 4860
+SHA256: 0d8e222c62f9e8ac55ed1e7b40792be442941ae5230ae9aa0c099dc5196e33b5
+SHA1: 540f23411e4e6cb47555d9ce02316d0bd0bf1e6b
+MD5sum: 07c1c00e366a468d142e41afd47ac7f3
+Description: tda10021 kernel module
+ tda10021 kernel module; Philips TDA10021 DVB-C demodulator driver
+Maintainer: Poky Maintainers <poky@lists.yoctoproject.org>
+Architecture: arm64
+OE: linux-renesas
+PackageArch: sparrow-hawk
+Homepage: https://www.yoctoproject.org/
+Depends: kernel-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Provides: kernel-module-tda10021
+
+Package: kernel-module-tda10023-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Version: 6.12.34+git0+f6cd0b6d75-r0
+Priority: 0
+Section: kernel
+Filename: pool/sparrow-hawk/k/kernel-module-tda10023-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty/kernel-module-tda10023-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty_6.12.34+git0+f6cd0b6d75-r0_arm64.deb
+Size: 4832
+SHA256: 65945ef6a200fcbf30189c37a8fcaf5feeb2ad7ca6e84345a7ed675ede68a281
+SHA1: 6d4484b8de93dd47505c2dae2e8e38839d2ad3f3
+MD5sum: bb04a1ab2023a794f13b41f94b3fc1c2
+Description: tda10023 kernel module
+ tda10023 kernel module; Philips TDA10023 DVB-C demodulator driver
+Maintainer: Poky Maintainers <poky@lists.yoctoproject.org>
+Architecture: arm64
+OE: linux-renesas
+PackageArch: sparrow-hawk
+Homepage: https://www.yoctoproject.org/
+Depends: kernel-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Provides: kernel-module-tda10023
+
+Package: kernel-module-tda10048-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Version: 6.12.34+git0+f6cd0b6d75-r0
+Priority: 0
+Section: kernel
+Filename: pool/sparrow-hawk/k/kernel-module-tda10048-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty/kernel-module-tda10048-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty_6.12.34+git0+f6cd0b6d75-r0_arm64.deb
+Size: 7072
+SHA256: 3fd7c0dfe2d4ca0238ac1e3ec60eb7ac7719800e5b18072c25297ad6868404c9
+SHA1: cc5b52db9029eed6c75f3effa12082d41780528e
+MD5sum: acb1f99768012b601c87d4498f88e898
+Description: tda10048 kernel module
+ tda10048 kernel module; NXP TDA10048HN DVB-T Demodulator driver
+Maintainer: Poky Maintainers <poky@lists.yoctoproject.org>
+Architecture: arm64
+OE: linux-renesas
+PackageArch: sparrow-hawk
+Homepage: https://www.yoctoproject.org/
+Depends: kernel-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Provides: kernel-module-tda10048
+
+Package: kernel-module-tda1004x-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Version: 6.12.34+git0+f6cd0b6d75-r0
+Priority: 0
+Section: kernel
+Filename: pool/sparrow-hawk/k/kernel-module-tda1004x-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty/kernel-module-tda1004x-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty_6.12.34+git0+f6cd0b6d75-r0_arm64.deb
+Size: 8492
+SHA256: edb1a8aee3d948a1f8d3e8647bb049adab15382b628717e7df13f25208a0e7f6
+SHA1: a0475ecca2053ebe101b9b83e9c5c7afca1c1b16
+MD5sum: e41e21efd4bca4fdd7edebde4174b4fa
+Description: tda1004x kernel module
+ tda1004x kernel module; Philips TDA10045H & TDA10046H DVB-T Demodulator
+Maintainer: Poky Maintainers <poky@lists.yoctoproject.org>
+Architecture: arm64
+OE: linux-renesas
+PackageArch: sparrow-hawk
+Homepage: https://www.yoctoproject.org/
+Depends: kernel-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Provides: kernel-module-tda1004x
+
+Package: kernel-module-tda10071-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Version: 6.12.34+git0+f6cd0b6d75-r0
+Priority: 0
+Section: kernel
+Filename: pool/sparrow-hawk/k/kernel-module-tda10071-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty/kernel-module-tda10071-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty_6.12.34+git0+f6cd0b6d75-r0_arm64.deb
+Size: 7084
+SHA256: 2431e15a04741b949984b80b2677c1b55c431ea183b39b21a736476960127c7d
+SHA1: 8686eedfb19ac32951ea08f38ccad6c611b4b54e
+MD5sum: 80c1e300d4483f4ceb486910a2c1a170
+Description: tda10071 kernel module
+ tda10071 kernel module; NXP TDA10071 DVB-S/S2 demodulator driver
+Maintainer: Poky Maintainers <poky@lists.yoctoproject.org>
+Architecture: arm64
+OE: linux-renesas
+PackageArch: sparrow-hawk
+Homepage: https://www.yoctoproject.org/
+Depends: kernel-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Provides: kernel-module-tda10071
+
+Package: kernel-module-tda10086-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Version: 6.12.34+git0+f6cd0b6d75-r0
+Priority: 0
+Section: kernel
+Filename: pool/sparrow-hawk/k/kernel-module-tda10086-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty/kernel-module-tda10086-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty_6.12.34+git0+f6cd0b6d75-r0_arm64.deb
+Size: 5864
+SHA256: f825bfbafeecdc9e522b18bff13c816feff54b9143a953b1739630c8ce8c137d
+SHA1: e7a5fa25757ce7ef2250f396bc3f5548a083c23a
+MD5sum: f65cc7db420ff457f4b16b955c3ca516
+Description: tda10086 kernel module
+ tda10086 kernel module; Philips TDA10086 DVB-S Demodulator
+Maintainer: Poky Maintainers <poky@lists.yoctoproject.org>
+Architecture: arm64
+OE: linux-renesas
+PackageArch: sparrow-hawk
+Homepage: https://www.yoctoproject.org/
+Depends: kernel-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Provides: kernel-module-tda10086
+
+Package: kernel-module-tda18271c2dd-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Version: 6.12.34+git0+f6cd0b6d75-r0
+Priority: 0
+Section: kernel
+Filename: pool/sparrow-hawk/k/kernel-module-tda18271c2dd-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty/kernel-module-tda18271c2dd-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty_6.12.34+git0+f6cd0b6d75-r0_arm64.deb
+Size: 10964
+SHA256: 373ff2627d15bd9a3047f6f49ef2e502d9790ae40710271dec21d9f7f88ec624
+SHA1: 32d4792f90d03b0c85d1c99d551a30d06077b7e1
+MD5sum: 0e3a5d337dff07d7d23e2dd8e76049f0
+Description: tda18271c2dd kernel module
+ tda18271c2dd kernel module; TDA18271C2 driver
+Maintainer: Poky Maintainers <poky@lists.yoctoproject.org>
+Architecture: arm64
+OE: linux-renesas
+PackageArch: sparrow-hawk
+Homepage: https://www.yoctoproject.org/
+Depends: kernel-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Provides: kernel-module-tda18271c2dd
+
+Package: kernel-module-tda665x-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Version: 6.12.34+git0+f6cd0b6d75-r0
+Priority: 0
+Section: kernel
+Filename: pool/sparrow-hawk/k/kernel-module-tda665x-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty/kernel-module-tda665x-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty_6.12.34+git0+f6cd0b6d75-r0_arm64.deb
+Size: 3324
+SHA256: 8a3c1bc781dd8cecfcb56acf167d69dece2701ee6059ff257004ba2ef43b456a
+SHA1: 4b576b08d982c8118370bd7e3e1c7fcca2f97285
+MD5sum: f818aa7d5ac4e80472516b67af7c0ce1
+Description: tda665x kernel module
+ tda665x kernel module; TDA665x driver
+Maintainer: Poky Maintainers <poky@lists.yoctoproject.org>
+Architecture: arm64
+OE: linux-renesas
+PackageArch: sparrow-hawk
+Homepage: https://www.yoctoproject.org/
+Depends: kernel-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Provides: kernel-module-tda665x
+
+Package: kernel-module-tda8083-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Version: 6.12.34+git0+f6cd0b6d75-r0
+Priority: 0
+Section: kernel
+Filename: pool/sparrow-hawk/k/kernel-module-tda8083-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty/kernel-module-tda8083-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty_6.12.34+git0+f6cd0b6d75-r0_arm64.deb
+Size: 4828
+SHA256: b41b6d58c530d0bb606c22f0afd4d682e50402ad3d92588ca5fc397be497f307
+SHA1: 1fe74538a60950635b62f8ec3b0a8f535d6ea4ba
+MD5sum: 09cd019343348f60f19981a03244d36e
+Description: tda8083 kernel module
+ tda8083 kernel module; Philips TDA8083 DVB-S Demodulator
+Maintainer: Poky Maintainers <poky@lists.yoctoproject.org>
+Architecture: arm64
+OE: linux-renesas
+PackageArch: sparrow-hawk
+Homepage: https://www.yoctoproject.org/
+Depends: kernel-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Provides: kernel-module-tda8083
+
+Package: kernel-module-tda8261-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Version: 6.12.34+git0+f6cd0b6d75-r0
+Priority: 0
+Section: kernel
+Filename: pool/sparrow-hawk/k/kernel-module-tda8261-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty/kernel-module-tda8261-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty_6.12.34+git0+f6cd0b6d75-r0_arm64.deb
+Size: 3292
+SHA256: 1727b3a58a7927c8a01ccc2ec496d79bda69e6fe98830360c4e1fc60c8bf70bb
+SHA1: ba4422d4147f17e2cab08151c3f95453e8cf2883
+MD5sum: 0220e598c817567e7ba069012e930b41
+Description: tda8261 kernel module
+ tda8261 kernel module; TDA8261 8PSK/QPSK Tuner
+Maintainer: Poky Maintainers <poky@lists.yoctoproject.org>
+Architecture: arm64
+OE: linux-renesas
+PackageArch: sparrow-hawk
+Homepage: https://www.yoctoproject.org/
+Depends: kernel-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Provides: kernel-module-tda8261
+
+Package: kernel-module-tda826x-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Version: 6.12.34+git0+f6cd0b6d75-r0
+Priority: 0
+Section: kernel
+Filename: pool/sparrow-hawk/k/kernel-module-tda826x-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty/kernel-module-tda826x-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty_6.12.34+git0+f6cd0b6d75-r0_arm64.deb
+Size: 3404
+SHA256: 86581ba5d3a92707b19e626b9ba14faf13ea05dc46a5acaf27af82d6860fc03f
+SHA1: 5835c6f69781ba931ecebd68c9f992b411808118
+MD5sum: 1f52c3feb4918ee3a812628f55491e22
+Description: tda826x kernel module
+ tda826x kernel module; DVB TDA826x driver
+Maintainer: Poky Maintainers <poky@lists.yoctoproject.org>
+Architecture: arm64
+OE: linux-renesas
+PackageArch: sparrow-hawk
+Homepage: https://www.yoctoproject.org/
+Depends: kernel-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Provides: kernel-module-tda826x
+
+Package: kernel-module-ts2020-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Version: 6.12.34+git0+f6cd0b6d75-r0
+Priority: 0
+Section: kernel
+Filename: pool/sparrow-hawk/k/kernel-module-ts2020-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty/kernel-module-ts2020-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty_6.12.34+git0+f6cd0b6d75-r0_arm64.deb
+Size: 5812
+SHA256: e38f268e0307c13c4bc17c93191895757a4e677f29a0d31bf3cafd654533ad62
+SHA1: 98f18f64d6266fae8a502475ce76cfbe8f717661
+MD5sum: b5fb3c86ffd626cdf35c0dbf3038bbaa
+Description: ts2020 kernel module
+ ts2020 kernel module; Montage Technology TS2020 - Silicon tuner driver
+ module
+Maintainer: Poky Maintainers <poky@lists.yoctoproject.org>
+Architecture: arm64
+OE: linux-renesas
+PackageArch: sparrow-hawk
+Homepage: https://www.yoctoproject.org/
+Depends: kernel-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Provides: kernel-module-ts2020
+
+Package: kernel-module-tua6100-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Version: 6.12.34+git0+f6cd0b6d75-r0
+Priority: 0
+Section: kernel
+Filename: pool/sparrow-hawk/k/kernel-module-tua6100-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty/kernel-module-tua6100-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty_6.12.34+git0+f6cd0b6d75-r0_arm64.deb
+Size: 3108
+SHA256: e78d9e3b479354352ea1093b2dffb57f585e237b4bf99a05551f4a33832881b3
+SHA1: 8dc9b47c9ffcac687d96abab7074607b426adcdd
+MD5sum: 0d3e21b05109d90b1c02513786941ed1
+Description: tua6100 kernel module
+ tua6100 kernel module; DVB tua6100 driver
+Maintainer: Poky Maintainers <poky@lists.yoctoproject.org>
+Architecture: arm64
+OE: linux-renesas
+PackageArch: sparrow-hawk
+Homepage: https://www.yoctoproject.org/
+Depends: kernel-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Provides: kernel-module-tua6100
+
+Package: kernel-module-ves1820-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Version: 6.12.34+git0+f6cd0b6d75-r0
+Priority: 0
+Section: kernel
+Filename: pool/sparrow-hawk/k/kernel-module-ves1820-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty/kernel-module-ves1820-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty_6.12.34+git0+f6cd0b6d75-r0_arm64.deb
+Size: 4628
+SHA256: 48df4a74f97745b4e0d19be20dfcfb5afacc3087eda9889ae5c1a1010f49e797
+SHA1: 90e1c01ca5bb1423dce15ac34f3f1287fdd1222e
+MD5sum: 544288326cbc39f85686c8b6a690addf
+Description: ves1820 kernel module
+ ves1820 kernel module; VLSI VES1820 DVB-C Demodulator driver
+Maintainer: Poky Maintainers <poky@lists.yoctoproject.org>
+Architecture: arm64
+OE: linux-renesas
+PackageArch: sparrow-hawk
+Homepage: https://www.yoctoproject.org/
+Depends: kernel-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Provides: kernel-module-ves1820
+
+Package: kernel-module-ves1x93-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Version: 6.12.34+git0+f6cd0b6d75-r0
+Priority: 0
+Section: kernel
+Filename: pool/sparrow-hawk/k/kernel-module-ves1x93-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty/kernel-module-ves1x93-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty_6.12.34+git0+f6cd0b6d75-r0_arm64.deb
+Size: 4824
+SHA256: ad2064b385ea61aa1b80e88e2c2b72638e4ad7f68feae45ccf55caf282cde5f0
+SHA1: cf2366bce40e8d728978fe1716465deaaf3eaef7
+MD5sum: 931313379f7039a04ccc4f55c890891e
+Description: ves1x93 kernel module
+ ves1x93 kernel module; VLSI VES1x93 DVB-S Demodulator driver
+Maintainer: Poky Maintainers <poky@lists.yoctoproject.org>
+Architecture: arm64
+OE: linux-renesas
+PackageArch: sparrow-hawk
+Homepage: https://www.yoctoproject.org/
+Depends: kernel-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Provides: kernel-module-ves1x93
+
+Package: kernel-module-xen-gntalloc-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Version: 6.12.34+git0+f6cd0b6d75-r0
+Priority: 0
+Section: kernel
+Filename: pool/sparrow-hawk/k/kernel-module-xen-gntalloc-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty/kernel-module-xen-gntalloc-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty_6.12.34+git0+f6cd0b6d75-r0_arm64.deb
+Size: 5200
+SHA256: 6d0f95392c24b0eee08f36affc33e70e4a75902679c616c09af0b19e9a2d0f7b
+SHA1: 74918f1694d2c96c93ba21193da283609c3a3f72
+MD5sum: 33df35a31abda156efd0ec8aa045c691
 Description: xen-gntalloc kernel module
  xen-gntalloc kernel module; User-space grant reference allocator driver
 Maintainer: Poky Maintainers <poky@lists.yoctoproject.org>
@@ -231,18 +2363,18 @@ Architecture: arm64
 OE: linux-renesas
 PackageArch: sparrow-hawk
 Homepage: https://www.yoctoproject.org/
-Depends: kernel-6.12.34-yocto-standard-g742b50859847-dirty
+Depends: kernel-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
 Provides: kernel-module-xen-gntalloc
 
-Package: kernel-module-xen-gntdev-6.12.34-yocto-standard-g742b50859847-dirty
-Version: 6.12.34+git0+742b508598-r0
+Package: kernel-module-xen-gntdev-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Version: 6.12.34+git0+f6cd0b6d75-r0
 Priority: 0
 Section: kernel
-Filename: pool/sparrow-hawk/k/kernel-module-xen-gntdev-6.12.34-yocto-standard-g742b50859847-dirty/kernel-module-xen-gntdev-6.12.34-yocto-standard-g742b50859847-dirty_6.12.34+git0+742b508598-r0_arm64.deb
-Size: 8536
-SHA256: 66af65198a554c20f206ae7e42a7fe9ccacfc5ce7d2893556b9febde49623516
-SHA1: 0389a3398a749445e1dcb0ce85f046c8620eef34
-MD5sum: 35dc57df4d5f6a6e64b604a4fe739f34
+Filename: pool/sparrow-hawk/k/kernel-module-xen-gntdev-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty/kernel-module-xen-gntdev-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty_6.12.34+git0+f6cd0b6d75-r0_arm64.deb
+Size: 8524
+SHA256: 1ece5aae47d7e4af44b5b9588e0d2714e584c4c92efccdab8b4757b6dc842c42
+SHA1: 95cee83ed7ca73044645f1c2a01481e3e8980903
+MD5sum: e384815f55e3d5fe414d583203fa17b1
 Description: xen-gntdev kernel module
  xen-gntdev kernel module; User-space granted page access driver
 Maintainer: Poky Maintainers <poky@lists.yoctoproject.org>
@@ -250,18 +2382,94 @@ Architecture: arm64
 OE: linux-renesas
 PackageArch: sparrow-hawk
 Homepage: https://www.yoctoproject.org/
-Depends: kernel-6.12.34-yocto-standard-g742b50859847-dirty
+Depends: kernel-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
 Provides: kernel-module-xen-gntdev
 
-Package: kernel-modules
-Version: 6.12.34+git0+742b508598-r0
+Package: kernel-module-zd1301-demod-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Version: 6.12.34+git0+f6cd0b6d75-r0
 Priority: 0
 Section: kernel
-Filename: pool/sparrow-hawk/k/kernel-modules/kernel-modules_6.12.34+git0+742b508598-r0_arm64.deb
-Size: 852
-SHA256: 34bbe4ed20037417649ed26650d2fb3dadf5265952f804b99aa7f82b2addeafd
-SHA1: 31f7962ae97bc456972f9766f6609d595cf3d90c
-MD5sum: ac1edf177a53479887704d105fb923d7
+Filename: pool/sparrow-hawk/k/kernel-module-zd1301-demod-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty/kernel-module-zd1301-demod-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty_6.12.34+git0+f6cd0b6d75-r0_arm64.deb
+Size: 4220
+SHA256: 9bf3e7e302d9e2947b9b4767e7a31f9900b0c283fcb33b285aa494ea87efb143
+SHA1: 6f36c6b3a4b7bd13efcabcbed772a87ee03f8bce
+MD5sum: f40e1e884dc63d704783e0de9214a117
+Description: zd1301-demod kernel module
+ zd1301-demod kernel module; ZyDAS ZD1301 demodulator driver
+Maintainer: Poky Maintainers <poky@lists.yoctoproject.org>
+Architecture: arm64
+OE: linux-renesas
+PackageArch: sparrow-hawk
+Homepage: https://www.yoctoproject.org/
+Depends: kernel-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Provides: kernel-module-zd1301-demod
+
+Package: kernel-module-zl10036-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Version: 6.12.34+git0+f6cd0b6d75-r0
+Priority: 0
+Section: kernel
+Filename: pool/sparrow-hawk/k/kernel-module-zl10036-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty/kernel-module-zl10036-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty_6.12.34+git0+f6cd0b6d75-r0_arm64.deb
+Size: 4656
+SHA256: 0bffe4ed1e5e0c860606041243995d816848294ea3e8704ee52fdd506d0e194c
+SHA1: cb3f66586075cb439f0500e899d01361c62bc0df
+MD5sum: 3e651c7f148a512e0b8b065e4b5b7cfd
+Description: zl10036 kernel module
+ zl10036 kernel module; DVB ZL10036 driver
+Maintainer: Poky Maintainers <poky@lists.yoctoproject.org>
+Architecture: arm64
+OE: linux-renesas
+PackageArch: sparrow-hawk
+Homepage: https://www.yoctoproject.org/
+Depends: kernel-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Provides: kernel-module-zl10036
+
+Package: kernel-module-zl10039-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Version: 6.12.34+git0+f6cd0b6d75-r0
+Priority: 0
+Section: kernel
+Filename: pool/sparrow-hawk/k/kernel-module-zl10039-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty/kernel-module-zl10039-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty_6.12.34+git0+f6cd0b6d75-r0_arm64.deb
+Size: 3980
+SHA256: e1478ce28d29a3c29e4d51df7d702bfb4d1eb1c0475d4fb5da16e46311019760
+SHA1: ee332069c41ace97cef28cfb9213268f7d568002
+MD5sum: 5a99f8627153b65c99b1535cf9fba1da
+Description: zl10039 kernel module
+ zl10039 kernel module; Zarlink ZL10039 DVB-S tuner driver
+Maintainer: Poky Maintainers <poky@lists.yoctoproject.org>
+Architecture: arm64
+OE: linux-renesas
+PackageArch: sparrow-hawk
+Homepage: https://www.yoctoproject.org/
+Depends: kernel-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Provides: kernel-module-zl10039
+
+Package: kernel-module-zl10353-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Version: 6.12.34+git0+f6cd0b6d75-r0
+Priority: 0
+Section: kernel
+Filename: pool/sparrow-hawk/k/kernel-module-zl10353-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty/kernel-module-zl10353-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty_6.12.34+git0+f6cd0b6d75-r0_arm64.deb
+Size: 5568
+SHA256: a526daec1ae8efcea47c005485002dfccff134064458ddaecccd61ed3146c08b
+SHA1: 346f32a307a7d1678eb73dfc7997c183bfda7e4a
+MD5sum: 05f79da5f181c46da7fb3a5b7c3f1bd0
+Description: zl10353 kernel module
+ zl10353 kernel module; Zarlink ZL10353 DVB-T demodulator driver
+Maintainer: Poky Maintainers <poky@lists.yoctoproject.org>
+Architecture: arm64
+OE: linux-renesas
+PackageArch: sparrow-hawk
+Homepage: https://www.yoctoproject.org/
+Depends: kernel-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
+Provides: kernel-module-zl10353
+
+Package: kernel-modules
+Version: 6.12.34+git0+f6cd0b6d75-r0
+Priority: 0
+Section: kernel
+Filename: pool/sparrow-hawk/k/kernel-modules/kernel-modules_6.12.34+git0+f6cd0b6d75-r0_arm64.deb
+Size: 1348
+SHA256: 8783e3a9443f89c74a1d093b2d620adc3cb1b2a7d0f1965706d8caa2fa4a05a8
+SHA1: 54174cc268f03f2c7a88877bad41368ac7649d31
+MD5sum: 9b44dbc297980e51cc051c24ca5c84e7
 Description: Linux kernel
  Kernel modules meta package
 Maintainer: Poky Maintainers <poky@lists.yoctoproject.org>
@@ -269,17 +2477,17 @@ Architecture: arm64
 OE: linux-renesas
 PackageArch: sparrow-hawk
 Homepage: https://www.yoctoproject.org/
-Depends: kernel-module-efivarfs-6.12.34-yocto-standard-g742b50859847-dirty, kernel-module-pcie-rcar-gen4-6.12.34-yocto-standard-g742b50859847-dirty, kernel-module-xen-gntalloc-6.12.34-yocto-standard-g742b50859847-dirty, kernel-module-xen-gntdev-6.12.34-yocto-standard-g742b50859847-dirty
+Depends: kernel-module-a8293-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty, kernel-module-af9013-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty, kernel-module-af9033-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty, kernel-module-ascot2e-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty, kernel-module-atbm8830-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty, kernel-module-au8522-common-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty, kernel-module-au8522-decoder-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty, kernel-module-au8522-dig-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty, kernel-module-bcm3510-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty, kernel-module-cx22700-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty, kernel-module-cx22702-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty, kernel-module-cx24110-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty, kernel-module-cx24113-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty, kernel-module-cx24116-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty, kernel-module-cx24117-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty, kernel-module-cx24120-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty, kernel-module-cx24123-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty, kernel-module-cxd2099-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty, kernel-module-cxd2820r-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty, kernel-module-cxd2841er-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty, kernel-module-cxd2880-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty, kernel-module-cxd2880-spi-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty, kernel-module-dib0070-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty, kernel-module-dib0090-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty, kernel-module-dib3000mb-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty, kernel-module-dib3000mc-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty, kernel-module-dib7000m-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty, kernel-module-dib7000p-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty, kernel-module-dib8000-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty, kernel-module-dib9000-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty, kernel-module-dibx000-common-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty, kernel-module-drx39xyj-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty, kernel-module-drxd-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty, kernel-module-drxk-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty, kernel-module-ds3000-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty, kernel-module-dvb-pll-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty, kernel-module-ec100-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty, kernel-module-efivarfs-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty, kernel-module-helene-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty, kernel-module-horus3a-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty, kernel-module-isl6405-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty, kernel-module-isl6421-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty, kernel-module-isl6423-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty, kernel-module-itd1000-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty, kernel-module-ix2505v-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty, kernel-module-l64781-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty, kernel-module-lg2160-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty, kernel-module-lgdt3305-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty, kernel-module-lgdt3306a-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty, kernel-module-lgdt330x-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty, kernel-module-lgs8gl5-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty, kernel-module-lgs8gxx-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty, kernel-module-lnbh25-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty, kernel-module-lnbh29-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty, kernel-module-lnbp21-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty, kernel-module-lnbp22-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty, kernel-module-m88ds3103-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty, kernel-module-m88rs2000-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty, kernel-module-mb86a16-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty, kernel-module-mb86a20s-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty, kernel-module-mn88443x-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty, kernel-module-mn88472-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty, kernel-module-mn88473-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty, kernel-module-mt312-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty, kernel-module-mt352-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty, kernel-module-mxl5xx-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty, kernel-module-mxl692-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty, kernel-module-nxt200x-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty, kernel-module-nxt6000-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty, kernel-module-or51132-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty, kernel-module-or51211-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty, kernel-module-pcie-rcar-gen4-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty, kernel-module-rtl2830-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty, kernel-module-rtl2832-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty, kernel-module-rtl2832-sdr-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty, kernel-module-s5h1409-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty, kernel-module-s5h1411-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty, kernel-module-s5h1420-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty, kernel-module-s5h1432-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty, kernel-module-s921-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty, kernel-module-si2165-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty, kernel-module-si2168-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty, kernel-module-si21xx-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty, kernel-module-sp2-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty, kernel-module-sp887x-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty, kernel-module-stb0899-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty, kernel-module-stb6000-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty, kernel-module-stb6100-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty, kernel-module-stv0288-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty, kernel-module-stv0297-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty, kernel-module-stv0299-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty, kernel-module-stv0367-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty, kernel-module-stv0900-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty, kernel-module-stv090x-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty, kernel-module-stv0910-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty, kernel-module-stv6110-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty, kernel-module-stv6110x-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty, kernel-module-stv6111-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty, kernel-module-tc90522-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty, kernel-module-tda10021-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty, kernel-module-tda10023-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty, kernel-module-tda10048-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty, kernel-module-tda1004x-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty, kernel-module-tda10071-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty, kernel-module-tda10086-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty, kernel-module-tda18271c2dd-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty, kernel-module-tda665x-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty, kernel-module-tda8083-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty, kernel-module-tda8261-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty, kernel-module-tda826x-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty, kernel-module-ts2020-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty, kernel-module-tua6100-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty, kernel-module-ves1820-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty, kernel-module-ves1x93-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty, kernel-module-xen-gntalloc-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty, kernel-module-xen-gntdev-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty, kernel-module-zd1301-demod-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty, kernel-module-zl10036-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty, kernel-module-zl10039-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty, kernel-module-zl10353-6.12.34-yocto-standard-gf6cd0b6d75a3-dirty
 
 Package: kernel-vmlinux
-Version: 6.12.34+git0+742b508598-r0
+Version: 6.12.34+git0+f6cd0b6d75-r0
 Priority: 0
 Section: kernel
-Filename: pool/sparrow-hawk/k/kernel-vmlinux/kernel-vmlinux_6.12.34+git0+742b508598-r0_arm64.deb
-Size: 6724036
-SHA256: d6fb88997bcbf2e871f1430ad869d6f947243aa14e11626f128bbf940e472d03
-SHA1: 6e637c0880137a9cb3e7ceb670f246ee7a589907
-MD5sum: 7cbf1e103b8b17a90eda948a442a68af
+Filename: pool/sparrow-hawk/k/kernel-vmlinux/kernel-vmlinux_6.12.34+git0+f6cd0b6d75-r0_arm64.deb
+Size: 6832548
+SHA256: b3aff2628706de7dac31bd3af32d6ace21fe04259ff38dba0c5ce2f337148570
+SHA1: 53c9aa091877528a1c74efd832175b7167c51fa3
+MD5sum: 05a33daa44af65ba795b079a5453d889
 Description: Linux kernel
  Linux kernel for the R-Car board
 Maintainer: Poky Maintainers <poky@lists.yoctoproject.org>
@@ -293,10 +2501,10 @@ Version: 1.0-r0
 Priority: 0
 Section: base
 Filename: pool/sparrow-hawk/l/linux-fitimage/linux-fitimage_1.0-r0_arm64.deb
-Size: 20324968
-SHA256: 0220b86dde758e988b22bfc76d1b78fc79e666e82d66bc3fd654ae3dd788126b
-SHA1: 09da51be08b0306e6c650bf03cd067fc5b4f3ca2
-MD5sum: 459671d897c8a682788bd47b476e2412
+Size: 6852944
+SHA256: 8b479cabeb69ad074aede8d83fcadb7a2a1490220cf0d6fa260d821d5b331152
+SHA1: e75dbc6c19b78c4c51d75996b76b35711302abba
+MD5sum: 68c8415c3c71001eb73bfe57766dcafc
 Description: linux-fitimage version 1.0-r0
  Custom FIT image with BL31, DTB, and Kernel
 Maintainer: Poky Maintainers <poky@lists.yoctoproject.org>
@@ -309,10 +2517,10 @@ Version: 1.0-r0
 Priority: 0
 Section: devel
 Filename: pool/sparrow-hawk/l/linux-fitimage-dbg/linux-fitimage-dbg_1.0-r0_arm64.deb
-Size: 828
-SHA256: d56ec7daf26c522c8c500bd51e70dd292a70786c8361e863c64c8f57ac0293df
-SHA1: be8a07478207f01d0eb1021efbf7589b095304ed
-MD5sum: 93c5b7c3441b75636eb00ed65ec2bbeb
+Size: 824
+SHA256: 2b361ed8679912415d2bd8623d5add391eb3fed804f68876f50061bc097ee7b8
+SHA1: 675f9b9474772557d44a68ce467a7f83cd2304bd
+MD5sum: cc87d6e937fb79e9be8afeb568e9c9d1
 Description: linux-fitimage version 1.0-r0 - Debugging files
  Custom FIT image with BL31, DTB, and Kernel  This package contains ELF
  symbols and related sources for debugging purposes.
@@ -327,9 +2535,9 @@ Priority: 0
 Section: devel
 Filename: pool/sparrow-hawk/l/linux-fitimage-dev/linux-fitimage-dev_1.0-r0_arm64.deb
 Size: 884
-SHA256: ad0ad823925458ba2c7f6b805ed0b044a351a2407c06d6a30ff69ce08f842239
-SHA1: a09de4401d8003240f0845e9458256b036594198
-MD5sum: 7e0925ab708216356bb1f9bad0af0495
+SHA256: 382940cc13a7e5c9ca54bab6c56f09f9b3cfc34bd3246259c665bd02d1a9850f
+SHA1: 1eb607b5e840f17310bf8b46f826c7165a0d496d
+MD5sum: 8172e014cf0a7fd1b32bd068c74a0cc7
 Description: linux-fitimage version 1.0-r0 - Development files
  Custom FIT image with BL31, DTB, and Kernel  This package contains
  symbolic links, header files, and related items necessary for software
