@@ -62,13 +62,12 @@ jobs:
           unzip -qo kernel_deb_package.zip
           rm -rf kernel_deb_package/systemd-* # HACK
           echo "$GPG_PASSPHRASE" | \
-            reprepro --gnupghome ~/.gnupg --ask-passphrase --no-tty \
-              --pinentry-mode loopback --passphrase-fd 0 \
-              -b repo --component main includedeb bookworm kernel_deb_package/*.deb
+            reprepro -b repo --component main includedeb bookworm kernel_deb_package/*.deb
           echo "$GPG_PUBLIC_KEY" > repo/kernel-repo.asc
         env:
           GPG_TTY: $(tty)
           GPG_PUBLIC_KEY: ${{ secrets.GPG_PUBLIC_KEY }}
+          REPREPRO_GPG_OPTS: "--no-tty --pinentry-mode loopback --passphrase-fd 0"
 
       - name: Commit and Push branch
         run: |
