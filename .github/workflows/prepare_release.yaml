@@ -59,6 +59,11 @@ jobs:
         run: |
           gpg --list-secret-keys
 
+      - name: Check GPG_PASSPHRASE length
+        run: echo ${#GPG_PASSPHRASE}
+        env:
+          GPG_PASSPHRASE: ${{ secrets.GPG_PASSPHRASE }}
+
       - name: Pre-cache GPG unlock
         run: |
           echo "$GPG_PASSPHRASE" | gpg --batch --yes --passphrase-fd 0 --pinentry-mode loopback --sign --output /dev/null <<< "test"
