@@ -64,9 +64,10 @@ jobs:
 
       - name: Pre-cache GPG unlock
         run: |
-          echo -n "$GPG_PASSPHRASE" | gpg --batch --yes --passphrase-fd 0 --pinentry-mode loopback --sign --output /dev/null <<< "test"
+          echo -n "$GPG_PASSPHRASE" | gpg --batch --yes --passphrase-fd 0 --pinentry-mode loopback --sign --default-key "${GPG_KEYID}" --output /dev/null <<< "test"
         env:
           GPG_PASSPHRASE: ${{ secrets.GPG_PASSPHRASE }}
+          GPG_KEYID: ${{ secrets.GPG_KEYID }}
 
       - name: Generate APT repo
         run: |
