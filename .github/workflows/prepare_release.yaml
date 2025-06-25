@@ -53,7 +53,6 @@ jobs:
       - name: Set up GPG
         run: |
           echo "allow-loopback-pinentry" >> ~/.gnupg/gpg-agent.conf
-          echo "use-agent" >> ~/.gnupg/gpg.conf
           echo REPREPRO_GPG_OPTS=\"--no-tty --pinentry-mode loopback --passphrase-fd 0\" >> $GITHUB_ENV
           gpgconf --kill gpg-agent
 
