@@ -16,7 +16,7 @@ DESKTOP_PKG=""
 
 REPO_BRANCH=bookworm
 EXTRA_APT_REPO="\
-deb [arch=arm64 trusted=yes signed-by=/etc/apt/trusted.gpg.d/kernel-repo.asc] https://raw.githubusercontent.com/yhamamachi/apt-repo-test/${REPO_BRANCH} bookworm sparrow-hawk \
+deb [arch=arm64 trusted=yes signed-by=/etc/apt/trusted.gpg.d/kernel-repo.asc] https://raw.githubusercontent.com/yhamamachi/apt-repo-test/${REPO_BRANCH} bookworm main \
 "
 GPG_KEY_URL=https://github.com/yhamamachi/apt-repo-test/raw/refs/heads/${BRANCH}/gpg
 
