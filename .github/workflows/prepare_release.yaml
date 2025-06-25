@@ -58,6 +58,7 @@ jobs:
       - name: Check GPG keys
         run: |
           gpg --list-secret-keys
+          gpg --batch --with-colons --list-secret-keys
 
       - name: Check GPG_PASSPHRASE length
         run: echo ${#GPG_PASSPHRASE}
