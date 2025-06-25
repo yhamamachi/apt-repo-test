@@ -93,12 +93,13 @@ jobs:
           **Note:**
           There is no support/help to get the firmware.
           Please do it at your own risk.
-          EOS
 
           ### Source/License
 
           kernel: Please check "kernel_deb_package.zip"
           others: Please check deb-src by using apt. Debian default packages are used in this image.
+
+          EOS
 
       - name: Create or update 'dev-latest' release
         uses: softprops/action-gh-release@v2
