@@ -44,26 +44,23 @@ jobs:
           git config --global user.name "ations-user"
           git config --global user.email "action@github.com"
 
+      - name: Import GPG key
+        uses: crazy-max/ghaction-import-gpg@v6
+        with:
+          gpg_private_key: ${{ secrets.GPG_PRIVATE_KEY }}
+          passphrase: ${{ secrets.PASSPHRASE }}
+
       - name: Set up GPG
         run: |
-          echo "$GPG_PRIVATE_KEY" | gpg --batch --import
           echo "allow-loopback-pinentry" >> ~/.gnupg/gpg-agent.conf
           echo "use-agent" >> ~/.gnupg/gpg.conf
           echo REPREPRO_GPG_OPTS=\"--no-tty --pinentry-mode loopback --passphrase-fd 0\" >> $GITHUB_ENV
           gpgconf --kill gpg-agent
-          gpgconf --launch gpg-agent
-        env:
-          GPG_PRIVATE_KEY: ${{ secrets.GPG_PRIVATE_KEY }}
 
       - name: Check GPG keys
         run: |
           gpg --list-secret-keys
           gpg --batch --with-colons --list-secret-keys
-
-      - name: Check GPG_PASSPHRASE length
-        run: echo ${#GPG_PASSPHRASE}
-        env:
-          GPG_PASSPHRASE: ${{ secrets.GPG_PASSPHRASE }}
 
       - name: Pre-cache GPG unlock
         run: |
