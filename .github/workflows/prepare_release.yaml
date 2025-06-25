@@ -56,6 +56,12 @@ jobs:
           echo REPREPRO_GPG_OPTS=\"--no-tty --pinentry-mode loopback --passphrase-fd 0\" >> $GITHUB_ENV
           gpgconf --kill gpg-agent
 
+    - name: Set GPG passphrase for signing
+      run: |
+        echo "${{ secrets.GPG_PASSPHRASE }}" > ~/.gnupg/passphrase
+        chmod 600 ~/.gnupg/passphrase
+      shell: bash
+
       - name: Check GPG keys
         run: |
           gpg --list-secret-keys
