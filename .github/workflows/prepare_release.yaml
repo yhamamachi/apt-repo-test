@@ -106,7 +106,7 @@ jobs:
         with:
           tag_name: dev-latest
           name: Development Latest
-          draft: false
+          draft: true
           prerelease: true
           files: |
             ./kernel_deb_package.zip
