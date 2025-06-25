@@ -8,7 +8,7 @@ on:
 
 jobs:
   Build:
-    name: Build
+    name: Prepare Release apt repository and debian based os image
     runs-on: ubuntu-22.04
     steps:
       - name: Maximize build space
@@ -63,7 +63,7 @@ jobs:
           rm -rf kernel_deb_package/systemd-* # HACK
           reprepro -b repo --component main includedeb bookwarm kernel_deb_package/*.deb
           echo "$GPG_PUBLIC_KEY" > repo/kernel-repo.asc
-       env:
+        env:
           GPG_TTY: $(tty)
           GPG_PUBLIC_KEY: ${{ secrets.GPG_PUBLIC_KEY }}
 
