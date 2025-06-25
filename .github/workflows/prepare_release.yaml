@@ -61,8 +61,7 @@ jobs:
           wget -q https://github.com/rcar-community/meta-sparrow-hawk/releases/download/dev-latest/kernel_deb_package.zip
           unzip -qo kernel_deb_package.zip
           rm -rf kernel_deb_package/systemd-* # HACK
-          REPREPRO_GPG_OPTS="--no-tty --pinentry-mode loopback --passphrase-fd 0" \
-            reprepro -b repo --component main includedeb bookworm kernel_deb_package/*.deb
+          echo "$GPG_PASSPHRASE" | reprepro -b repo --component main includedeb bookworm kernel_deb_package/*.deb
           echo "$GPG_PUBLIC_KEY" > repo/kernel-repo.asc
         env:
           GPG_TTY: $(tty)
