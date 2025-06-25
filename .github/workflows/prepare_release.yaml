@@ -38,7 +38,6 @@ jobs:
           sudo apt autoremove -y
           sudo apt clean -y
           sudo apt autoclean -y
-          pip3 install websockets
 
       - name: Setup github config
         run: |
