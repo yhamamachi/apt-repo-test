@@ -32,7 +32,7 @@ jobs:
       - name: Setup package
         run: |
           sudo apt update
-          sudo apt install -y reprepro
+          sudo apt install -y reprepro gnupg pinentry-curses
 
           # Clean up apt
           sudo apt autoremove -y
