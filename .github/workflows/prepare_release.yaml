@@ -11,23 +11,6 @@ jobs:
     name: Prepare Release apt repository and debian based os image
     runs-on: ubuntu-24.04
     steps:
-      #- name: Maximize build space
-      #  uses: easimon/maximize-build-space@v7
-      #  with:
-      #    root-reserve-mb: 4096
-      #    swap-size-mb: 1024
-      #    remove-dotnet: 'true'
-      #    remove-android: 'true'
-      #    remove-haskell: 'true'
-      #    remove-codeql: 'true'
-      #    remove-docker-images: 'true'
-
-      #- name: Check disk and memory
-      #  run: |
-      #    ls -lh
-      #    df -h
-      #    free -h
-
       - uses: actions/checkout@v3
       - name: Setup package
         run: |
@@ -50,13 +33,7 @@ jobs:
           gpg_private_key: ${{ secrets.GPG_PRIVATE_KEY }}
           passphrase: ${{ secrets.PASSPHRASE }}
 
-      - name: Set up GPG
-        run: |
-          echo "allow-loopback-pinentry" >> ~/.gnupg/gpg-agent.conf
-          echo REPREPRO_GPG_OPTS=\"--no-tty --pinentry-mode loopback --passphrase-fd 0\" >> $GITHUB_ENV
-          gpgconf --kill gpg-agent
-
-      - name: Decode GPG passphrase and test signing
+      - name: Setup GPG
         run: |
           echo "$GPG_PASSPHRASE_B64" | base64 -d > passphrase.txt
           chmod 600 passphrase.txt
@@ -69,24 +46,6 @@ jobs:
         env:
           GPG_PASSPHRASE_B64: ${{ secrets.GPG_PASSPHRASE_B64 }}
           GPG_KEYID: ${{ secrets.GPG_KEYID }}
-
-
-      - name: Check GPG keys
-        run: |
-          gpg --list-secret-keys
-          gpg --batch --with-colons --list-secret-keys
-          gpg --version
-
-      - name: Pre-cache GPG unlock
-        run: |
-          echo "$GPG_PASSPHRASE_B64"
-          echo ${{ secrets.GPG_PASSPHRASE_B64 }}
-          echo -n "${{ secrets.GPG_PASSPHRASE_B64 }}" | base64 -d | gpg --batch --yes --passphrase-fd 0 --pinentry-mode loopback --sign --default-key "${GPG_KEYID}" --output /dev/null <<< "test"
-        env:
-          GPG_PASSPHRASE: ${{ secrets.GPG_PASSPHRASE }}
-          GPG_PASSPHRASE_B64: ${{ secrets.GPG_PASSPHRASE_B64 }}
-          GPG_KEYID: ${{ secrets.GPG_KEYID }}
-          GPG_TTY: /dev/tty
 
       - name: Generate APT repo
         run: |
@@ -108,7 +67,7 @@ jobs:
           BRANCH=bookworm
           cd repo
           git init
-          git remote add origin https://github.com/${{ github.repository }}
+          git remote add origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
           git checkout -b $BRANCH
           git add .
           git commit -m "Update APT repo"
