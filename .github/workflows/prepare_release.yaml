@@ -50,6 +50,7 @@ jobs:
           echo "allow-loopback-pinentry" >> ~/.gnupg/gpg-agent.conf
           echo "use-agent" >> ~/.gnupg/gpg.conf
           echo REPREPRO_GPG_OPTS=\"--no-tty --pinentry-mode loopback --passphrase-fd 0\" >> $GITHUB_ENV
+          gpgconf --reload gpg-agent
         env:
           GPG_PRIVATE_KEY: ${{ secrets.GPG_PRIVATE_KEY }}
 
@@ -60,7 +61,8 @@ jobs:
           wget -q https://github.com/rcar-community/meta-sparrow-hawk/releases/download/dev-latest/kernel_deb_package.zip
           unzip -qo kernel_deb_package.zip
           rm -rf kernel_deb_package/systemd-* # HACK
-          reprepro -b repo --component main includedeb bookworm kernel_deb_package/*.deb
+          REPREPRO_GPG_OPTS="--no-tty --pinentry-mode loopback --passphrase-fd 0" \
+            reprepro -b repo --component main includedeb bookworm kernel_deb_package/*.deb
           echo "$GPG_PUBLIC_KEY" > repo/kernel-repo.asc
         env:
           GPG_TTY: $(tty)
