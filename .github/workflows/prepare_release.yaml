@@ -64,6 +64,7 @@ jobs:
 
       - name: Pre-cache GPG unlock
         run: |
+          echo "$GPG_PASSPHRASE_B64"
           echo -n "$GPG_PASSPHRASE_B64" | base64 -d | gpg --batch --yes --passphrase-fd 0 --pinentry-mode loopback --sign --default-key "${GPG_KEYID}" --output /dev/null <<< "test"
         env:
           GPG_PASSPHRASE: ${{ secrets.GPG_PASSPHRASE }}
