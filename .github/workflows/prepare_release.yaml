@@ -67,7 +67,7 @@ jobs:
         env:
           GPG_TTY: $(tty)
           GPG_PUBLIC_KEY: ${{ secrets.GPG_PUBLIC_KEY }}
-          REPREPRO_GPG_OPTS: "--no-tty --pinentry-mode loopback --passphrase-fd 0"
+          GPG_PASSPHRASE: ${{ secrets.GPG_PASSPHRASE }}
 
       - name: Commit and Push branch
         run: |
