@@ -76,7 +76,7 @@ jobs:
 
       - name: Build debian image
         run: |
-          chmod -x ./build_image/*.sh
+          chmod +x ./build_image/*.sh
           ./build_image/build_with_docker_sparrow-hawk.sh
 
       - name: Generate release message
