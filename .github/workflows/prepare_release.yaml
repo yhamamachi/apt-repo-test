@@ -9,7 +9,7 @@ on:
 jobs:
   Build:
     name: Prepare Release apt repository and debian based os image
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-24.04
     steps:
       #- name: Maximize build space
       #  uses: easimon/maximize-build-space@v7
