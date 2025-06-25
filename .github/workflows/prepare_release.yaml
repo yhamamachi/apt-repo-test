@@ -57,7 +57,7 @@ jobs:
         run: |
           mkdir -p repo/conf
           cp conf/* -t repo/conf/
-          wget https://github.com/rcar-community/meta-sparrow-hawk/releases/download/dev-latest/kernel_deb_package.zip
+          wget -q https://github.com/rcar-community/meta-sparrow-hawk/releases/download/dev-latest/kernel_deb_package.zip
           unzip -qo kernel_deb_package.zip
           rm -rf kernel_deb_package/systemd-* # HACK
           reprepro -b repo --component main includedeb bookwarm kernel_deb_package/*.deb
