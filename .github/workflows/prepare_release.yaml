@@ -56,6 +56,21 @@ jobs:
           echo REPREPRO_GPG_OPTS=\"--no-tty --pinentry-mode loopback --passphrase-fd 0\" >> $GITHUB_ENV
           gpgconf --kill gpg-agent
 
+      - name: Decode GPG passphrase and test signing
+        run: |
+          echo "$GPG_PASSPHRASE_B64" | base64 -d > passphrase.txt
+          chmod 600 passphrase.txt
+
+          mkdir -p ~/.gnupg
+          echo "allow-loopback-pinentry" >> ~/.gnupg/gpg-agent.conf
+          gpgconf --kill gpg-agent
+
+          gpg --batch --yes --passphrase-file ./passphrase.txt --pinentry-mode loopback --default-key "${GPG_KEYID}" --sign --output /dev/null <<< "test"
+        env:
+          GPG_PASSPHRASE_B64: ${{ secrets.GPG_PASSPHRASE_B64 }}
+          GPG_KEYID: ${{ secrets.GPG_KEYID }}
+
+
       - name: Check GPG keys
         run: |
           gpg --list-secret-keys
