@@ -88,6 +88,7 @@ mmdebstrap --variant=$VARIANT --arch=$ARCH \
     --customize-hook="chroot ${CHROOT_DIR} systemctl enable systemd-networkd" \
     --customize-hook="chroot ${CHROOT_DIR} systemctl enable systemd-resolved" \
     --customize-hook="chroot ${CHROOT_DIR} ln -s /run/systemd/resolve/resolv.conf /etc/resolv.conf" \
+    || true
 
 echo "Make flashable image from rootfs"
 USED_SIZE=$(du --max-depth=1 ${CHROOT_DIR} | tail -1 | awk '{print int($1/1000)}')
