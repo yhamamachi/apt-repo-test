@@ -50,7 +50,8 @@ jobs:
           echo "allow-loopback-pinentry" >> ~/.gnupg/gpg-agent.conf
           echo "use-agent" >> ~/.gnupg/gpg.conf
           echo REPREPRO_GPG_OPTS=\"--no-tty --pinentry-mode loopback --passphrase-fd 0\" >> $GITHUB_ENV
-          gpgconf --reload gpg-agent
+          gpgconf --kill gpg-agent
+          gpgconf --launch gpg-agent
         env:
           GPG_PRIVATE_KEY: ${{ secrets.GPG_PRIVATE_KEY }}
 
