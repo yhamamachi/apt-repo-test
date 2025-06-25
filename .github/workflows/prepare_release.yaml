@@ -55,6 +55,10 @@ jobs:
         env:
           GPG_PRIVATE_KEY: ${{ secrets.GPG_PRIVATE_KEY }}
 
+      - name: Check GPG keys
+        run: |
+          gpg --list-secret-keys
+
       - name: Pre-cache GPG unlock
         run: |
           echo "$GPG_PASSPHRASE" | gpg --batch --yes --passphrase-fd 0 --pinentry-mode loopback --sign --output /dev/null <<< "test"
