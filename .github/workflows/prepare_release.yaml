@@ -110,7 +110,7 @@ jobs:
           prerelease: true
           files: |
             ./kernel_deb_package.zip
-            ./build_image/sparrow-hawk-debian-based-dist.img.gz
+            ./build_image/*.img.gz
           body_path: ${{ github.workspace }}-release_msg.txt
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
