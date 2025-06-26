@@ -122,6 +122,7 @@ jobs:
         uses: softprops/action-gh-release@v2
         with:
           tag_name: dev-latest
+          target_commitish: wf-test
           name: Development Latest
           draft: false
           prerelease: true
