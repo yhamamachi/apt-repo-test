@@ -57,6 +57,7 @@ jobs:
           echo "$GPG_PASSPHRASE" | \
             reprepro -b repo --component main includedeb bookworm kernel_deb_package/*.deb
           echo "$GPG_PUBLIC_KEY" > repo/kernel-repo.asc
+          zip -r repo.zip repo
         env:
           GPG_TTY: $(tty)
           GPG_PUBLIC_KEY: ${{ secrets.GPG_PUBLIC_KEY }}
@@ -129,6 +130,7 @@ jobs:
           files: |
             ./kernel_deb_package.zip
             ./build_image/*.img.gz
+            ./repo.zip
           body_path: ${{ github.workspace }}-release_msg.txt
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
