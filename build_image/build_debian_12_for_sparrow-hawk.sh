@@ -4,7 +4,7 @@
 # Configuable parameter         #
 #################################
 DEVICE=sparrow-hawk # Currently, it doesn't support to change device.
-IMAGE_NAME=${DEVICE}-debian-based-dist.img
+IMAGE_NAME=${DEVICE}-debian-based-bsp.img
 HOSTNAME=${DEVICE}
 USERNAME=rcar # Default password is same as USERNAME
 EXTRA_IMAGE_SIZE=1000 # MiB
