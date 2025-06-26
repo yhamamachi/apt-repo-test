@@ -1,0 +1,21 @@
+Origin: Debian
+Label: Debian
+Suite: stable
+Codename: bookworm
+Version: 12
+Date: Thu, 26 Jun 2025 07:30:53 UTC
+Architectures: arm64
+Components: main
+Description: Kernel package apt repostiroy for sparrow-hawk
+MD5Sum:
+ 26951b33d11b5d9071007dfb24a66faf 13471 main/binary-arm64/Packages
+ ddb2d649253055637959011df0269962 2966 main/binary-arm64/Packages.gz
+ 0d8fd8392ac0d6aaa79f10f61d5514f4 153 main/binary-arm64/Release
+SHA1:
+ b1af646acb123c03fdab2d06c05fa8d58d02bd24 13471 main/binary-arm64/Packages
+ dc688b967c4c718036ff266b09ffbcbd101a0692 2966 main/binary-arm64/Packages.gz
+ 1c5a32e8578478f654f5dc9410b4a8522fd7308a 153 main/binary-arm64/Release
+SHA256:
+ a0ec5a55afba9ef44fa3444142141235875156e5d927a3358832a6de317e08b4 13471 main/binary-arm64/Packages
+ 1f0efad73560fa2019df2e3343510c16b38882d568f4e8dc300778c904e0f328 2966 main/binary-arm64/Packages.gz
+ a998cf488fa047db9ce5823d0b7372881d272ab3bf5cfa905994b91b50cb938c 153 main/binary-arm64/Release

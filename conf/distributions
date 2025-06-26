@@ -1,0 +1,11 @@
+Origin: Debian
+Label: Debian
+Suite: stable
+Codename: bookworm
+Version: 12
+Architectures: arm64
+Components: main
+Description: Kernel package apt repostiroy for sparrow-hawk
+#Update: debian non-US security
+SignWith: yes
+

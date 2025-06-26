@@ -1,0 +1,7 @@
+Archive: stable
+Version: 12
+Component: main
+Origin: Debian
+Label: Debian
+Architecture: arm64
+Description: Kernel package apt repostiroy for sparrow-hawk
