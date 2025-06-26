@@ -18,7 +18,7 @@ REPO_BRANCH=bookworm
 EXTRA_APT_REPO="\
 deb [arch=arm64 trusted=yes signed-by=/etc/apt/trusted.gpg.d/kernel-repo.asc] https://raw.githubusercontent.com/yhamamachi/apt-repo-test/${REPO_BRANCH} bookworm main \
 "
-GPG_KEY_URL=https://github.com/yhamamachi/apt-repo-test/raw/refs/heads/${REPO_BRANCH}/gpg
+GPG_KEY_URL=https://github.com/yhamamachi/apt-repo-test/raw/refs/heads/${REPO_BRANCH}/kernel-repo.asc
 
 CODENAME=bookworm
 DEBIAN_VER=12 # どちらかからもう片方を取得する仕組みのほうが良いか？
