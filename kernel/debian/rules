@@ -1,0 +1,28 @@
+#!/usr/bin/make -f
+
+# Prevent passing build option
+export DEB_BUILD_MAINT_OPTIONS = hardening=-all optimize=-lto
+export ARCH=arm64
+export CROSS_COMPILE=aarch64-linux-gnu-
+
+DEB_VERSION_UPSTREAM := $(shell dpkg-parsechangelog -SVersion | cut -d- -f1)
+CORENUM := $(shell nproc)
+
+%:
+	dh $@
+
+override_dh_auto_clean:
+	$(MAKE) clean
+
+
+override_dh_auto_configure:
+	cat debian/sparrow_hawk.cfg >> arch/arm64/configs/renesas_defconfig
+	$(MAKE) renesas_defconfig
+	
+override_dh_auto_build:
+	$(MAKE) ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- -j$(CORENUM) Image dtbs modules
+
+override_dh_auto_install:
+	$(MAKE) INSTALL_PATH=$(CURDIR)/debian/tmp install
+	$(MAKE) INSTALL_MOD_PATH=$(CURDIR)/debian/modules modules_install
+
