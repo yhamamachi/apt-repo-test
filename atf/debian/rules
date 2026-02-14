@@ -4,6 +4,7 @@
 export DEB_BUILD_MAINT_OPTIONS = hardening=-all optimize=-lto
 
 DEB_VERSION_UPSTREAM := $(shell dpkg-parsechangelog -SVersion | cut -d- -f1)
+CORENUM := $(shell nproc)
 
 %:
 	dh $@
@@ -14,7 +15,7 @@ override_dh_auto_build:
 	unset LDFLAGS
 	unset AS
 	unset LD
-	$(MAKE) CROSS_COMPILE=aarch64-linux-gnu- -j$(nproc) \
+	$(MAKE) CROSS_COMPILE=aarch64-linux-gnu- -j$(CORENUM) \
 		PLAT=rcar_gen4 \
 		DEBUG=0 \
 		bl31 rcar_srecord SPD=none MBEDTLS_COMMON_MK=1 \
