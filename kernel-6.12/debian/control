@@ -12,6 +12,6 @@ Package: sparrow-hawk-kernel-6.12
 Architecture: all
 Depends: ${misc:Depends},
 Provides: sparrow-hawk-kernel
-Conflicts: sparrow-hawk-kernel
-Replaces: sparrow-hawk-kernel
+Conflicts: sparrow-hawk-kernel-6.18
+Replaces: sparrow-hawk-kernel-6.18
 Description: Linux kernel 6.12 for Sparrow Hawk
