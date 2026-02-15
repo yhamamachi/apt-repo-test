@@ -11,4 +11,5 @@ Homepage: https://github.com/ARM-software/arm-trusted-firmware
 Package: sparrow-hawk-kernel-6.12
 Architecture: all
 Depends: ${misc:Depends},
+Conflicts: sparrow-hawk-kernel-6.18
 Description: Linux kernel 6.12 for Sparrow Hawk
