@@ -12,6 +12,6 @@ Package: sparrow-hawk-bsp
 Architecture: all
 Depends: ${misc:Depends},
     sparrow-hawk-arm-trusted-firmware,
-    sparrow-hawk-kernel-6.12 | sparrow-hawk-kernel-6.18,
-    sparrow-hawk-mkfit
+    sparrow-hawk-kernel,
+    sparrow-hawk-mkfit,
 Description: Meta package for Sparrow Hawk
