@@ -12,7 +12,7 @@ Package: sparrow-hawk-mkfit
 Architecture: all
 Depends: ${misc:Depends},
     initramfs-tools, busybox-static, binutils, u-boot-tools, device-tree-compiler,
-    sparrow-hawk-kernel-6.12,
+    sparrow-hawk-kernel,
     sparrow-hawk-arm-trusted-firmware,
     sparrow-hawk-pcie-fw,
 Description: Postinst script for generating fitImage automatically
