@@ -14,7 +14,8 @@ mkdir -p $INITRAMFS_DIR/lib/modules/
 cp -a /lib/modules/${KERNEL_VERSION} -t $INITRAMFS_DIR/lib/modules/
 cp -a /usr/lib/sparrow-hawk/init -t $INITRAMFS_DIR/
 mkdir -p $INITRAMFS_DIR/lib/firmware
-cp -a /usr/lib/firmware/* -t $INITRAMFS_DIR/lib/firmware
+cp -a /usr/lib/firmware/rcar_gen4_pcie.bin -t $INITRAMFS_DIR/lib/firmware
+cp -a /usr/lib/firmware/LICENCE.r8a779g_pcie_phy -t $INITRAMFS_DIR/lib/firmware
 
 # tree $INITRAMFS_DIR/
 
