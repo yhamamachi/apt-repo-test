@@ -1,5 +1,6 @@
 #!/bin/bash
 
+SCRIPT_DIR=$(cd `dirname $` && pwd)
 RAW_VERSION=${1:-6.18.6-2026-01-20}
 VERSION=$(echo $RAW_VERSION | cut -d'-' -f1)
 
@@ -11,8 +12,11 @@ rm -rf ${PKG}-${VERSION}
 mkdir ${PKG}-${VERSION}
 tar xf ${PKG}_${VERSION}.orig.tar.gz --strip-components=1 -C ${PKG}-${VERSION}
 
-cd ${PKG}-${VERSION}
-cp -r ../debian .
+cp -r ${SCRIPT_DIR}/debian -t ${PKG}-${VERSION}
 
-dpkg-buildpackage -us -uc
+docker run --rm -it --platform linux/arm64 \
+    -v ${SCRIPT_DIR}:/build -u $(id -u):$(id -g) \
+    -w /build/${PKG}-${VERSION} \
+    debian-arm64-builder \
+    dpkg-buildpackage -us -uc
 
