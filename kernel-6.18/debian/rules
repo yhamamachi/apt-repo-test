@@ -14,7 +14,7 @@ override_dh_auto_clean:
 
 
 override_dh_auto_configure:
-	cat debian/patches/*.cfg >> arch/arm64/configs/renesas_defconfig
+	cat debian/patches/*.cfg >> arch/arm64/configs/sparrow_hawk_defconfig
 	$(MAKE) sparrow_hawk_defconfig
 	
 override_dh_auto_build:
