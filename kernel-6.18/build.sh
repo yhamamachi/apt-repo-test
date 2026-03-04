@@ -1,6 +1,6 @@
 #!/bin/bash
 
-SCRIPT_DIR=$(cd `dirname $` && pwd)
+SCRIPT_DIR=$(cd `dirname $0` && pwd)
 RAW_VERSION=${1:-6.18.6-2026-01-20}
 VERSION=$(echo $RAW_VERSION | cut -d'-' -f1)
 
