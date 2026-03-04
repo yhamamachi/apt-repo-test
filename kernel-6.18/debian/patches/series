@@ -5,6 +5,9 @@
 0004-input-Add-support-for-no-irq-to-ili210x-driver_618.patch
 0005-arm64-dts-renesas-r8a779g3-Add-waveshare-13.3-DSI-FH.patch
 
+uio/0001-drivers-clk-r8a779g0-cpg-mssr-backport-from-BSP-.patch
+uio/0001-driver-pmdomain-r8a779g0-Backport-update.patch
+
 uio/0001-uio-Add-new-ioctl-for-power-management.patch
 uio/0002-uio-Add-PMA-IOCTL-to-compat-list.patch
 uio/0003-uio-uio_pdrv_genirq-renesas-Add-clock-divisor-ioctl-.patch
