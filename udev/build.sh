@@ -1,6 +1,6 @@
 #!/bin/bash
 
-SCRIPT_DIR=$(cd `dirname $` && pwd)
+SCRIPT_DIR=$(cd `dirname $0` && pwd)
 VERSION=${1:-1.0.0}
 PKG=sparrow-hawk-udev
 
@@ -15,9 +15,10 @@ cd ${PKG}-${VERSION}
 cp -r ../debian ./
 
 docker run --rm -it --platform linux/arm64 \
-    -v ${SCRIPT_DIR}:/build -u $(id -u):$(id -g) \
+    -v ${SCRIPT_DIR}:/build:Z -u $(id -u):$(id -g) \
     -w /build/${PKG}-${VERSION} \
     debian-arm64-builder \
     dpkg-buildpackage -us -uc
+
 
 
