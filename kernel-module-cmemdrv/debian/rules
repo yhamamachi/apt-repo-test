@@ -2,6 +2,8 @@
 
 # Prevent passing build option
 export DEB_BUILD_MAINT_OPTIONS = hardening=-all optimize=-lto
+export ARCH=arm64
+export CROSS_COMPILE=aarch64-linux-gnu-
 export KERNEL_SRC=/build/kernel
 
 DEB_VERSION_UPSTREAM := $(shell dpkg-parsechangelog -SVersion | cut -d- -f1)
