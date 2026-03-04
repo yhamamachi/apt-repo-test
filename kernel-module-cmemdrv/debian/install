@@ -1,2 +1,2 @@
 debian/modules/lib ./usr/
-
+debian/patches/cmemdrv.conf ./usr/lib/modprobe.d/
