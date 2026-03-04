@@ -15,7 +15,7 @@ override_dh_auto_build:
 	unset LDFLAGS
 	unset AS
 	unset LD
-	$(MAKE) CROSS_COMPILE=aarch64-linux-gnu- -j$(CORENUM) \
+	$(MAKE) -j$(CORENUM) \
 		PLAT=rcar_gen4 \
 		DEBUG=0 \
 		bl31 rcar_srecord SPD=none MBEDTLS_COMMON_MK=1 \
