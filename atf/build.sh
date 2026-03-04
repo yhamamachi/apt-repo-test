@@ -11,9 +11,9 @@ mkdir ${PKG}-${VERSION}
 tar xf ${PKG}_${VERSION}.orig.tar.gz --strip-components=1 -C ${PKG}-${VERSION}
 cp -r ${SCRIPT_DIR}/debian -t ${PKG}-${VERSION}
 
-docker run --rm -it --platform linux/arm64 \
+docker run --rm -it --platform linux/amd64 \
     -v ${SCRIPT_DIR}:/build:Z -u $(id -u):$(id -g) \
     -w /build/${PKG}-${VERSION} \
-    debian-arm64-builder \
-    dpkg-buildpackage -us -uc
+    debian-amd64-builder \
+    dpkg-buildpackage -us -uc -a arm64
 
