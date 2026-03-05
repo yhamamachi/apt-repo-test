@@ -1,4 +1,4 @@
-FROM --platform=linux/arm64 debian:bookworm
+FROM --platform=linux/arm64 debian:trixie
 
 ENV DEBIAN_FRONTEND=noninteractive
 
