@@ -1,8 +1,4 @@
 #!/bin/sh
 set -e
 
-if [ "$1" = "configure" ]; then
-    dpkg-trigger sparrow-hawk-arm-trusted-firmware
-fi
-
 exit 0
