@@ -1,2 +1,5 @@
 /*/sparrow-hawk-*
 *.img.gz
+/libcamera/libcamera
+/*/linux
+
