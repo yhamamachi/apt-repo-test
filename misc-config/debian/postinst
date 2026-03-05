@@ -1,8 +1,4 @@
 #!/bin/sh
 set -e
 
-if [ "$1" = "configure" ] || [ "$1" = "triggered" ]; then
-    /usr/lib/sparrow-hawk/mkfit.sh
-fi
-
 exit 0
