@@ -78,7 +78,7 @@ imager_block = {
         },
         {
             "name": "Sparrow Hawk 8GB/16GB",
-            "icon": "http://rcar.kenichi3.mydns.jp/sh-image/sh.png",
+            "icon": image_url,
             "tags": ["sh"],
             "matching_type": "exclusive",
             "description": "Retronix SparrowHawk (R-Car V4H)"
