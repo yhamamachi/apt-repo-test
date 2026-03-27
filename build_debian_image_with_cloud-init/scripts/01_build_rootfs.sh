@@ -126,7 +126,14 @@ if [[ "${OVERLAY}" == "1" && -d "${OVERLAY_DIR}" ]]; then
   CUSTOMIZE_HOOKS+=("--customize-hook=rsync -aHAX --numeric-ids '${OVERLAY_DIR}/' \"\$1/\"")
 fi
 
-# 5) apt cleanup
+# 5) Setup sparrow hawk package
+CUSTOMIZE_HOOKS+=("--customize-hook=chroot \"\$1\" bash -lc 'set -euo pipefail
+  export DEBIAN_FRONTEND=noninteractive
+  echo \"deb [trusted=yes] https://yhamamachi.github.io/apt-repo/ bookworm main\" > /etc/apt/sources.list.d/sparrow-hawk.list
+  apt-get update && apt-get install -y sparrow-hawk-bsp
+'")
+
+# 6) apt cleanup
 if [[ "${APT_CLEAN}" == "1" ]]; then
   CUSTOMIZE_HOOKS+=("--customize-hook=chroot \"\$1\" bash -lc 'apt-get clean || true; rm -rf /var/lib/apt/lists/* || true'")
 fi
