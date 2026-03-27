@@ -28,10 +28,17 @@ $(IMG).xz: rootfs.done
 	sudo scripts/03_pack_and_hash.sh "$(IMG)"
 
 $(REPO): $(IMG).xz
-	python3 scripts/04_update_repo_json.py "$(XZ)" "$(REPO)" "http://rcar.kenichi3.mydns.jp/sh-image/$(notdir $(XZ))" "http://rcar.kenichi3.mydns.jp/sh-image/sh-mascot.png"
+	python3 scripts/04_update_repo_json.py "$(XZ)" "$(REPO)" \
+		"https://github.com/yhamamachi/apt-repo-test/releases/download/binary_release/$(notdir $(XZ))" \
+		"https://github.com/yhamamachi/apt-repo-test/releases/download/binary_release/sh-mascot.png"
 
 clean:
 	sudo rm -rf "$(OUTDIR)" rootfs.done
 
 install:
 	sudo cp $(REPO) $(IMG).xz /var/www/html/sh-image
+
+github_release: $(IMG).xz ${REPO}
+	gh release create binary_release --title "Image Release" --prerelease -n "Release" \
+		$(IMG).xz ${REPO} images/sh-mascot.png images/sh.png
+
