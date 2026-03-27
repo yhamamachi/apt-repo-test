@@ -78,10 +78,10 @@ imager_block = {
         },
         {
             "name": "Sparrow Hawk 8GB/16GB",
-			"icon": "http://rcar.kenichi3.mydns.jp/sh-image/sh.png",
+            "icon": "http://rcar.kenichi3.mydns.jp/sh-image/sh.png",
             "tags": ["sh"],
             "matching_type": "exclusive",
-			"description": "Retronix SparrowHawk (R-Car V4H)"
+            "description": "Retronix SparrowHawk (R-Car V4H)"
         },
     ]
 }
@@ -123,3 +123,4 @@ print(f"image_download_size: {image_download_size}")
 print(f"image_download_sha256: {image_download_sha256}")
 print(f"extract_size: {extract_size}")
 print(f"extract_sha256: {extract_sha256}")
+
