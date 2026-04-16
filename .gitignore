@@ -2,6 +2,7 @@
 *.img.gz
 /libcamera/libcamera
 /*/linux
+/kernel-module-pvrsrvkm/*.tar.bz2
 
 out
 rootfs.done
