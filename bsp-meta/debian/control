@@ -14,6 +14,7 @@ Depends: ${misc:Depends},
     sparrow-hawk-arm-trusted-firmware,
     sparrow-hawk-kernel,
     sparrow-hawk-kernel-module-cmemdrv,
+    sparrow-hawk-kernel-module-pvrsrvkm,
     sparrow-hawk-libcamera,
     sparrow-hawk-misc-config,
     sparrow-hawk-mkfit,
@@ -21,3 +22,4 @@ Depends: ${misc:Depends},
     sparrow-hawk-udev,
     sparrow-hawk-u-boot,
 Description: Meta package for Sparrow Hawk
+
