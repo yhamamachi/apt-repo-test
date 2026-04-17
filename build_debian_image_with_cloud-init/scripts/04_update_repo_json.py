@@ -78,7 +78,7 @@ imager_block = {
         },
         {
             "name": "Sparrow Hawk 8GB/16GB",
-            "icon": icon_url,
+            "icon": icon_url.replace("sh-mascot","sh"),
             "tags": ["sh"],
             "matching_type": "exclusive",
             "description": "Retronix SparrowHawk (R-Car V4H)"
