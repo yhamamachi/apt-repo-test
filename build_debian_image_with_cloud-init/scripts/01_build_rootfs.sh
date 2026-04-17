@@ -138,6 +138,20 @@ if [[ "${APT_CLEAN}" == "1" ]]; then
   CUSTOMIZE_HOOKS+=("--customize-hook=chroot \"\$1\" bash -lc 'apt-get clean || true; rm -rf /var/lib/apt/lists/* || true'")
 fi
 
+# 7) Network setup
+CUSTOMIZE_HOOKS+=("--customize-hook=chroot \"\$1\" bash -lc 'set -euo pipefail
+  mkdir -p /boot
+  cat > /etc/netplan/99-end0.yaml <<EOF
+network:
+  version: 2
+  ethernets:
+    end0:
+      dhcp4: true
+      dhcp6: true
+      optional: true
+EOF
+'")
+
 echo "=== mmdebstrap build parameters ==="
 echo "ARCH       : ${ARCH}"
 echo "SUITE      : ${SUITE}"
