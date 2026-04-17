@@ -9,11 +9,6 @@ EXTRA_IMAGE_SIZE=1000 # MiB
 ADDITIONAL_PACKAGE=""
 VARIANT=debootstrap # minbase # default=debootstrap
 
-# For X11 with Gnome/LXQt
-DESKTOP_PKG=""
-#DESKTOP_PKG="gnome"
-#DESKTOP_PKG="lxqt"
-
 #################################
 # Fixed parameter               #
 #################################
@@ -28,6 +23,8 @@ SCRIPT_DIR=$(cd `dirname $0` && pwd)
 CHROOT_DIR=${SCRIPT_DIR}/rootfs
 NET_DEV=end0
 USE_LOCAL_DEB="no"
+IMAGE_NAME_POSTFIX=""
+DEBIAN_VER=13
 
 DHCP_CONF="
 [Match]
@@ -49,7 +46,6 @@ UTIL_PKG=" \
 PKG_LIST=" \
     ${BASE_PKG} \
     ${UTIL_PKG} \
-    ${DESKTOP_PKG} \
     ${ADDITIONAL_PACKAGE} \
 "
 
@@ -58,11 +54,12 @@ PKG_LIST=" \
 #################################
 Usage () {
     echo "Usage:"
-    echo "    $0 <DEBIAN_VERSION> [OPTIONS]"
-    echo "DEBIAN_VERSION: Only major version(ex. 13)"
+    echo "    $0 [OPTIONS]"
     echo "OPTIONS:"
     echo "    -h | --help:          Show this help"
     echo "    -l | --use-local-deb: Use local deb package instead of kernel-apt-repo(For development)"
+    echo "       | --desktop <pkg>: Add task-<pkg>-desktop package into image"
+    echo "       | --version <num>: Set target debian version(ex.13)"
     exit
 }
 
@@ -75,23 +72,32 @@ Get_codename_from_version () {
 #################################
 # Main process                  #
 #################################
-
 # Check version and codename
-DEBIAN_VER=${1:-13}
+while [[ $# -gt 0 ]]; do
+    case "$1" in
+        --version)
+            DEBIAN_VER=$2
+            shift ;;
+        --desktop)
+            DESKTOP_ENV=$2
+            PKG_LIST+=" task-${DESKTOP_ENV}-desktop "
+            IMAGE_NAME_POSTFIX="-${DESKTOP_ENV}"
+            shift ;;
+        -l|--use-local-deb)
+            USE_LOCAL_DEB="yes" ;;
+        -h|--help)
+            Usage; exit 0 ;;
+        *) ;; # Ignore unknown option
+    esac
+    shift
+done
 CODENAME=$( Get_codename_from_version ${DEBIAN_VER} )
-IMAGE_NAME=${DEVICE}-debian-${DEBIAN_VER}-based-bsp.img
 if [[ $CODENAME == "" ]]; then
     Usage; exit -1
 fi
 echo $CODENAME
 
-for arg in $@; do
-    if [[ "$arg" == "-l" || "$arg" == "--use-local-deb" ]]; then
-        USE_LOCAL_DEB="yes"
-    elif [[ "$arg" == "-h" || "$arg" == "--help" ]]; then
-        Usage; exit;
-    fi
-done
+IMAGE_NAME=${DEVICE}-debian-${DEBIAN_VER}-based-bsp${IMAGE_NAME_POSTFIX}.img
 
 # root privilege is needed for this script
 if [ "`whoami`" != "root" ]; then
