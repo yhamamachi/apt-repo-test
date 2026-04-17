@@ -9,6 +9,7 @@ avahi-daemon
 iproute2
 iputils-ping
 netplan.io
+systemd-resolved
 
 # remote access
 openssh-server
