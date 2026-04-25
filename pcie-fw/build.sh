@@ -1,6 +1,6 @@
 #!/bin/bash
 
-VERSION=$1
+VERSION=${1:-1.0.0}
 PKG=sparrow-hawk-pcie-fw
 
 rm -rf ${PKG}_${VERSION}.orig.tar.gz
