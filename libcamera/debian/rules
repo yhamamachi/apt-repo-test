@@ -12,7 +12,7 @@ CORENUM := $(shell nproc)
 	dh $@
 
 override_dh_auto_configure:
-	meson setup --reconfigure --prefix=/usr \
+	meson setup --prefix=/usr \
 		-Dpipelines=rcar-gen4,rkisp1 \
 		-Dipas=rkisp1 \
 		-Dcam=enabled \
