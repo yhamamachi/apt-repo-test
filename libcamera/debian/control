@@ -13,3 +13,6 @@ Architecture: all
 Depends: ${misc:Depends},
     libdw1, libunwind8, libevent-dev,
 Description: libcamera for Sparrow Hawk kernel
+Provides: gstreamer1.0-libcamera
+Conflicts: gstreamer1.0-libcamera
+Replaces: gstreamer1.0-libcamera
