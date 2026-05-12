@@ -25,3 +25,6 @@ uio/0014-uio-uio_pdrv_genirq-Add-parameter-error-in-case-not-.patch
 uio/0015-WIP-Fix-build-error-on-kernel-6.12.patch
 uio/1001-arm64-dts-renesas-sparrow-hawk-Add-overlay-for-UIO-C.patch
 
+PCI-rcar-gen4-Limit-Max_Read_Request_Size-and-Max_Payload_Size-to-256-Bytes.patch
+0001-arm64-dts-renesas-sparrow-hawk-Reserve-first-128-MiB.patch
+
