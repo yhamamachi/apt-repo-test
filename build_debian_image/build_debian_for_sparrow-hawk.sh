@@ -16,7 +16,7 @@ DEVICE=sparrow-hawk # Currently, it doesn't support to change device.
 GH_REPO="rcar-community/kernel-apt-repository"
 REPO_BRANCH=apt-repo
 EXTRA_APT_REPO="\
-deb [trusted=yes] https://yhamamachi.github.io/apt-repo/ bookworm main \
+deb [trusted=yes] https://yhamamachi.github.io/apt-repo/ _CODENAME_ main \
 "
 ARCH=arm64
 SCRIPT_DIR=$(cd `dirname $0` && pwd)
@@ -96,6 +96,7 @@ if [[ $CODENAME == "" ]]; then
     Usage; exit -1
 fi
 echo $CODENAME
+EXTRA_APT_REPO=$(echo "${EXTRA_APT_REPO}" | sed "s/_CODENAME_/$CODENAME/")
 
 IMAGE_NAME=${DEVICE}-debian-${DEBIAN_VER}-based-bsp${IMAGE_NAME_POSTFIX}.img
 
