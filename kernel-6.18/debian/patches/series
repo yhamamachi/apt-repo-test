@@ -1,9 +1,5 @@
+0001-arm64-dts-renesas-sparrow-hawk-Enable-I2C3-I2C4.patch
 0002-HACK-drivers-gpu-drm-drm_file-Ingnore-flag-checking.patch
-0001-drm-panel-Add-panel-driver-for-Waveshare-DSI-touchsc_618.patch
-0002-drm-panel-Added-waveshare-13.3inch-panel.patch
-0003-drm-panel-Added-waveshare-7.0inch-h-dsi-screen-suppo.patch
-0004-input-Add-support-for-no-irq-to-ili210x-driver_618.patch
-0005-arm64-dts-renesas-r8a779g3-Add-waveshare-13.3-DSI-FH.patch
 
 uio/0001-drivers-clk-r8a779g0-cpg-mssr-backport-from-BSP-.patch
 uio/0001-driver-pmdomain-r8a779g0-Backport-update.patch
@@ -24,7 +20,4 @@ uio/0013-Revert-uio-uio_pdrv_genirq-Add-parameter-error-in-ca.patch
 uio/0014-uio-uio_pdrv_genirq-Add-parameter-error-in-case-not-.patch
 uio/0015-WIP-Fix-build-error-on-kernel-6.12.patch
 uio/1001-arm64-dts-renesas-sparrow-hawk-Add-overlay-for-UIO-C.patch
-
-PCI-rcar-gen4-Limit-Max_Read_Request_Size-and-Max_Payload_Size-to-256-Bytes.patch
-0001-arm64-dts-renesas-sparrow-hawk-Reserve-first-128-MiB.patch
 

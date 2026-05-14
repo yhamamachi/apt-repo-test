@@ -2,7 +2,7 @@
 
 SCRIPT_DIR=$(cd `dirname $` && pwd)
 COMMIT=daf8608d920fbf1d179abab8a52cbc0f022c98a1
-RAW_VERSION=${1:-6.18.6-2026-01-20}
+RAW_VERSION=${1:-6.18.20-2026-04-01}
 VERSION=$(echo $RAW_VERSION | cut -d'-' -f1)
 KERNEL_VERSION=$(echo $RAW_VERSION | sed 's/\.[0-9]*-.*//')
 PKG=sparrow-hawk-kernel-module-pvrsrvkm
