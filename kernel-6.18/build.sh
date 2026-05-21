@@ -10,14 +10,18 @@ DEFCONFIG_NAME=sparrow_hawk_defconfig
 cd ${SCRIPT_DIR}
 git clone https://github.com/rcar-community/linux.git
 cd linux
-#git fetch
+git fetch
 git archive ${BRANCH} -o ../${PKG}_${VERSION}.orig.tar.gz
 
 cd ${SCRIPT_DIR}
+# Backup .version file
+if [[ -e ${PKG}-${VERSION} ]]; then
+    cp -f ${PKG}-${VERSION}/.version ${SCRIPT_DIR}/.version
+fi
+
 rm -rf ${PKG}-${VERSION}
 mkdir ${PKG}-${VERSION}
 tar xf ${PKG}_${VERSION}.orig.tar.gz --strip-components=0 -C ${PKG}-${VERSION}
-
 cd ${PKG}-${VERSION}
 while read line; do
     if [[ "$line" != "" ]]; then
@@ -26,8 +30,10 @@ while read line; do
 done < ${SCRIPT_DIR}/patches/series
 cat ${SCRIPT_DIR}/patches/*.cfg >> arch/arm64/configs/${DEFCONFIG_NAME}
 
-# cd ${SCRIPT_DIR}/${PKG}-${VERSION}
-# ${SCRIPT_DIR}/debian/build_kernel.sh ${DEFCONFIG_NAME}
+# Restore .version file
+if [[ -e ${SCRIPT_DIR}/${PKG}-${VERSION} ]]; then
+    mv ${SCRIPT_DIR}/.version ./.version
+fi
 
 cat << EOS > ./build_kernel.sh
 export ARCH=arm64
@@ -35,9 +41,12 @@ export CROSS_COMPILE=aarch64-linux-gnu-
 export DEFCONFIG_NAME=${1:-sparrow_hawk_defconfig}
 
 make -j$(nproc) ${DEFCONFIG_NAME}
-make -j$(nproc) Image dtbs modules
 make -j$(nproc) bindeb-pkg DPKG_FLAGS=-d
 EOS
+
+# Cleanup previous build artifacts
+cd ${SCRIPT_DIR}
+rm -rf *.deb *.buildinfo *.changes
 
 docker run --rm -it --platform linux/amd64 \
     -v ${SCRIPT_DIR}:/build:Z -u $(id -u):$(id -g) \
