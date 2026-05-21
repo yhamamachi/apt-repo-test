@@ -11,8 +11,8 @@ Homepage: https://github.com/ARM-software/arm-trusted-firmware
 Package: sparrow-hawk-bsp
 Architecture: all
 Depends: ${misc:Depends},
+    linux-image-6.18-arm64-renesas,
     sparrow-hawk-arm-trusted-firmware,
-    sparrow-hawk-kernel,
     sparrow-hawk-kernel-module-cmemdrv,
     sparrow-hawk-kernel-module-pvrsrvkm,
     sparrow-hawk-libcamera,
