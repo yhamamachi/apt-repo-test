@@ -63,7 +63,7 @@ docker run --rm -it --platform linux/amd64 \
 # Build meta package #
 ######################
 
-TARGETS=("linux-image" "linux-headers" "linux-libc-dev")
+TARGETS=("linux-image" "linux-headers")
 
 rm -rf ${SCRIPT_DIR}/build_meta
 mkdir -p ${SCRIPT_DIR}/build_meta
