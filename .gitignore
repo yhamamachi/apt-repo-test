@@ -1,4 +1,7 @@
 /*/sparrow-hawk-*
+linux-*.deb
+build_meta
+linux-upstream_*
 *.img.gz
 /libcamera/libcamera
 /*/linux

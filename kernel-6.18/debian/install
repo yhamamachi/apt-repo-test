@@ -1,5 +1,0 @@
-arch/arm64/boot/Image usr/lib/sparrow-hawk/
-arch/arm64/boot/dts/renesas/r8a779g3-sparrow-hawk*.dtb* usr/lib/sparrow-hawk/
-debian/tmp/* usr/lib/sparrow-hawk/
-debian/modules/* ./usr/
-debian/patches/uio_pdrv_genirq.conf usr/lib/modprobe.d/

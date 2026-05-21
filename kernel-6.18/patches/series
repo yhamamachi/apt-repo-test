@@ -19,5 +19,6 @@ uio/0012-uio-uio_pdrv_genirq-Hotfix-clock-and-power-control-f.patch
 uio/0013-Revert-uio-uio_pdrv_genirq-Add-parameter-error-in-ca.patch
 uio/0014-uio-uio_pdrv_genirq-Add-parameter-error-in-case-not-.patch
 uio/0015-WIP-Fix-build-error-on-kernel-6.12.patch
+uio/0016-include-uapi-linux-renesas_uioctl.h-Fix-SPDX-part.patch
 uio/1001-arm64-dts-renesas-sparrow-hawk-Add-overlay-for-UIO-C.patch
 
