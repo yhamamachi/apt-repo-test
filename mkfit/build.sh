@@ -1,5 +1,6 @@
 #!/bin/bash
 
+SCRIPT_DIR=$(cd `dirname $0` && pwd)
 VERSION=${1:-1.0.0}
 PKG=sparrow-hawk-mkfit
 

@@ -1,6 +1,15 @@
 #!/bin/bash
 
-KERNEL_VERSION=$(strings /usr/lib/sparrow-hawk/Image | grep "Linux version" | head -1 | awk '{print $3}')
+# kernel postinst path some information
+# ex.) 6.18.20-arm64-renesas
+KERNEL_VERSION=$1
+# Maybe /boot
+KERNEL_IMAGE_PATH=$2
+
+# Get kernel version if this script doens't call from kernel postinst
+if [[ -z $KERNEL_VERSION ]];then
+    KERNEL_VERSION=$(ls /boot/vmlinuz* | cut -d'-' -f2-4)
+fi
 BUSYBOX_BIN_PATH=$(which busybox)
 
 # Generate initramfs
@@ -26,5 +35,6 @@ popd
 # Generate fitImage
 cd /usr/lib/sparrow-hawk/
 cp -f /boot/fitImage{,.old} || true
-mkimage -f fit-image.its /boot/fitImage
+sed -e "s/KERNEL_VERSION/${KERNEL_VERSION}/" fit-image.its.template > fit-image.its
+mkimage -f fit-image.its /boot/fitImage > /dev/null
 
