@@ -1,5 +1,7 @@
 0001-arm64-dts-renesas-sparrow-hawk-Enable-I2C3-I2C4.patch
 0002-HACK-drivers-gpu-drm-drm_file-Ingnore-flag-checking.patch
+0003-arm64-dts-renesas-r8a779g0-Add-qos-node.patch
+0001-PCI-rcar-gen4-Limit-Max_Read_Request_Size-and-Max_Pa.patch
 
 uio/0001-drivers-clk-r8a779g0-cpg-mssr-backport-from-BSP-.patch
 uio/0001-driver-pmdomain-r8a779g0-Backport-update.patch
