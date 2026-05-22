@@ -96,4 +96,8 @@ for target in ${TARGETS[@]}; do
     # Cleanup
     rm -rf ${WORK_DIR}
 done
+cp ${SCRIPT_DIR}/build_meta/*.deb -t ${SCRIPT_DIR}
+
+# Cleanup
+rm -rf ${SCRIPT_DIR}/build_meta
 
