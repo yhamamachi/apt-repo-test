@@ -17,7 +17,7 @@ RUN apt update && apt install -y \
     meson \
     ninja-build \
     bc kmod cpio flex libncurses5-dev libelf-dev libssl-dev dwarves bison \
-    g++-aarch64-linux-gnu rsync
+    g++-aarch64-linux-gnu rsync dkms
 # U-Boot dependency
 RUN apt update && apt install -y \
     device-tree-compiler dfu-util efitools flex gdisk graphviz imagemagick \
