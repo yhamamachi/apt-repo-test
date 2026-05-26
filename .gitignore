@@ -6,6 +6,8 @@ linux-upstream_*
 /libcamera/libcamera
 /*/linux
 /kernel-module-pvrsrvkm/*.tar.bz2
+/*/*-dkms*
+/*-dkms/*.tar.gz
 
 out
 rootfs.done
