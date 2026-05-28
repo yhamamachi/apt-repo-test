@@ -1,13 +1,18 @@
+/*/*.img.gz
+/*.orig.tar.gz
+/*/*.orig.tar.gz
+/*/*.dsc
+/*/*.deb
+/*/*.buildinfo
+/*/*.changes
+/*/*.debian.tar.xz
+
 /*/sparrow-hawk-*
-linux-*.deb
-build_meta
-linux-upstream_*
-*.img.gz
+/*/*-dkms*/
+/qos-lib/qos-lib-*/
+/qos-lib/qos_lib/
 /libcamera/libcamera
 /*/linux
-/kernel-module-pvrsrvkm/*.tar.bz2
-/*/*-dkms*
-/*-dkms/*.tar.gz
 
 out
 rootfs.done
