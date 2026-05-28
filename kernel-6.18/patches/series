@@ -2,6 +2,7 @@
 0002-HACK-drivers-gpu-drm-drm_file-Ingnore-flag-checking.patch
 0003-arm64-dts-renesas-r8a779g0-Add-qos-node.patch
 0001-PCI-rcar-gen4-Limit-Max_Read_Request_Size-and-Max_Pa.patch
+0001-media-rcar-vin-Drop-min_queued_buffers.patch
 
 uio/0001-drivers-clk-r8a779g0-cpg-mssr-backport-from-BSP-.patch
 uio/0001-driver-pmdomain-r8a779g0-Backport-update.patch
