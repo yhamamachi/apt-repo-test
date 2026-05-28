@@ -19,6 +19,7 @@ Depends: ${misc:Depends},
     sparrow-hawk-mkfit,
     sparrow-hawk-pcie-fw,
     sparrow-hawk-udev,
+    sparrow-hawk-utils,
     sparrow-hawk-u-boot,
 Description: Meta package for Sparrow Hawk
 
